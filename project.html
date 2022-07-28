@@ -28,7 +28,7 @@
         {{ project_text }}
 
         {% if bib %}
-            <br />
+            <h3>Publication{% if bib|length > 1 %}s{% endif %}</h3>
             <p>Please use this when referring to the post or publication:</p>
             {% for key, item in bib.items() %}
               <div class="publication-card">

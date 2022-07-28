@@ -5,3 +5,6 @@ Amidst the ongoing pandemic, the assessment of computed tomography (CT) images f
 ### Impact statement
 
 Applied artificial intelligence (AI) research focuses disproportionately on novel architecture modifications that do not necessarily generalize to other datasets, while neglecting systematic comparisons between commonly used algorithm components. This inhibits the deployment of AI for real-world applications. For automatic COVID-19 grading specifically, attention for compatibility of AI with clinical workflow is lacking. This paper presents a systematic investigation of COVID-19 grading algorithm components using a large publicly available dataset. The results are published in an online challenge. These contributions speed up the development of AI applications for COVID-19 grading by establishing insights into the components of such applications and by allowing applications produced by future research to be compared in a fair manner. The adherence to a standardized COVID-19 grading system may increase the compatibility between AI and clinical workflow.
+
+### Algorithm
+We uploaded our algorithm that we trained for this paper to the Grand Challenge platform, so you can run it on your own data - or view some public examples - [here](https://grand-challenge.org/algorithms/corads-ai/).
