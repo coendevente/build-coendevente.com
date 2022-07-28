@@ -3,6 +3,7 @@
 cd site
 git add -u
 git commit -m "$0"
+git push
 cd ..
 git add -u 
 git add site
