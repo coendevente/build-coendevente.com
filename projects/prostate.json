@@ -1,8 +1,8 @@
 {
     "title": "Prostate Cancer Detection and Grading in bpMRI",
-    "main_image": "linear-gradient(0deg, rgba(231, 76, 60, 0.8), rgba(231, 76, 60, 0.2)), url('https://coendevente.github.io/img/content/prostate.jpg')",
+    "main_image": "linear-gradient(0deg, rgba(231, 76, 60, 0.8), rgba(231, 76, 60, 0.2)), url(images/prostate.jpg)",
     "main_image_position": "top",
-    "thumbnail": "linear-gradient(0deg, rgba(231, 76, 60, 0.8), rgba(231, 76, 60, 0.2)), url(https://coendevente.github.io/img/content/prostate.jpg)",
+    "thumbnail": "linear-gradient(0deg, rgba(231, 76, 60, 0.8), rgba(231, 76, 60, 0.2)), url(images/prostate.jpg)",
     "thumbnail_position": "top",
     "publication_date": "4 December 2019",
     "bib": ["vent20a"]
