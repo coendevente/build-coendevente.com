@@ -30,7 +30,7 @@ For each image they were presented with, graders needed to state whether the eye
 ### Outcomes
 We were happy to see that people from all over the world joined the AIROGS challenge. 351 participants from 51 countries joined the challenge and 15 teams from 13 countries eventually submitted a solution for the final leaderboard. The world map below depicts for each country how many users joined and submitted to the final leaderboard. Each circle indicates a country and the circle’s size portrays the number of participants from that country.
 
-<img src="images/8876d211-9a0a-4fe8-b736-878a83c6f5e5.png" width=800/ style="margin-left: calc(50% - 400px); max-width: 100%;" alt="Map indicating the number of participants that joined and submitted to the final phase for each country.">
+<img src="images/8876d211-9a0a-4fe8-b736-878a83c6f5e5.png" width="100%" alt="Map indicating the number of participants that joined and submitted to the final phase for each country.">
 
 Participants were evaluated on two aspects: glaucoma screening performance and robustness. Glaucoma screening performance was measured by the partial area under the receiver operator characteristic curve at 90-100% specificity (pAUCₛ) and the sensitivity at 95% specificity (SE@95SPₛ). We quantified robustness using Cohen's kappa score, i.e. the agreement between the reference and the decisions provided by the challenge participants on image gradability (κᵤ), and the area under the receiver operator characteristic curve with the human reference for ungradability as labels and ungradability scalar values provided by the participants, as the target scores (AUCᵤ). A final score, defined as the mean of these four metrics, subsequently determined the final participant ranking.
 
