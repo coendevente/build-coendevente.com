@@ -58,10 +58,10 @@ def copy_to_local(config, k, new_shortest_axis_size=None):
         if url.startswith("http"):
             im = download_file(url)
             fname = hashlib.md5(url.encode()).hexdigest()
-            url_out = Path("images") / (fname + ".jpg")
+            url_out = Path("images") / (fname + ".png")
         else:
             im = Image.open(Path("site/") / url)
-            url_out = os.path.splitext(url)[0] + "_thumb.jpg"
+            url_out = os.path.splitext(url)[0] + "_thumb.png"
         
         if new_shortest_axis_size is None:
             im_out = im
