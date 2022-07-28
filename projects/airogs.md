@@ -71,7 +71,10 @@ You can also already try out some solutions from participants who made their cod
 
 If you would like to see more results, hear more details about the challenge or the learn more about the methods used by the participants, [read their method descriptions](https://airogs.grand-challenge.org/evaluation/final-test-phase/leaderboard/) or watch the AIROGS event at ISBI 2022 here:
 
-<video class="w-100" controls="" src="files/AIROGS.mp4"></video>
+<!-- <video class="w-100" controls="" src="files/AIROGS.mp4"></video> -->
+<div class="video-container">
+    <iframe width="100%" src="https://www.youtube.com/embed/uu-cOW-5Ijs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 <br>
 In conclusion, we presented a challenge based on real-world data for glaucoma screening by CFP. The results are promising, as the teams’ performances were high and many teams exceeded our target of an 80% sensitivity at 95% specificity. We hope the results of this challenge help toward implementing robust AI for glaucoma screening in clinical practice.
