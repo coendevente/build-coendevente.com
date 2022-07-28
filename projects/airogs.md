@@ -5,7 +5,7 @@ Glaucoma is a leading cause of irreversible blindness and impaired vision, [esti
 
 Glaucomatous patients can be identified with the use of color fundus photography (CFP). See an example CFP image with the optic disc magnified, below. The analysis of CFP images performed by human experts, however, is a highly costly procedure. AI could increase the cost-effectiveness of glaucoma screening, by reducing the need for this manual labor. Moreover, if automated AI based solutions that can forward glaucomatous patients to ophthalmologists would be integrated in scanners (or even better: smartphone cameras), they could be used at eye shops and opticians without the need for an expert to be present at the site.
 
-<img src="https://rumc-gcorg-p-public.s3.amazonaws.com/i/2022/04/29/26ebcfd5-eccb-4a19-968a-6b4b8d35deeb.png" width=400/ style="margin-left: calc(50% - 200px); max-width: 100%;" alt="Color fundus image with optic disc pointed out.">
+<img src="images/26ebcfd5-eccb-4a19-968a-6b4b8d35deeb.jpg" width=400/ style="margin-left: calc(50% - 200px); max-width: 100%;" alt="Color fundus image with optic disc pointed out.">
 
 ### From at-the-lab performance to real-world scenarios
 Testing AI screening solutions in real-world settings is highly important, as illustrated in [this news article](https://www.technologyreview.com/2020/04/27/1000658/google-medical-ai-accurate-lab-real-life-clinic-covid-diabetes-retina-disease/), based on [this evaluation study](https://dl.acm.org/doi/abs/10.1145/3313831.3376718). They described observations when deploying an AI model for diabetic retinopathy screening from CFP images in clinics in Thailand.
@@ -30,21 +30,21 @@ For each image they were presented with, graders needed to state whether the eye
 ### Outcomes
 We were happy to see that people from all over the world joined the AIROGS challenge. 351 participants from 51 countries joined the challenge and 15 teams from 13 countries eventually submitted a solution for the final leaderboard. The world map below depicts for each country how many users joined and submitted to the final leaderboard. Each circle indicates a country and the circle’s size portrays the number of participants from that country.
 
-<img src="https://rumc-gcorg-p-public.s3.amazonaws.com/i/2022/04/29/8876d211-9a0a-4fe8-b736-878a83c6f5e5.png" width=800/ style="margin-left: calc(50% - 400px); max-width: 100%;" alt="Map indicating the number of participants that joined and submitted to the final phase for each country.">
+<img src="images/8876d211-9a0a-4fe8-b736-878a83c6f5e5.png" width=800/ style="margin-left: calc(50% - 400px); max-width: 100%;" alt="Map indicating the number of participants that joined and submitted to the final phase for each country.">
 
 Participants were evaluated on two aspects: glaucoma screening performance and robustness. Glaucoma screening performance was measured by the partial area under the receiver operator characteristic curve at 90-100% specificity (pAUCₛ) and the sensitivity at 95% specificity (SE@95SPₛ). We quantified robustness using Cohen's kappa score, i.e. the agreement between the reference and the decisions provided by the challenge participants on image gradability (κᵤ), and the area under the receiver operator characteristic curve with the human reference for ungradability as labels and ungradability scalar values provided by the participants, as the target scores (AUCᵤ). A final score, defined as the mean of these four metrics, subsequently determined the final participant ranking.
 
 The best pAUCₛ, SE@95SPₛ, κᵤ and AUCᵤ were 0.90, 85%, 0.82 and 0.99, respectively. The four metrics for each participant, along with the final score on the left, are shown here:
 
-<img src="https://rumc-gcorg-p-public.s3.amazonaws.com/i/2022/04/29/93836330-271a-47a2-a10f-353aedf85bfc.png" alt="Plot with rankings and four metrics of the challenge for each country.">
+<img src="images/93836330-271a-47a2-a10f-353aedf85bfc.png" alt="Plot with rankings and four metrics of the challenge for each country.">
 
 The receiver operator characteristic curves (ROCs) for glaucoma screening performance and robustness are shown below. The sensitivity and specificity of the graders are plotted as well, showing that the screening performance of the teams was on par with the one of human graders.
 
-<img src="https://rumc-gcorg-p-public.s3.amazonaws.com/i/2022/04/29/fa1940be-1aeb-456b-a148-207b51c1dbeb.png" alt="ROC plots of the two challenge tasks.">
+<img src="images/fa1940be-1aeb-456b-a148-207b51c1dbeb.png" alt="ROC plots of the two challenge tasks.">
 
 The winning teams recevied a cash prize and AWS compute credits:
 
-<img src="https://rumc-gcorg-p-public.s3.amazonaws.com/i/2022/05/13/19c0292b-b0de-476d-873c-ef0ae5cec722.jpg">
+<img src="images/19c0292b-b0de-476d-873c-ef0ae5cec722.jpeg">
 
 ### What worked?
 Based on the [method descriptions](https://airogs.grand-challenge.org/evaluation/final-test-phase/leaderboard/) provided by the team participants, it stood out that a few methodological choices were made predominantly by top performing teams.
@@ -71,7 +71,7 @@ You can also already try out some solutions from participants who made their cod
 
 If you would like to see more results, hear more details about the challenge or the learn more about the methods used by the participants, [read their method descriptions](https://airogs.grand-challenge.org/evaluation/final-test-phase/leaderboard/) or watch the AIROGS event at ISBI 2022 here:
 
-<video class="w-100" controls="" src="https://rumc-gcorg-p-public.s3.eu-west-1.amazonaws.com/i/2022/04/12/AIROGS+presentation+at+ISBI+with+Q+and+A.mp4"></video>
+<video class="w-100" controls="" src="files/AIROGS.mp4"></video>
 
 <br>
 In conclusion, we presented a challenge based on real-world data for glaucoma screening by CFP. The results are promising, as the teams’ performances were high and many teams exceeded our target of an 80% sensitivity at 95% specificity. We hope the results of this challenge help toward implementing robust AI for glaucoma screening in clinical practice.

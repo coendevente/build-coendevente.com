@@ -49,34 +49,46 @@ def download_file(url):
 
     return i
 
+
+
+def copy_to_local(config, k, new_shortest_axis_size=None):
+    v = config[k]
+    if "url(" in v and ")" in v:
+        url = v.split("url(")[1].split(")")[0].replace("'", "")
+        if url.startswith("http"):
+            im = download_file(url)
+            fname = hashlib.md5(url.encode()).hexdigest()
+            url_out = Path("images") / (fname + ".jpg")
+        else:
+            im = Image.open(Path("site/") / url)
+            url_out = os.path.splitext(url)[0] + "_thumb.jpg"
+        
+        if new_shortest_axis_size is None:
+            im_out = im
+        else:
+            if im.size[0] < im.size[1]:
+                w = new_shortest_axis_size
+                h = int(round(w / im.size[0] * im.size[1]))
+            else:
+                h = new_shortest_axis_size
+                w = int(round(h / im.size[1] * im.size[0]))
+
+            im_out = im.resize((w, h))
+
+        im_out = im_out.convert('RGB')
+
+        im_out.save(Path("site/") / url_out)
+
+        config[k] = v.split("url(")[0] + "url('" + str(url_out) + "')" + ")".join(v.split("url(")[1].split(")")[1:])
+        print(config[k])
+
+
 def update_imgs_in_config(config):
     for k, v in config.items():
         if k == "thumbnail":
-            if "url(" in v and ")" in v:
-                url = v.split("url(")[1].split(")")[0]
-                if url.startswith("http"):
-                    im = download_file(url)
-                    fname = hashlib.md5(url.encode()).hexdigest()
-                    url_out = Path("images") / (fname + ".jpg")
-                else:
-                    im = Image.open(Path("site/") / url)
-                    url_out = os.path.splitext(url)[0] + "_thumb.jpg"
-                
-                if im.size[0] < im.size[1]:
-                    w = 512
-                    h = int(round(w / im.size[0] * im.size[1]))
-                else:
-                    h = 512
-                    w = int(round(h / im.size[1] * im.size[0]))
-
-                im_out = im.resize((w, h)).convert('RGB')
-
-                im_out.save(Path("site/") / url_out)
-
-                config[k] = v.split("url(")[0] + "url('" + str(url_out) + "')" + ")".join(v.split("url(")[1].split(")")[1:])
-                print(config[k])
+            copy_to_local(config, k, 512)
         elif k == "main_image":
-            pass
+            copy_to_local(config, k)
     
 
 def projects():
