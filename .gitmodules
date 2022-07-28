@@ -1,3 +1,6 @@
 [submodule "site2"]
 	path = site2
 	url = git@github.com:coendevente/coendevente.github.io.git
+[submodule "site"]
+	path = site
+	url = git@github.com:coendevente/coendevente.github.io.git
