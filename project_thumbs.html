@@ -2,7 +2,7 @@
 {% if make_lists and loop.index0 % (12 // w_col_n) == 0 %}
 <div class="collection-list colophome listforshowall w-dyn-items w-row">
 {% endif %}
-<div data-ix="flowinslow" class="collection-item lazyload w-dyn-item w-col w-col-{{ w_col_n }}">
+<div data-ix="flowinslow" class="collection-item lazyload w-dyn-item w-col w-col-{{ w_col_n }}" onclick="document.location.href = '{{ out_filename }}';">
     <div data-ix="goupbox" class="templatethumb movewithmouse opvoorkant" 
         style="background-image: {{ project.thumbnail }}; background-size: cover; background-position: {{ project.thumbnail_position }};">
         <a class="templatethumblink w-inline-block" href="{{ out_filename }}">
