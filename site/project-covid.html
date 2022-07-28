@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<!--  This site was created in Webflow. http://www.webflow.com  -->
+<!--  Last Published: Fri Mar 09 2018 17:05:10 GMT+0000 (UTC)  -->
+<html data-wf-page="59a4444cf0b9de0001da1f74" data-wf-site="59a4444cf0b9de0001da1f73" lang="nl">
+<head>
+  <meta charset="utf-8">
+  <title>Coen de Vente | Automated COVID-19 Grading in CT Scans</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/websify.webflow.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">
+      WebFont.load({
+        google: {
+          families: ["Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic", "Raleway:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"]
+        }
+      });
+    </script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">
+      ! function(o, c) {
+        var n = c.documentElement,
+          t = " w-mod-";
+        n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
+      }(window, document);
+    </script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/favicon.png" rel="apple-touch-icon">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K0837QE6PJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-K0837QE6PJ');
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.1/lazyload.js"></script>
+</head>
+<body class="body">
+  <div data-collapse="medium" data-animation="default" data-duration="400" data-ix="changecolorscroll" class="navbar colored w-nav">
+      <div class="container w-container"><a href="index.html" class="brand w-nav-brand">
+        <div>
+          <a href="index.html" class="navlink w-nav-link no-text-transform text-logo">Coen de Vente</a>
+        </div>
+        <nav role="navigation" class="nav-menu colored w-nav-menu">
+          <a href="index.html" class="navlink w-nav-link">Home</a>
+          <a href="projects.html" class="navlink w-nav-link">Projects</a>
+          <a href="publications.html" class="navlink w-nav-link">Publications</a>
+          <a href="cv.html" class="navlink over w-nav-link">CV</a>
+          <a href="about.html" class="navlink over w-nav-link">About</a>
+          <a href="contact.html" class="navlink w-nav-link">Contact</a>
+        </nav>
+        <div class="menu-button w-nav-button">
+          <div class="colored hamburgericon w-icon-nav-menu"></div>
+        </div>
+    </div>
+  </div><div class="section-9">
+  <div style="background-image: linear-gradient(0deg, rgba(20, 20, 20, 0.8), rgba(60, 60, 60, 0.2)), url('https://d19vzld1wvxwbr.cloudfront.net/static/images/radiology_banner_1.0d8dab81cc46.png'); background-size: cover; height: 400px; padding-bottom: 0px; background-position: right;" class="div-block-27">
+    <div style="height: 100%; display: flex; flex-direction: column; justify-content: flex-end;" class="row-5 w-row whitetext" >
+        <h1 style="font-size: 40px; " class="heading-5 zwartehead naastmockup">
+          <div data-ix="flowinslow" class="column-9 w-col w-col-2 whitetext"></div>
+          <div data-ix="flowinslow" class="column-9 w-col w-col-8 whitetext">
+            Automated COVID-19 Grading in CT Scans
+
+            <div class="publication-date">
+              <p style="margin: 0; font-weight: 600;"><img class="clock-icon" src="images/clock.png"> 8 October 2021</p>
+            </div>
+          </div>
+          <div data-ix="flowinslow" class="column-10 w-clearfix w-col w-col-2"></div>
+        </h1>
+    </div>
+  </div>
+</div>
+
+<div class="section-8">
+  <div class="div-block-29">
+    <div class="div-block-28 bgtarget blurbg"></div>
+  </div>
+  
+  <div class="div-block-27 sameheight0source">
+    <div class="row-5 w-row">
+      <div data-ix="flowinslow" class="column-10 w-clearfix w-col w-col-2"></div>
+      <div data-ix="flowinslow" class="column-9 w-col w-col-8">
+        <h3>Abstract</h3>
+
+<p>Amidst the ongoing pandemic, the assessment of computed tomography (CT) images for COVID-19 presence can exceed the workload capacity of radiologists. Several studies addressed this issue by automating COVID-19 classification and grading from CT images with convolutional neural networks (CNNs). Many of these studies reported initial results of algorithms that were assembled from commonly used components. However, the choice of the components of these algorithms was often pragmatic rather than systematic and systems were not compared to each other across papers in a fair manner. We systematically investigated the effectiveness of using 3-D CNNs instead of 2-D CNNs for seven commonly used architectures, including DenseNet, Inception, and ResNet variants. For the architecture that performed best, we furthermore investigated the effect of initializing the network with pretrained weights, providing automatically computed lesion maps as additional network input, and predicting a continuous instead of a categorical output. A 3-D DenseNet-201 with these components achieved an area under the receiver operating characteristic curve of 0.930 on our test set of 105 CT scans and an AUC of 0.919 on a publicly available set of 742 CT scans, a substantial improvement in comparison with a previously published 2-D CNN. This article provides insights into the performance benefits of various components for COVID-19 classification and grading systems. We have created a challenge on grand-challenge.org to allow for a fair comparison between the results of this and future research.</p>
+
+<h3>Impact statement</h3>
+
+<p>Applied artificial intelligence (AI) research focuses disproportionately on novel architecture modifications that do not necessarily generalize to other datasets, while neglecting systematic comparisons between commonly used algorithm components. This inhibits the deployment of AI for real-world applications. For automatic COVID-19 grading specifically, attention for compatibility of AI with clinical workflow is lacking. This paper presents a systematic investigation of COVID-19 grading algorithm components using a large publicly available dataset. The results are published in an online challenge. These contributions speed up the development of AI applications for COVID-19 grading by establishing insights into the components of such applications and by allowing applications produced by future research to be compared in a fair manner. The adherence to a standardized COVID-19 grading system may increase the compatibility between AI and clinical workflow.</p>
+
+
+        
+            <br />
+            <p>Please use this when referring to the post or publication:</p>
+            
+              <div class="publication-card">
+                <p><span class='highlight-me'>C. de Vente</span>, L.H. Boulogne, K. Vaidhya Venkadesh, C. Sital, N. Lessmann, C. Jacobs, C.I. Sánchez and B. van Ginneken. "Automated COVID-19 Grading with Convolutional Neural Networks in Computed Tomography Scans: A Systematic Comparison", <i>IEEE Transactions on Artificial Intelligence</i>, 2022;3(2):129-138.</p><div class="publication-button-group"><a data-ix="goupbox" id="publication-modal-vent21-button" class="knop footerknop movewithmouse w-button publication-button">Cite</a> <a data-ix="goupbox" target="_blank" class="knop footerknop movewithmouse w-button publication-button" href="https://doi.org/10.1109/TAI.2021.3115093">DOI</a></div>
+
+              </div>
+            
+        
+
+      </div>
+      <div data-ix="flowinslow" class="column-10 w-clearfix w-col w-col-2"></div>
+    </div>
+  </div>
+</div>
+
+<div class="section-4" style="background-color: #9497B2;">
+  <div class="row-2 w-row">
+    <h3 class="heading-5 zwartehead" style="color: white;">Other projects</h3>
+  </div>
+
+  <div class="row-2 w-row">
+
+    <div class="column-5 w-col w-col-9 w-col-stack">
+      <div class="w-dyn-list">
+        <div class="collection-list colophome w-dyn-items w-row other-projects-list">
+          
+
+<div data-ix="flowinslow" class="collection-item lazyload w-dyn-item w-col w-col-4">
+    <div data-ix="goupbox" class="templatethumb movewithmouse opvoorkant" 
+        style="background-image: linear-gradient(0deg, rgba(211, 93, 39, 0.4), rgba(237, 169, 142, 0.1)), url('images/2a3f6c29d8c6b438f8c0ad0860d9cf43.jpg'); background-size: cover; background-position: left;">
+        <a class="templatethumblink w-inline-block" href="project-airogs.html">
+            <div class="templatefrontwrap">
+                <div class="templatefront">
+                    <img src="images/magnifying-glass-icon.png" height="20">
+                </div>
+            </div>
+            <img class="thumbimgbg">
+        </a>
+    </div>
+    <h3 class="heading-9"><a href="project-airogs.html">AIROGS Challenge Report: AI models can be used for glaucoma screening, but do they know when they cannot?</a></h3>
+</div>
+
+
+
+<div data-ix="flowinslow" class="collection-item lazyload w-dyn-item w-col w-col-4">
+    <div data-ix="goupbox" class="templatethumb movewithmouse opvoorkant" 
+        style="background-image: linear-gradient(0deg, rgba(241, 196, 15, 0.8), rgba(241, 196, 15, 0.2)), url('images/eye_thumb.jpg'); background-size: cover; background-position: top;">
+        <a class="templatethumblink w-inline-block" href="project-amd.html">
+            <div class="templatefrontwrap">
+                <div class="templatefront">
+                    <img src="images/magnifying-glass-icon.png" height="20">
+                </div>
+            </div>
+            <img class="thumbimgbg">
+        </a>
+    </div>
+    <h3 class="heading-9"><a href="project-amd.html">Estimating Uncertainty of Deep Neural Networks for Age-related Macular Degeneration Grading using Optical Coherence Tomography</a></h3>
+</div>
+
+
+
+<div data-ix="flowinslow" class="collection-item lazyload w-dyn-item w-col w-col-4">
+    <div data-ix="goupbox" class="templatethumb movewithmouse opvoorkant" 
+        style="background-image: linear-gradient(0deg, rgba(231, 76, 60, 0.8), rgba(231, 76, 60, 0.2)), url('images/f2ae8559d36985c438ffe1276d4a4de2.jpg'); background-size: cover; background-position: top;">
+        <a class="templatethumblink w-inline-block" href="project-prostate.html">
+            <div class="templatefrontwrap">
+                <div class="templatefront">
+                    <img src="images/magnifying-glass-icon.png" height="20">
+                </div>
+            </div>
+            <img class="thumbimgbg">
+        </a>
+    </div>
+    <h3 class="heading-9"><a href="project-prostate.html">Prostate Cancer Detection and Grading in bpMRI</a></h3>
+</div>
+
+
+        </div>
+      </div>
+    </div>
+    
+    <div class="column-6 w-col w-col-3 w-col-stack">
+      <a href="projects.html" data-ix="flowinslow" class="link-block voorhome w-inline-block">
+        <div data-ix="showarrowgoupbox" class="morerect meerophome movewithmouse meernietophome">
+          <h1 class="infronthead moreinfront bekijkmeer">More projects</h1><img src="images/arrow-point-to-right.png" class="arrowright"></div>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+  <div id="publication-modal-vent21" class="modal">
+    <div class="modal-content">
+      <span class="close" id="close-publication-modal-vent21">&times;</span>
+      <p>C. de Vente, L.H. Boulogne, K. Vaidhya Venkadesh, C. Sital, N. Lessmann, C. Jacobs, C.I. Sánchez and B. van Ginneken. "Automated COVID-19 Grading with Convolutional Neural Networks in Computed Tomography Scans: A Systematic Comparison", <i>IEEE Transactions on Artificial Intelligence</i>, 2022;3(2):129-138.</p>
+      <pre id="publication-modal-vent21-pre">@article{Vent21,
+  author = {Coen de Vente and Luuk H. Boulogne and Kiran Vaidhya Venkadesh and Cheryl Sital and Nikolas Lessmann and Colin Jacobs and Clara I. S\'{a}nchez and Bram van Ginneken},
+  title = {Automated COVID-19 Grading with Convolutional Neural Networks in Computed Tomography Scans: A Systematic Comparison},
+  journal ={IEEE Transactions on Artificial Intelligence}
+  year={2022},
+  volume={3},
+  number={2},
+  pages={129-138},
+  doi={10.1109/TAI.2021.3115093},
+}</pre>
+
+        <div class="publication-button-group">
+          <a data-ix="goupbox" onclick="copy_text('publication-modal-vent21')" 
+          class="knop footerknop movewithmouse w-button publication-button publication-button-black">
+            <img src="images/copy.png" class="copy-icon"> Copy
+          </a>
+      </div>
+    </div>
+  </div>
+
+
+
+<script>
+  function copy_text(id_to_publish) {
+    var id = id_to_publish + "-pre";
+    var r = document.createRange();
+    r.selectNode(document.getElementById(id));
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(r);
+    document.execCommand('copy');
+    window.getSelection().removeAllRanges();
+  }
+</script>
+<div class="div-block-17">
+  <div data-ix="flowinslow" class="div-block-34">
+    <h1 class="heading-7">Want to get in contact?</h1><a data-ix="goupbox" href="contact.html" class="knop footerknop movewithmouse w-button">Drop me a line</a></div>
+</div>
+
+
+<div class="section-5">
+    <div class="row-3 w-row">
+      <div class="column colrightarr w-col w-col-4">
+        <div class="div-block-9">
+          <div class="text-block-8">sitemap</div>
+        </div>
+        <div class="div-block-9"><a href="index.html" class="link">home</a></div>
+        <div class="div-block-9"><a href="projects.html" class="link">projects</a></div>
+        <div class="div-block-9"><a href="publications.html" class="link">publications</a></div>
+        <div class="div-block-9"><a href="cv.html" class="link">cv</a></div>
+        <div class="div-block-9"><a href="about.html" class="link">about</a></div>
+        <div class="div-block-9"><a href="contact.html" class="link">contact</a></div>
+      </div>
+      <div class="colrightarr w-col w-col-4">
+        <div class="div-block-9">
+          <div class="text-block-8">contact</div>
+        </div>
+        <div class="div-block-9"><a href="mailto:hello@coendevente.com" class="link">hello@coendevente.com</a></div>
+        <div class="div-block-9"><a href="contact.html" class="link">contact form</a></div>
+        <div class="div-block-9"><a href="https://calendly.com/coendevente" class="link">schedule a meeting with me</a></div>
+      </div>
+      <div class="colrightarr w-col w-col-4 norightbar">
+        <div class="div-block-9">
+          <div class="text-block-8">links</div>
+        </div>
+        <!-- <div class="div-block-9 langetekst"> -->
+        <div class="div-block-9">
+          <a target="_blank" href="https://scholar.google.com/citations?user=AqL8A60AAAAJ" class="link">
+            <img class="link-icon" src="https://coendevente.github.io/img/links/scholar.svg" /> Google Scholar
+          </a>
+        </div>
+        <div class="div-block-9">
+          <a target="_blank" href="https://www.linkedin.com/in/coendevente/" class="link">
+            <img class="link-icon" src="https://coendevente.github.io/img/links/linkedin.png" /> LinkedIn
+          </a>
+        </div>
+        <div class="div-block-9">
+          <a target="_blank" href="https://qurai.amsterdam/researcher/coen_de_vente/" class="link">
+            <img class="link-icon" src="https://coendevente.github.io/img/links/qurai.png" /> QurAI
+          </a>
+        </div>
+        <div class="div-block-9">
+          <a target="_blank" href="https://www.diagnijmegen.nl/people/coen-de-vente/" class="link">
+            <img class="link-icon" src="https://coendevente.github.io/img/links/radboudumc.png" /> DIAG Nijmegen
+          </a>
+        </div>
+        <div class="div-block-9">
+          <a target="_blank" href="https://github.com/coendevente" class="link">
+            <img class="link-icon" src="https://coendevente.github.io/img/links/github.svg" /> GitHub
+          </a>
+        </div>
+        <!-- </div> -->
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript" intergrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+  <style>
+      .w-webflow-badge {
+        display: none !important;
+      }
+      .w-nav,
+      .w--nav-menu-open,
+      .w-nav-link {
+        transition: all .5s;
+      }
+      .w-nav.colored,
+      .w--nav-menu-open.colored {
+        background: #FFF;
+        box-shadow: 0 -10px 30px #333;
+      }
+      .w-nav-link.colored {
+        color: #333 !important;
+      }
+      .w-icon-nav-menu.colored {
+        color: #333;
+      }
+      .thumbimgbg {
+        position: relative;
+        top: 0;
+        z-index: 0;
+      }
+      .templatefront {
+        transition: opacity .3s;
+      }
+    </style>
+  <script>
+      lazyload();
+      function refresh() {
+        thresh = 0;
+        fromTop = $(window).scrollTop();
+        navHeight = $(".w-nav").height() + $(".w-nav-menu").height();
+        wittebalk = $(".wittebalk").html() === "1";
+        alwaysDarkText = $(".naastmockup").css("color") === "rgb(51, 51, 51)";
+        if (thresh < fromTop || $(window).width() <= 991 || wittebalk || alwaysDarkText) {
+          $(".w-nav").addClass("colored");
+          $(".w-nav-link").addClass("colored");
+          $(".blacklogo").show();
+          $(".whitelogo").hide();
+          $(".w-icon-nav-menu").addClass("colored");
+          $(".w--nav-menu-open").addClass("colored");
+        } else {
+          $(".w-nav").removeClass("colored");
+          $(".w-nav-link").removeClass("colored");
+          $(".blacklogo").hide();
+          $(".whitelogo").show();
+          $(".w-icon-nav-menu").removeClass("colored");
+          $(".w--nav-menu-open").removeClass("colored");
+        }
+      }
+      $(document).click(function() {
+        refresh();
+      });
+      $(document).ready(function() {
+        refresh();
+      });
+      $(window).scroll(function() {
+        refresh();
+      });
+      $(window).resize(function() {
+        refresh();
+      });
+      $(".movewithmouse").mousemove(function(e) {
+        cursorX = e.clientX;
+        cursorY = e.clientY;
+        divW = $(this).outerWidth();
+        divH = $(this).outerHeight();
+        maxXdeg = divW / 50;
+        /2/ / 7; //10;
+        maxYdeg = maxXdeg; //10;
+        maxZdeg = -(divW / 400); //0;//3;//2;
+        maxXpx = divW / 50; //10;//30;
+        maxYpx = divW / 50; //10;//30;
+        divCenterX = $(this).offset().left - $(window).scrollLeft() + (divW / 2);
+        divCenterY = $(this).offset().top - $(window).scrollTop() + (divH / 2);
+        xDist = cursorX - divCenterX;
+        yDist = cursorY - divCenterY;
+        xDeg = -maxXdeg * (xDist / (divW / 2));
+        yDeg = maxYdeg * (yDist / (divH / 2));
+        zDeg = maxZdeg * (xDist * yDist / (divW * divH / 4));
+        xPx = maxXpx * (xDist / (divW / 2));
+        yPx = maxYpx * (yDist / (divH / 2));
+        cssText = "scale(1.04)";
+        cssText += " rotateY(" + xDeg + "deg) rotateX(" + yDeg + "deg) rotateZ(" + zDeg + "deg)";
+        cssText += " translateX(" + xPx + "px) translateY(" + yPx + "px)";
+        $(this).css("transform", cssText);
+      });
+      $(".templatethumb").hover(function() {
+        thumbW = $(this).width();
+        thumbH = $(this).height();
+        img = $(this).find(".thumbimgbg");
+        imgH = img.height();
+        v = 45; // px per sec
+        t = imgH / v;
+        $(".thumbimgbg").css("transition", "top " + t + "s");
+        console.log(t);
+        img.css("top", -imgH + thumbH);
+        $(this).find(".templatefront").width(thumbW);
+        $(this).find(".templatefront").height(thumbH);
+        $(this).find(".templatefront").css("opacity", 1);
+      }, function() {
+        img.css("top", 0);
+        $(this).find(".templatefront").css("opacity", 0);
+      });
+    </script>
+<!--End of Tawk.to Script -->
+  <style>
+      .hideword {
+        /* display: none; */
+        opacity: 0;
+      }
+      .switchwordswrap {
+        text-align: left;
+      }
+      .switchwords,
+      .holdplace {
+        display: block;
+        float: left;
+        height: 70px;
+      }
+      @media(max-width: 767px) {
+        .switchwords,
+        .holdplace {
+          height: 55px;
+        }
+      }
+      @media(max-width: 479px) {
+        .switchwords,
+        .holdplace {
+          height: 45px;
+        }
+      }
+      .wordwrapper {
+        position: absolute;
+        height: 0;
+        width: 0;
+      }
+      .nofloatleft {
+        /* float: none; */
+      }
+      .floatleftwrap {
+        /* overflow: hidden; */
+      }
+    </style>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/plax.js"></script>
+  <script>
+    $.plax.enable()
+    $('.medical-image').plaxify()
+    $('.ground-bg').plaxify()
+    $('.plax').plaxify()
+  </script>
+
+  <script>
+    Array.from(document.getElementsByClassName("modal")).forEach(
+      function(modal) {
+        // Get the button that opens the modal
+        var btn = document.getElementById(modal.id + "-button");
+        console.log(btn);
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementById("close-" + modal.id);
+        
+        // When the user clicks on the button, open the modal
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+      }
+    );
+        
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      Array.from(document.getElementsByClassName("modal")).forEach(
+        function(modal) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+            console.log(modal)
+          }
+        }
+      )
+    };
+  </script>
+</body>
+</html>

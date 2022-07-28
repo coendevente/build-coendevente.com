@@ -1,0 +1,99 @@
+<div class="section-9">
+  <div style="background-image: {{ main_image }}; background-size: cover; height: 400px; padding-bottom: 0px; background-position: {{ main_image_position }};" class="div-block-27">
+    <div style="height: 100%; display: flex; flex-direction: column; justify-content: flex-end;" class="row-5 w-row whitetext" >
+        <h1 style="font-size: 40px; " class="heading-5 zwartehead naastmockup">
+          <div data-ix="flowinslow" class="column-9 w-col w-col-2 whitetext"></div>
+          <div data-ix="flowinslow" class="column-9 w-col w-col-8 whitetext">
+            {{ title }}
+
+            <div class="publication-date">
+              <p style="margin: 0; font-weight: 600;"><img class="clock-icon" src="images/clock.png"> {{ publication_date }}</p>
+            </div>
+          </div>
+          <div data-ix="flowinslow" class="column-10 w-clearfix w-col w-col-2"></div>
+        </h1>
+    </div>
+  </div>
+</div>
+
+<div class="section-8">
+  <div class="div-block-29">
+    <div class="div-block-28 bgtarget blurbg"></div>
+  </div>
+  
+  <div class="div-block-27 sameheight0source">
+    <div class="row-5 w-row">
+      <div data-ix="flowinslow" class="column-10 w-clearfix w-col w-col-2"></div>
+      <div data-ix="flowinslow" class="column-9 w-col w-col-8">
+        {{ project_text }}
+
+        {% if bib %}
+            <br />
+            <p>Please use this when referring to the post or publication:</p>
+            {% for key, item in bib.items() %}
+              <div class="publication-card">
+                {{ item.html }}
+              </div>
+            {% endfor %}
+        {% endif %}
+
+      </div>
+      <div data-ix="flowinslow" class="column-10 w-clearfix w-col w-col-2"></div>
+    </div>
+  </div>
+</div>
+
+<div class="section-4" style="background-color: #9497B2;">
+  <div class="row-2 w-row">
+    <h3 class="heading-5 zwartehead" style="color: white;">Other projects</h3>
+  </div>
+
+  <div class="row-2 w-row">
+
+    <div class="column-5 w-col w-col-9 w-col-stack">
+      <div class="w-dyn-list">
+        <div class="collection-list colophome w-dyn-items w-row other-projects-list">
+          {{ projects }}
+        </div>
+      </div>
+    </div>
+    
+    <div class="column-6 w-col w-col-3 w-col-stack">
+      <a href="projects.html" data-ix="flowinslow" class="link-block voorhome w-inline-block">
+        <div data-ix="showarrowgoupbox" class="morerect meerophome movewithmouse meernietophome">
+          <h1 class="infronthead moreinfront bekijkmeer">More projects</h1><img src="images/arrow-point-to-right.png" class="arrowright"></div>
+      </a>
+    </div>
+  </div>
+</div>
+
+{% if bib %}
+{% for key, item in bib.items() %}
+  <div id="publication-modal-{{ key }}" class="modal">
+    <div class="modal-content">
+      <span class="close" id="close-publication-modal-{{ key }}">&times;</span>
+      <p>{{ item.only_text }}</p>
+      <pre id="publication-modal-{{ key }}-pre">{{ item.pub_type + '{' + item.bibtex + '}' }}</pre>
+
+        <div class="publication-button-group">
+          <a data-ix="goupbox" onclick="copy_text('publication-modal-{{ key }}')" 
+          class="knop footerknop movewithmouse w-button publication-button publication-button-black">
+            <img src="images/copy.png" class="copy-icon"> Copy
+          </a>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+{% endif %}
+
+<script>
+  function copy_text(id_to_publish) {
+    var id = id_to_publish + "-pre";
+    var r = document.createRange();
+    r.selectNode(document.getElementById(id));
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(r);
+    document.execCommand('copy');
+    window.getSelection().removeAllRanges();
+  }
+</script>

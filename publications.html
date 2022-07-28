@@ -1,0 +1,49 @@
+<!-- <div class="bgtarget headshort"></div> -->
+<div class="section-6">
+  <div class="w-row">
+  <div class="w-col" style="width: 1400px; max-width: 100vw;">
+      <h1 class="heading-8">Publications</h1>
+  </div>
+  </div>
+</div>
+<div class="section-7 section-move-up">
+  <div class="w-dyn-list">
+    <div class="collection-list colophome listforshowall w-dyn-items w-row">
+        <div class="div-block-27 sameheight0source">
+          <div class="row-5 w-row">
+            <div data-ix="flowinslow" class="column-9 w-col w-col-8">
+              {% for group, bib_items in bib.items() %}
+                <h2 class="pub-head">{{ group }}</h2>
+                {% for key, item in bib_items.items() %}
+                  <div class="publication-card">
+                    {{ item.html }}
+                  </div>
+                {% endfor %}
+              {% endfor %}
+              </div>
+            <div data-ix="flowinslow" class="column-10 w-clearfix w-col w-col-4"></div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+{% for group, bib_items in bib.items() %} 
+  {% for key, item in bib_items.items() %}
+    <div id="publication-modal-{{ key }}" class="modal">
+      <div class="modal-content">
+        <span class="close" id="close-publication-modal-{{ key }}">&times;</span>
+        <p>{{ item.only_text }}</p>
+        <pre id="publication-modal-{{ key }}-pre">{{ item.pub_type + '{' + item.bibtex + '}' }}</pre>
+
+          <div class="publication-button-group">
+            <a data-ix="goupbox" onclick="copy_text('publication-modal-{{ key }}')" 
+            class="knop footerknop movewithmouse w-button publication-button publication-button-black">
+              <img src="images/copy.png" class="copy-icon"> Copyzoom
+
+            </a>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+{% endfor %}

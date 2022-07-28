@@ -1,0 +1,9 @@
+{
+    "title": "Automated COVID-19 Grading in CT Scans",
+    "main_image": "linear-gradient(0deg, rgba(20, 20, 20, 0.8), rgba(60, 60, 60, 0.2)), url('https://d19vzld1wvxwbr.cloudfront.net/static/images/radiology_banner_1.0d8dab81cc46.png')",
+    "main_image_position": "right",
+    "thumbnail": "linear-gradient(0deg, rgba(52, 152, 219, 0.8), rgba(52, 152, 219, 0.2)), url(https://coendevente.github.io/img/content/covid.jpg)",
+    "thumbnail_position": "left",
+    "publication_date": "8 October 2021",
+    "bib": ["vent21"]
+}

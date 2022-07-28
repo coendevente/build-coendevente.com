@@ -1,0 +1,9 @@
+{
+    "title": "Estimating Uncertainty of Deep Neural Networks for Age-related Macular Degeneration Grading using Optical Coherence Tomography",
+    "main_image": "linear-gradient(0deg, rgba(241, 196, 15, 0.8), rgba(241, 196, 15, 0.2)), url(images/eye.jpeg)",
+    "main_image_position": "center left",
+    "thumbnail": "linear-gradient(0deg, rgba(241, 196, 15, 0.8), rgba(241, 196, 15, 0.2)), url(images/eye.jpeg)",
+    "thumbnail_position": "top",
+    "publication_date": "20 June 2020",
+    "bib": ["vent20"]
+}
