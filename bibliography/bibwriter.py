@@ -411,7 +411,7 @@ class PublicationsGenerator:
         elif 'url' in bib_item.entry:
             url_pub = bib_item.entry['url']
             if is_html_format:
-                formatted_text += ' <a ' + a_tags + ' href=\"' + url_pub + '/\">URL</a>'
+                formatted_text += ' <a ' + a_tags + ' href=\"' + url_pub + '\">URL</a>'
             else:
                 formatted_text += 'urlweb: ' + url_pub + '\n'
 
