@@ -1,6 +1,5 @@
 # Example usage: sh push.sh "Commit message"
 
-git pull -X ours -m "Keep my changes"
 python3 generate.py
 cd site
 git add -u
