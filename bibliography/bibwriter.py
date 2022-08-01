@@ -358,7 +358,7 @@ class PublicationsGenerator:
 
         print('List of bibkeys returning UnicodeEncodeError')
         for bib in list_bibs_error:
-            print(bib)
+            print(bib)        
 
     def __append_publication_md(self, global_index, bib_key, html_format):
         bib_item = global_index[bib_key]
@@ -369,6 +369,8 @@ class PublicationsGenerator:
         pub_html += '</p>'
         pub_html += '<div class="publication-button-group">'
         pub_html += f'<a data-ix="goupbox" id="publication-modal-{bib_key.lower()}-button" class="knop footerknop movewithmouse w-button publication-button">Cite</a>'
+        if bib_item.scholar_id and bib_item.scholar_cites:
+            pub_html += f'<a data-ix="goupbox" href="https://scholar.google.com/scholar?oi=bibs&hl=nl&cites={bib_item.scholar_id}" target="_new" class="knop footerknop movewithmouse w-button publication-button">Cited by {bib_item.scholar_cites}</a>'
 
         pub_type = bib_item.entry_type
         if 'year' in bib_item.entry:

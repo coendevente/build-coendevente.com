@@ -5,3 +5,4 @@ template: publication
 bibkey: xion21
 published_in: Medical Image Analysis
 pub_details: <i>Medical Image Analysis</i>, 2021;67:101832
+pmid: http://www.ncbi.nlm.nih.gov/pubmed/33166776

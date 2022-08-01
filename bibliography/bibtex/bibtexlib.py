@@ -1,7 +1,10 @@
 #requires: pip install latexcodec
+from curses.ascii import ETB
 from pickletools import stringnl
 import latexcodec
 from collections import defaultdict
+import requests
+import json
 # helper functions:
 
 def get_blocks(content, start_character, delim=('{','}')):
@@ -236,6 +239,16 @@ class BibItem:
         self.entry_type = entry_type
         self.values = {}
         self.bibtex = bibtex
+        self.scholar_cites = self._get_scholar_cites()
+    
+    def _get_scholar_cites(self):
+        scholar_id = self.scholar_id
+
+        if scholar_id:
+            return self._get_cites(scholar_id)
+        else:
+            return None
+
     
     def _update_bibtex(self, string_rules):
         out = ""
@@ -261,6 +274,20 @@ class BibItem:
             out += line + '\n'
         self.bibtex = out
 
+    def _get_cites(self, scholar_id):
+        headers = {'Accept-Encoding': 'identity'}
+        with open("serpapi.key") as f:
+            api_key = f.read()
+        url = f"https://serpapi.com/search?engine=google_scholar&api_key={api_key}&cites={scholar_id}"
+        r = requests.get(url, headers=headers)
+        res = json.loads(r.text)
+
+        if 'total_results' not in res['search_information']:
+            return None
+
+        cites = res['search_information']['total_results']
+        return cites
+
     def __getattr__ (self, key):
         if key in self.values:
             # memoization
@@ -274,10 +301,17 @@ class BibItem:
             result = self._get_simple_value(key).replace('--', '-')
         elif key in ('doi', 'pmid', 'url'):
             result = self._get_url(key)
+        elif key == 'scholar_id':
+            result = self._get_scholar_id()
         else:
             result = ''
         self.values[key] = result
         return result
+
+    def _get_scholar_id(self):
+        if 'scholar_id' not in self.entry:
+            return None
+        return decode_latex(self.entry['scholar_id'].replace("{", "").replace("}", ""))
 
     def _get_authors(self):
         if 'author' not in self.entry:
