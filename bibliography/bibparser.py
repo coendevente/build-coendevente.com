@@ -1,10 +1,6 @@
 import json
 import time
-import latexcodec
-import codecs
-import glob
 import os
-import numpy as np
 
 from mdfiles import create_author_md_files, create_publication_md, create_group_md_files
 from authors import get_list_researchers, get_publications_by_author
