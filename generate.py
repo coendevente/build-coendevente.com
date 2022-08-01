@@ -257,19 +257,6 @@ def publications():
 
 
 def prepare_bib():
-    bib_files_root = Path("bibliography/content/")
-
-    with open(bib_files_root / "diag.bib") as f:
-        diag_bib = f.read()
-
-    with open(bib_files_root / "coen.bib") as f:
-        coen_bib = f.read()
-
-    publications_bib = diag_bib + '\n' + coen_bib
-
-    with open(bib_files_root / "publications.bib", 'w') as f:
-        f.write(publications_bib)
-
     bibparser.main()
     bibwriter.main()
 
