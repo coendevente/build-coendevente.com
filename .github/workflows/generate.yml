@@ -9,6 +9,11 @@ jobs:
       with:
         python-version: '3.x' # Version range or exact version of a Python version to use, using SemVer's version range syntax
         architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
+    - shell: bash
+      env:
+        SERPAPI: ${{ secrets.SERPAPI }}
+      run: |
+        echo "$SERPAPI" > serpapi.key
     - run: pip install --upgrade pip
     - run: pip install -rrequirements.txt
     - run: python generate.py
