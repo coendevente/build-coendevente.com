@@ -1,1 +1,1 @@
-{"diag": {"2021": ["xion21", "less20", "gonz21", "vent21a"], "__types__": ["article", "preprint", "inproceedings", "conference"], "2020": ["vent20a", "vent20", "ardu20"], "2022": ["lemi22", "vent21", "schw22", "schw22a"], "2018": ["vent18"], "__years__": [2022, 2021, 2020, 2018]}}
+{"diag": {"2021": ["xion21", "less20", "vent21a", "gonz21"], "__types__": ["article", "preprint", "inproceedings", "conference"], "2020": ["vent20a", "ardu20", "vent20"], "2022": ["schw22a", "vent21", "lemi22", "schw22"], "2018": ["vent18"], "__years__": [2022, 2021, 2020, 2018]}}
