@@ -1,2 +1,2 @@
-black==22.2
+black==21.12b0
 markdown==2.4.3
