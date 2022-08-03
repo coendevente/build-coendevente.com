@@ -1,15 +1,10 @@
 title: Automated COVID-19 Grading with Convolutional Neural Networks in Computed Tomography Scans: A Systematic Comparison
-authors: C. de Vente, L. Boulogne, K. Venkadesh, C. Sital, N. Lessmann, C. Jacobs, C. Sánchez and B. van Ginneken
-has_pdf: True 
-bibkey: vent21
-groups: diag
-booktitle: NA 
-year: 2022
-doi: https://doi.org/10.1109/TAI.2021.3115093
+authors: C. de Vente, L.H. Boulogne, K. Vaidhya Venkadesh, C. Sital, N. Lessmann, C. Jacobs, C.I. Sánchez and B. van Ginneken
+has_pdf: True
 template: publication
-diag_authors: coen-de-vente
-journal: IEEE Transactions on Artificial Intelligence
-
-
+bibkey: vent21
+published_in: IEEE Transactions on Artificial Intelligence
+pub_details: <i>IEEE Transactions on Artificial Intelligence</i>, 2022;3(2):129-138
+doi: https://doi.org/10.1109/TAI.2021.3115093
 Amidst the ongoing pandemic, the assessment of computed tomography (CT) images for COVID-19 presence can exceed the workload capacity of radiologists. Several studies addressed this issue by automating COVID-19 classification and grading from CT images with convolutional neural networks (CNNs). Many of these studies reported initial results of algorithms that were assembled from commonly used components. However, the choice of the components of these algorithms was often pragmatic rather than systematic and systems were not compared to each other across papers in a fair manner. We systematically investigated the effectiveness of using 3D CNNs instead of 2D CNNs for seven commonly used architectures, including DenseNet, Inception, and ResNet variants. For the architecture that performed best, we furthermore investigated the effect of initializing the network with pre-trained weights, providing automatically computed lesion maps as additional network input, and predicting a continuous instead of a categorical output. A 3D DenseNet-201 with these components achieved an area under the receiver operating characteristic curve (AUC) of 0.930 on our test set of 105 CT scans and an AUC of 0.919 on a publicly available set of 742 CT scans, a substantial improvement in comparison with a previously published 2D CNN. output contributed the least to improving the model performance. This paper provides insights into the performance benefits of various components for COVID-19 classification and grading systems. We have created a challenge on grand-challenge.org to allow for a fair comparison between the results of this and future research.
 
