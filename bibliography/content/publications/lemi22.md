@@ -1,8 +1,11 @@
 title: Glaucomatous features in fundus photographs of eyes with 'Referable glaucoma' of a large population based labeled data set for training an Artificial Intelligence (AI) algorithm for glaucoma screening
-authors: H.G. Lemij, C. de Vente, C. Sánchez, J. Cuadros, N. Jaccard and K. Vermeer
-has_pdf: False
-template: publication
+authors: H. Lemij, C. de Vente, C. Sánchez, J. Cuadros, N. Jaccard and K. Vermeer
+has_pdf: False 
 bibkey: lemi22
-published_in: Association for Research in Vision and Ophthalmology
-pub_details: in: <i>Association for Research in Vision and Ophthalmology</i>, 2022
-urlweb: https://iovs.arvojournals.org/article.aspx?articleid=2782322
+groups: diag
+booktitle: Association for Research in Vision and Ophthalmology
+year: 2022
+doi: NA 
+template: publication
+diag_authors: coen-de-vente
+journal: NA 

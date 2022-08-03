@@ -1,11 +1,15 @@
 title: Automated Assessment of COVID-19 Reporting and Data System and Chest CT Severity Scores in Patients Suspected of Having COVID-19 Using Artificial Intelligence
-authors: N. Lessmann, C.I. Sánchez, L. Beenen, L.H. Boulogne, M. Brink, E. Calli, J. Charbonnier, T. Dofferhoff, W.M. van Everdingen, P.K. Gerke, B. Geurts, H.A. Gietema, M. Groeneveld, L. van Harten, N. Hendrix, W. Hendrix, H.J. Huisman, I. Isgum, C. Jacobs, R. Kluge, M. Kok, J. Krdzalic, B. Lassen-Schmidt, K. van Leeuwen, J. Meakin, M. Overkamp, T. van Rees Vellinga, E.M. van Rikxoort, R. Samperna, C. Schaefer-Prokop, S. Schalekamp, E.T. Scholten, C. Sital, L. Stöger, J. Teuwen, K. Vaidhya Venkadesh, C. de Vente, M. Vermaat, W. Xie, B. de Wilde, M. Prokop and B. van Ginneken
-has_pdf: True
-template: publication
+authors: N. Lessmann, C. Sánchez, L. Beenen, L. Boulogne, M. Brink, E. Calli, J. Charbonnier, T. Dofferhoff, W. van Everdingen, P. Gerke, B. Geurts, H. Gietema, M. Groeneveld, L. van Harten, N. Hendrix, W. Hendrix, H. Huisman, I. Isgum, C. Jacobs, R. Kluge, M. Kok, J. Krdzalic, B. Lassen-Schmidt, K. van Leeuwen, J. Meakin, M. Overkamp, T. van Rees  Vellinga, E. van Rikxoort, R. Samperna, C. Schaefer-Prokop, S. Schalekamp, E. Scholten, C. Sital, L. Stöger, J. Teuwen, K. Vaidhya  Venkadesh, C. de Vente, M. Vermaat, W. Xie, B. de Wilde, M. Prokop and B. van Ginneken
+has_pdf: True 
 bibkey: less20
-published_in: Radiology
-pub_details: <i>Radiology</i>, 2021;298(1):E18-E28
+groups: diag
+booktitle: NA 
+year: 2021
 doi: https://doi.org/10.1148/radiol.2020202439
-pmid: http://www.ncbi.nlm.nih.gov/pubmed/32729810
+template: publication
+diag_authors: coen-de-vente
+journal: Radiology
+
+
 The coronavirus disease 2019 (COVID-19) pandemic has spread across the globe with alarming speed, morbidity, and mortality. Immediate triage of patients with chest infections suspected to be caused by COVID-19 using chest CT may be of assistance when results from definitive viral testing are delayed. Purpose: To develop and validate an artificial intelligence (AI) system to score the likelihood and extent of pulmonary COVID-19 on chest CT scans using the COVID-19 Reporting and Data System (CO-RADS) and CT severity scoring systems. Materials and Methods: The CO-RADS AI system consists of three deep-learning algorithms that automatically segment the five pulmonary lobes, assign a CO-RADS score for the suspicion of COVID-19, and assign a CT severity score for the degree of parenchymal involvement per lobe. This study retrospectively included patients who underwent a nonenhanced chest CT examination because of clinical suspicion of COVID-19 at two medical centers. The system was trained, validated, and tested with data from one of the centers. Data from the second center served as an external test set. Diagnostic performance and agreement with scores assigned by eight independent observers were measured using receiver operating characteristic analysis, linearly weighted κ values, and classification accuracy. Results: A total of 105 patients (mean age, 62 years ± 16 [standard deviation]; 61 men) and 262 patients (mean age, 64 years ± 16; 154 men) were evaluated in the internal and external test sets, respectively. The system discriminated between patients with COVID-19 and those without COVID-19, with areas under the receiver operating characteristic curve of 0.95 (95% CI: 0.91, 0.98) and 0.88 (95% CI: 0.84, 0.93), for the internal and external test sets, respectively. Agreement with the eight human observers was moderate to substantial, with mean linearly weighted κ values of 0.60 ± 0.01 for CO-RADS scores and 0.54 ± 0.01 for CT severity scores. Conclusion: With high diagnostic performance, the CO-RADS AI system correctly identified patients with COVID-19 using chest CT scans and assigned standardized CO-RADS and CT severity scores that demonstrated good agreement with findings from eight independent observers and generalized well to external data.
 
