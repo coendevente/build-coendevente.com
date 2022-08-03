@@ -1,11 +1,8 @@
 title: A deep learning framework for the detection and quantification of drusen and reticular pseudodrusen on optical coherence tomography
-authors: R. Schwartz, H. Khalid, S. Liakopoulos, Y. Ouyang, C. de Vente, C. González-Gonzalo, A. Lee, R. Guymer, E. Chew, C. Egan and others
-has_pdf: False 
-bibkey: schw22
-groups: diag
-booktitle: NA 
-year: 2022
-doi: NA 
+authors: R. Schwartz, H. Khalid, S. Liakopoulos, Y. Ouyang, C. de Vente, C. González-Gonzalo, A.Y. Lee, R. Guymer, E.Y. Chew, C. Egan and  others
+has_pdf: False
 template: publication
-diag_authors: coen-de-vente
-journal: arXiv:2204.02406
+bibkey: schw22
+published_in: arXiv:2204.02406
+pub_details: <i>arXiv:2204.02406</i>, 2022
+arxiv: https://arxiv.org/abs/2204.02406

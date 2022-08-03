@@ -1,11 +1,8 @@
 title: A deep learning pipeline for the detection and quantification of drusen and reticular pseudodrusen on optical coherence tomography
-authors: R. Schwartz, H. Khalid, S. Liakopoulos, Y. Ouyang, C. de Vente, C. Gonzalo, A. Lee, C. Egan, C. Sánchez and A. Tufail
-has_pdf: False 
-bibkey: schw22a
-groups: diag
-booktitle: Association for Research in Vision and Ophthalmology
-year: 2022
-doi: NA 
+authors: R. Schwartz, H. Khalid, S. Liakopoulos, Y. Ouyang, C. de Vente, C.G. Gonzalo, A.Y. Lee, C.A. Egan, C. Sánchez and A. Tufail
+has_pdf: False
 template: publication
-diag_authors: coen-de-vente
-journal: NA 
+bibkey: schw22a
+published_in: Association for Research in Vision and Ophthalmology
+pub_details: in: <i>Association for Research in Vision and Ophthalmology</i>, 2022
+urlweb: https://iovs.arvojournals.org/article.aspx?articleid=2781366
