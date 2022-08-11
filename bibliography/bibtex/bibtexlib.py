@@ -275,18 +275,19 @@ class BibItem:
         self.bibtex = out
 
     def _get_cites(self, scholar_id):
-        headers = {'Accept-Encoding': 'identity'}
-        with open("serpapi.key") as f:
-            api_key = f.read()
-        url = f"https://serpapi.com/search?engine=google_scholar&api_key={api_key}&cites={scholar_id}"
-        r = requests.get(url, headers=headers)
-        res = json.loads(r.text)
+        r = requests.get(f'https://scholar.google.com/scholar?cites={scholar_id}')
 
-        if 'total_results' not in res['search_information']:
-            return None
+        if r.status_code == 200:
+            div_str = '<div class="gs_ab_mdw">'
+            text = r.text
+            div_str_split = text.split(div_str)
 
-        cites = res['search_information']['total_results']
-        return cites
+            if len(div_str_split) == 3:
+                for a in div_str_split[-1].split():
+                    if a.isnumeric():
+                        return int(a)
+        
+        return None
 
     def __getattr__ (self, key):
         if key in self.values:
