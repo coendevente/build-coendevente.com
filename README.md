@@ -1,7 +1,7 @@
 # Repo to build coendevente.com
 
 ## Installation
-`pip3 install --requirements.txt`
+`pip3 install -rrequirements.txt`
 
 ## Building
 `python3 generate.py`
