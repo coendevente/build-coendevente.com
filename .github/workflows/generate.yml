@@ -17,6 +17,4 @@ jobs:
     - run: pip install --upgrade pip
     - run: pip install -rrequirements.txt
     - run: python generate.py
-    - run: cd site && git diff
-    - run: sh push.sh "Auto-commit"
     - uses: stefanzweifel/git-auto-commit-action@v4
