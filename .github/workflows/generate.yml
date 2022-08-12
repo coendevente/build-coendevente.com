@@ -19,6 +19,20 @@ jobs:
     - run: python generate.py
     - run: touch site/test.test
     # - uses: stefanzweifel/git-auto-commit-action@v4
-    - uses: textbook/git-checkout-submodule-action@master
-      with:
-        remote: true
+    - name: Commit submodule
+        run: |
+          cd site
+          git config user.email "coendevente@gmail.com"
+          git config user.name "coendevente"
+          git add -u
+          git commit -m "Update submodules" || echo "No changes to commit"
+          git push --recurse-submodules=check
+          cd ..
+    - name: Commit
+        run: |
+          git config user.email "coendevente@gmail.com"
+          git config user.name "coendevente"
+          git add -u
+          git commit -m "Update submodules" || echo "No changes to commit"
+          git push --recurse-submodules=check
+    
