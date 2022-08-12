@@ -1,6 +1,6 @@
 # Example usage: sh push.sh "Commit message"
 
-# git pull
+git pull
 python3 generate.py
 cd site
 git add -u
