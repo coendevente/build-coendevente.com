@@ -373,6 +373,8 @@ class PublicationsGenerator:
         if bib_item.scholar_id and bib_item.scholar_cites:
             print("Adding to pub_html...")
             pub_html += f'<a data-ix="goupbox" href="https://scholar.google.com/scholar?oi=bibs&hl=nl&cites={bib_item.scholar_id}" target="_new" class="knop footerknop movewithmouse w-button publication-button">Cited by {bib_item.scholar_cites}</a>'
+        else:
+            print("Not adding to pub_html")
 
         pub_type = bib_item.entry_type
         if 'year' in bib_item.entry:
