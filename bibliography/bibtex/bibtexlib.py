@@ -291,7 +291,7 @@ class BibItem:
         if r.status_code == 200:
             text = r.text
 
-            val = text.split("results")[0].split()[-1].replace("'", "")
+            val = text.split("result")[0].split()[-1].replace("'", "")
             if val.isnumeric():
                 return int(val)
             
