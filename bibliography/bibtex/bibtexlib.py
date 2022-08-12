@@ -1,10 +1,12 @@
 #requires: pip install latexcodec
 from curses.ascii import ETB
 from pickletools import stringnl
+import warnings
 import latexcodec
 from collections import defaultdict
 import requests
 import json
+import os
 # helper functions:
 
 def get_blocks(content, start_character, delim=('{','}')):
@@ -274,7 +276,16 @@ class BibItem:
             out += line + '\n'
         self.bibtex = out
 
+    def _use_dummy_citation_count(self):
+        if "USE_DUMMY_CITATION_COUNT" in os.environ:
+            return os.environ["USE_DUMMY_CITATION_COUNT"] == "true"
+        
+        return False
+
     def _get_cites(self, scholar_id):
+        if self._use_dummy_citation_count():
+            return "?"
+
         r = requests.get(f'https://scholar.google.com/scholar?cites={scholar_id}')
 
         if r.status_code == 200:
@@ -286,7 +297,8 @@ class BibItem:
                 for a in div_str_split[-1].split():
                     if a.isnumeric():
                         return int(a)
-        
+        warnings.warn(f"Could not get number of citations for Scholar ID {scholar_id} ({r.status_code})")
+
         return None
 
     def __getattr__ (self, key):
