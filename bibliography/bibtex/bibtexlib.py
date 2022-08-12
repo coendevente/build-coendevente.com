@@ -293,10 +293,14 @@ class BibItem:
             text = r.text
             div_str_split = text.split(div_str)
 
+            print("div_str_split:", div_str_split)
+
             if len(div_str_split) == 3:
                 for a in div_str_split[-1].split():
                     if a.isnumeric():
+                        print(int(a))
                         return int(a)
+        
         warnings.warn(f"Could not get number of citations for Scholar ID {scholar_id} ({r.status_code})")
 
         return None
