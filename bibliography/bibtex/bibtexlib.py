@@ -292,10 +292,11 @@ class BibItem:
             text = r.text
 
             val = text.split("result")[0].split()[-1].replace("'", "")
+            print("val:", val)
             if val.isnumeric():
                 return int(val)
             
-            print("text:", text)
+            # print("text:", text)
         
         warnings.warn(f"Could not get number of citations for Scholar ID {scholar_id} ({r.status_code})")
 
