@@ -291,10 +291,13 @@ class BibItem:
         if r.status_code == 200:
             text = r.text
 
-            val = text.split("result")[0].split()[-1].split(">")[-1].replace("'", "")
+            val = text.split("result")[0].split()[-1].split(">")[-1].replace("'", "").strip()
             print("val:", val)
             if val.isnumeric():
+                print("isnumeric")
                 return int(val)
+            else:
+                print("not isnumeric")
             
             # print("text:", text)
         
