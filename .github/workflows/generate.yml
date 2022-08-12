@@ -17,4 +17,8 @@ jobs:
     - run: pip install --upgrade pip
     - run: pip install -rrequirements.txt
     - run: python generate.py
-    - uses: stefanzweifel/git-auto-commit-action@v4
+    - run: touch site/test.test
+    # - uses: stefanzweifel/git-auto-commit-action@v4
+    - uses: textbook/git-checkout-submodule-action@master
+      with:
+        remote: true
