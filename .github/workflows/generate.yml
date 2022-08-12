@@ -19,3 +19,4 @@ jobs:
     - run: python generate.py
     - run: cd site && git diff
     - uses: stefanzweifel/git-auto-commit-action@v4
+    - run: sh push.sh "Auto-commit"
