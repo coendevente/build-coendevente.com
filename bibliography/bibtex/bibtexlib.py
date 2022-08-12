@@ -289,17 +289,17 @@ class BibItem:
         r = requests.get(f'https://scholar.google.com/scholar?cites={scholar_id}')
 
         if r.status_code == 200:
-            div_str = '<div class="gs_ab_mdw">'
+            div_str = '<div id="gs_ab_md"><div class="gs_ab_mdw">'
             text = r.text
             div_str_split = text.split(div_str)
 
-            print("div_str_split:", div_str_split)
+            if len(div_str_split) == 2:
+                a = div_str_split[-1].split()[1]
+                if a.isnumeric():
+                    print(int(a))
+                    return int(a)
 
-            if len(div_str_split) == 3:
-                for a in div_str_split[-1].split():
-                    if a.isnumeric():
-                        print(int(a))
-                        return int(a)
+            print("div_str_split:", div_str_split)
         
         warnings.warn(f"Could not get number of citations for Scholar ID {scholar_id} ({r.status_code})")
 
