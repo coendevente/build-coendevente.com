@@ -25,7 +25,7 @@ jobs:
         git config user.name "coendevente"
         git add -u
         git commit -m "Update submodules" || echo "No changes to commit"
-        git push --recurse-submodules=check
+        git push --recurse-submodules=check origin HEAD:master
         cd ..
     - run: |
         git config user.email "coendevente@gmail.com"
