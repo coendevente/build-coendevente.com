@@ -1,4 +1,4 @@
-title: Hierarchical curriculum learning for robust automated detection of low-prevalence retinal disease features: application to reticular pseudodrusen
+title: AIROGS: Artificial Intelligence for RObust Glaucoma Screening Challenge
 authors: C. de Vente, K. Vermeer, N. Jaccard, H.G. Lemij and C. Sánchez
 has_pdf: False
 template: publication
