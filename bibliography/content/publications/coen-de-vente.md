@@ -2,4 +2,4 @@ title: Publications of Coen De Vente
 template: publications-author
 author: coen-de-vente
 author_name: Coen De Vente
-bibkeys: gonz21,xion21,less20,vent18,lemi22,schw22a,vent23a,vent21,vent21a,vent20,vent20a,vent23b,schw22,vent22,ardu20
+bibkeys: lemi22,vent18,vent21a,schw22a,schw22,vent22,vent23b,vent20a,xion21,vent21,gonz21,ardu20,less20,vent23a,vent20
