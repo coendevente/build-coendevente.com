@@ -4,5 +4,6 @@
     "main_image_position": "right",
     "thumbnail": "linear-gradient(0deg, rgba(211, 93, 39, 0.4), rgba(237, 169, 142, 0.1)), url(https://rumc-gcorg-p-public.s3.amazonaws.com/logos/challenge/644/logo2-01-logo.png)",
     "thumbnail_position": "left",
-    "publication_date": "10 May 2022"
+    "publication_date": "10 May 2022",
+    "bib": ["vent23a"]
 }
