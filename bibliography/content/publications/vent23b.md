@@ -5,4 +5,5 @@ template: publication
 bibkey: vent23b
 published_in: arXiv:2302.03116
 pub_details: <i>arXiv:2302.03116</i>, 2023
+doi: https://doi.org/10.48550/arXiv.2302.03116
 arxiv: https://arxiv.org/abs/2302.03116
