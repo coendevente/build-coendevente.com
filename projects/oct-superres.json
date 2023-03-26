@@ -1,0 +1,10 @@
+{    
+    "title": "3D Diffusion Models for Standardized High-Quality OCTs",
+    "main_image": "linear-gradient(0deg, rgba(11, 77, 23, 0.8), rgba(53, 83, 182, 0.3)), url(images/oct-superres/oct_jungle.jpg)",
+    "main_image_position": "right",
+    "thumbnail": "linear-gradient(0deg, rgba(53, 182, 56, 0.4), rgba(53, 83, 182, 0.3)), url(images/oct-superres/oct_jungle_small.png)",
+    "thumbnail_position": "left",
+    "publication_date": "26 March 2023",
+    "order": 1000,
+    "bib": ["vent23c"]
+}

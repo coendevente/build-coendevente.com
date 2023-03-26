@@ -1,0 +1,10 @@
+{    
+    "title": "Making AI Transferable Across OCT Scanners from Different Vendors",
+    "main_image": "linear-gradient(0deg, rgba(11, 77, 23, 0.8), rgba(53, 83, 182, 0.3)), url(images/bscan_example.jpg)",
+    "main_image_position": "center",
+    "thumbnail": "linear-gradient(0deg, rgba(53, 182, 56, 0.4), rgba(53, 83, 182, 0.3)), url(images/bscan_example.jpg)",
+    "thumbnail_position": "center",
+    "publication_date": "June 2021",
+    "order": 1001.5,
+    "bib": ["vent21a"]
+}
