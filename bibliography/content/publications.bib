@@ -1222,7 +1222,7 @@
 
 @conference{Lemi22,
   title={Glaucomatous features in fundus photographs of eyes with 'Referable glaucoma' of a large population based labeled data set for training an Artificial Intelligence (AI) algorithm for glaucoma screening},
-  author={Lemij, Hans G and de Vente, Coen and S{\'a}nchez, Clara and Cuadros, Jorge and Jaccard, Nicolas and Vermeer, Koen},
+  author={Lemij, Hans G and de Vente, Coen and S{\'a}nchez, Clara I and Cuadros, Jorge and Jaccard, Nicolas and Vermeer, Koen},
   booktitle=ARVO,
   volume={63},
   number={7},
@@ -1235,7 +1235,7 @@
 
 @conference{Schw22a,
   title={A deep learning pipeline for the detection and quantification of drusen and reticular pseudodrusen on optical coherence tomography},
-  author={Schwartz, Roy and Khalid, Hagar and Liakopoulos, Sandra and Ouyang, Yanling and de Vente, Coen and Gonzalo, Cristina Gonz{\'a}lez and Lee, Aaron Y and Egan, Catherine A and S{\'a}nchez, Clara and Tufail, Adnan},
+  author={Schwartz, Roy and Khalid, Hagar and Liakopoulos, Sandra and Ouyang, Yanling and de Vente, Coen and Gonzalo, Cristina Gonz{\'a}lez and Lee, Aaron Y and Egan, Catherine A and S{\'a}nchez, Clara I and Tufail, Adnan},
   booktitle=ARVO,
   url={https://iovs.arvojournals.org/article.aspx?articleid=2781366},
   volume={63},
@@ -1247,7 +1247,7 @@
 }
 
 @conference{Vent22,
-  author = {de Vente, Coen and Vermeer, Koen and Jaccard, Nicolas and Lemij, Hans G and S{\'a}nchez, Clara},
+  author = {de Vente, Coen and Vermeer, Koen and Jaccard, Nicolas and Lemij, Hans G and S{\'a}nchez, Clara I},
   booktitle = IMAGE,
   url = {https://drive.google.com/file/d/11DfeyNA8I4UVZGkhn_NVIOIGbcEesfCw/view?usp=sharing},
   title = {AIROGS: Artificial Intelligence for RObust Glaucoma Screening Challenge},
@@ -1280,7 +1280,7 @@
   doi={10.48550/arXiv.2302.03116}
 }
 
-@article{lemij2023characteristics,
+@article{Lemi23,
   title={Characteristics of a large, labeled dataset for the training of artificial intelligence for glaucoma screening with fundus photographs},
   author={Lemij, Hans G and de Vente, Coen and S{\'a}nchez, Clara I and Vermeer, Koen A},
   journal={Ophthalmology Science},
@@ -1288,4 +1288,21 @@
   year={2023},
   publisher={Elsevier},
   doi={10.1016/j.xops.2023.100300}
+}
+
+
+@conference{Vent23c,
+  author = {de Vente, Coen and Tufail, A. and Schmitz-Valckenberg, S. and Saßmannshausen, M. and Hoyng, C. and S{\'a}nchez on behalf of the MACUSTAR consortium, Clara I},
+  booktitle = ARVO,
+  title = {OCT Super-Resolution for Data Standardization using AI: A MACUSTAR report},
+  abstract = {Purpose:  In optical coherence tomography scans (OCTs) from multicenter studies, there is often large variability in image quality and resolution between scans. This impairs the consistency of biomarker quantification within studies, but also between different datasets. The aim of this study was to validate a super-resolution approach based on artificial intelligence (AI) for improving the resolution of OCTs (by increasing the density of the scan pattern) to consistently enhance data within studies to high-quality standards. 
+
+Methods:  The MACUSTAR cohort, a European multicentre study, was used as a training set with 743 OCTs from 181 patients and validation set with 26 OCTs from 26 patients (n=3 no AMD, n=2 early AMD, n=18 intermediate AMD, n=3 late AMD). All scans were Heidelberg Spectralis OCTs with 241 B-scans. We trained a 3D diffusion model to generate high-resolution OCTs, which was used during evaluation to produce OCTs with 241 B-scans from OCTs with 120 B-scans. The performance was calculated using the mean squared error (MSE) on OCT volume-level between the generated B-scans and the original B-scans.
+
+Results: The MSE between the generated B-scans from the low-resolution OCTs and the original B-scans from the high-resolution OCTs was 0.006 ± 0.004 (mean ± SD). Fig. 1 shows visual examples of the generated OCTs compared to the original B-scans in the validation set.
+
+Conclusions:  We showed the feasibility of the proposed approach to generate super-resolution OCTs, which is one of the required steps to standardize high-quality OCTs within multicenter studies. In extensions of this approach, coherence between the OCT and other modalities, such as en face imaging and other metadata, could be introduced, allowing the AI model to make better informed generative decisions.
+},
+  optnote = {DIAG, RADIOLOGY},
+  year = {2023},
 }

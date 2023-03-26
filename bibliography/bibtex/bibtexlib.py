@@ -278,6 +278,7 @@ class BibItem:
 
     def _use_dummy_citation_count(self):
         if "USE_DUMMY_CITATION_COUNT" in os.environ:
+            print('os.environ["USE_DUMMY_CITATION_COUNT"]:', os.environ["USE_DUMMY_CITATION_COUNT"])
             return os.environ["USE_DUMMY_CITATION_COUNT"] == "true"
         
         return False

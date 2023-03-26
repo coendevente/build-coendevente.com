@@ -1,5 +1,5 @@
 title: AIROGS: Artificial Intelligence for RObust Glaucoma Screening Challenge
-authors: C. de Vente, K. Vermeer, N. Jaccard, H.G. Lemij and C. Sánchez
+authors: C. de Vente, K. Vermeer, N. Jaccard, H.G. Lemij and C.I. Sánchez
 has_pdf: False
 template: publication
 bibkey: vent22

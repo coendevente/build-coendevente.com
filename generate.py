@@ -96,8 +96,10 @@ def projects():
 
     projects_filter_func = lambda p: (p.startswith("projects/") and p.endswith(".md"))
     all_projects = template_env.list_templates(filter_func=projects_filter_func)
+    
+    print(all_projects)
 
-    project_dict = {}
+    project_dict_unordered = {}
 
     for project_filename in all_projects:   
         project_name = Path(project_filename).stem
@@ -109,7 +111,13 @@ def projects():
         update_imgs_in_config(config)
         
         out_filename = f'project-{project_name}.html'
-        project_dict[out_filename] = (project_filename, config)
+        project_dict_unordered[out_filename] = (project_filename, config)
+        
+        assert "order" in config
+        
+    # Sort project_dict
+    project_dict_list = sorted(project_dict_unordered.items(), key=lambda x: x[1][1]["order"])
+    project_dict = {k: v for k, v in project_dict_list}
     
     for out_filename, (project_filename, config) in project_dict.items():
         with open(project_filename) as markdown_file:

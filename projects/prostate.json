@@ -5,5 +5,6 @@
     "thumbnail": "linear-gradient(0deg, rgba(231, 76, 60, 0.8), rgba(231, 76, 60, 0.2)), url(images/prostate.jpg)",
     "thumbnail_position": "top",
     "publication_date": "4 December 2019",
-    "bib": ["vent20a"]
+    "bib": ["vent20a"],
+    "order": 1004
 }

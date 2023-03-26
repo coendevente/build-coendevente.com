@@ -5,5 +5,6 @@
     "thumbnail": "linear-gradient(0deg, rgba(52, 152, 219, 0.8), rgba(52, 152, 219, 0.2)), url(images/covid.jpg)",
     "thumbnail_position": "left",
     "publication_date": "8 October 2021",
-    "bib": ["vent21"]
+    "bib": ["vent21"],
+    "order": 1001.2
 }
