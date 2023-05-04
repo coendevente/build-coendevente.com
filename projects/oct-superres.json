@@ -6,5 +6,7 @@
     "thumbnail_position": "left",
     "publication_date": "26 March 2023",
     "order": 1000,
-    "bib": ["vent23c"]
+    "bib": ["vent23c"],
+    "download_text": "Poster (PDF)",
+    "download_file": "files/arvo2023poster.pdf"
 }

@@ -131,6 +131,10 @@ def projects():
         header = get_header(config['title'])
         footer = get_footer()
         
+        show_download_text = config["download_text"] if "download_text" in config else False
+        download_text = config["download_text"] if "download_text" in config else ""
+        download_file = config["download_file"] if "download_file" in config else None
+        
         project_keys = [k for k in list(project_dict.keys()) if k != out_filename][:3]
         project_dict_other = {k: project_dict[k] for k in project_keys}
         projects_thumbs = template_env.get_template('project_thumbs.html').render(projects=project_dict_other, w_col_n=4, make_lists=False)
@@ -141,7 +145,10 @@ def projects():
             publication_date=config['publication_date'],
             bib=bib,
             project_text=project_text,
-            projects=projects_thumbs
+            projects=projects_thumbs,
+            show_download_text=show_download_text,
+            download_text=download_text,
+            download_file=download_file
         ) + footer
 
         with open(os.path.join('site', out_filename), 'w') as output_file:

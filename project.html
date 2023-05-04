@@ -6,8 +6,21 @@
           <div data-ix="flowinslow" class="column-9 w-col w-col-8 whitetext project-title">
             {{ title }}
 
-            <div class="publication-date">
-              <p style="margin: 0; font-weight: 600;"><img class="clock-icon" src="images/clock.png"> {{ publication_date }}</p>
+            <div class="below-title-wrapper">
+              <div class="publication-date">
+                <p><img class="clock-icon" src="images/clock.png"> {{ publication_date }}</p>
+              </div>
+
+              {% if show_download_text %}
+              <div class="download-pdf-button">
+                <a href="{{ download_file }}" target="_blank">
+                  <p>
+                    <img class="download-icon" src="images/download.png">
+                    {{ download_text }}
+                  </p>
+                </a>
+              </div>
+              {% endif %}
             </div>
           </div>
           <div data-ix="flowinslow" class="column-10 w-clearfix w-col w-col-2"></div>

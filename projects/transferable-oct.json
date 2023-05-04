@@ -6,5 +6,7 @@
     "thumbnail_position": "center",
     "publication_date": "June 2021",
     "order": 1001.5,
-    "bib": ["vent21a"]
+    "bib": ["vent21a"],
+    "download_text": "Poster (PDF)",
+    "download_file": "files/arvo2021poster.pdf"
 }

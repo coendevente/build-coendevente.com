@@ -6,5 +6,7 @@
     "thumbnail_position": "left",
     "publication_date": "8 October 2021",
     "bib": ["vent21"],
-    "order": 1001.2
+    "order": 1001.2,
+    "download_text": "IEEE TAI Publication (PDF)",
+    "download_file": "files/covid19papertai.pdf"
 }

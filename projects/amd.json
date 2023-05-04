@@ -6,5 +6,7 @@
     "thumbnail_position": "top",
     "publication_date": "20 June 2020",
     "bib": ["vent20"],
-    "order": 1002
+    "order": 1002,
+    "download_text": "Presentation at ARVO (PPTX)",
+    "download_file": "files/ARVO2020_video.pptx"
 }

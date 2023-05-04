@@ -13,3 +13,8 @@ The algorithm achieved an area under the Receiver Operating Characteristic of 0.
 We present a method for improving uncertainty estimation for AMD grading in OCT, by combining the output of multiple individually trained CNNs. This increased reliability of system confidences can contribute to building trust in CNNs for retinal disease screening. Furthermore, this technique is a first step towards selective prediction in retinal disease screening, where only cases with high uncertainty predictions need to be referred for expert evaluation.
 
 <img src="images/amd1.png" style="width: 100%;" />
+
+### ARVO Presentation
+<div class="video-container">
+    <iframe width="100%" src="https://www.youtube.com/embed/Bokh6sU63rg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>

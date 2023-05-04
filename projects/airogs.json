@@ -6,5 +6,7 @@
     "thumbnail_position": "left",
     "publication_date": "10 May 2022",
     "bib": ["vent23a"],
-    "order": 1001
+    "order": 1001,
+    "download_text": "Preprint (PDF)",
+    "download_file": "files/2302.01738.pdf"
 }
