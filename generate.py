@@ -106,6 +106,7 @@ def projects():
 
         project_filename_json = project_filename.replace(".md", ".json")
         with open(project_filename_json) as json_file:
+            print(json_file)
             config = json.load(json_file)
         
         update_imgs_in_config(config)
