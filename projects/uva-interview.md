@@ -1,0 +1,5 @@
+Recently, an interview with me was published on the website of the UvA Informatics Institute. The interview was about robust AI techniques for medical imaging, specifically for screening eye diseases. We organized the Artificial Intelligence for RObust Glaucoma Screening (AIROGS) challenge, which aimed to address the limitations of AI in disease detection. The challenge involved building AI software capable of detecting glaucoma in a robust way. The results showed that the best-performing algorithms were on par with human experts. Also, the future steps needed to implement these AI systems in clinical practice are discussed.
+
+You can read the full article [here](https://ivi.uva.nl/content/news/2023/06/when-will-robust-ai-supported-medical-imaging-finally-become-a-reality.html)!
+
+<sub><i>The cover image of this post was generated using Midjourney.</i></sub>
