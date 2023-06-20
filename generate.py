@@ -13,12 +13,14 @@ import requests
 from PIL import Image
 import tempfile
 import hashlib
+import time
 
 
 template_env = Environment(loader=FileSystemLoader(searchpath='./'))
 
 def get_header(title="Personal website"):
-    return template_env.get_template('header.html').render(title=title)
+    now = int(time.time())
+    return template_env.get_template('header.html').render(title=title, now=now)
 
 def get_footer(include_contact=True):
     return template_env.get_template('footer.html').render(include_contact=include_contact)
