@@ -98,15 +98,3 @@
   </div>
 {% endfor %}
 {% endif %}
-
-<script>
-  function copy_text(id_to_publish) {
-    var id = id_to_publish + "-pre";
-    var r = document.createRange();
-    r.selectNode(document.getElementById(id));
-    window.getSelection().removeAllRanges();
-    window.getSelection().addRange(r);
-    document.execCommand('copy');
-    window.getSelection().removeAllRanges();
-  }
-</script>
