@@ -21,17 +21,17 @@ jobs:
     - run: git config --global user.name "coendevente"
     # - run: sh push.sh "auto-commit"
     - run: |
-      git pull
-      python3 generate.py
-      cd site
-      git add -u
-      git commit -m "$1"
-      git push
-      cd ..
-      git add -u
-      git add site
-      git commit -m "$1"
-      git push --recurse-submodules=on-demand
+        git pull
+        python3 generate.py
+        cd site
+        git add -u
+        git commit -m "$1"
+        git push
+        cd ..
+        git add -u
+        git add site
+        git commit -m "$1"
+        git push --recurse-submodules=on-demand
     - run: touch site/test.test
     - uses: stefanzweifel/git-auto-commit-action@v4
     # - run: |
