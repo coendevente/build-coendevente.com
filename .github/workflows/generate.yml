@@ -25,12 +25,12 @@ jobs:
         python3 generate.py
         cd site
         git add -u
-        git commit -m "$1"
+        git commit -m "auto-commit"
         git push
         cd ..
         git add -u
         git add site
-        git commit -m "$1"
+        git commit -m "auto-commit"
         git push --recurse-submodules=on-demand
     - run: touch site/test.test
     - uses: stefanzweifel/git-auto-commit-action@v4
