@@ -26,12 +26,12 @@ jobs:
         cd site
         git add -u
         git commit -m "auto-commit"
-        git push
+        git push origin HEAD:main
         cd ..
         git add -u
         git add site
         git commit -m "auto-commit"
-        git push --recurse-submodules=on-demand HEAD:main
+        git push --recurse-submodules=on-demand origin HEAD:main
     - run: touch site/test.test
     - uses: stefanzweifel/git-auto-commit-action@v4
     # - run: |
