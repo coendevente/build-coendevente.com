@@ -3,7 +3,7 @@ authors: C. de Vente, K.A. Vermeer, N. Jaccard, H. Wang, H. Sun, F. Khader, D. T
 has_pdf: False
 template: publication
 bibkey: vent23a
-published_in: arXiv:2302.01738
-pub_details: <i>arXiv:2302.01738</i>, 2023
-doi: https://doi.org/10.48550/arXiv.2302.01738
-arxiv: https://arxiv.org/abs/2302.01738
+published_in: IEEE transactions on medical imaging
+pub_details: <i>IEEE transactions on medical imaging</i>, 2023;43(1):542-557
+doi: https://doi.org/10.1109/TMI.2023.3313786
+pmid: http://www.ncbi.nlm.nih.gov/pubmed/37713220
