@@ -64,7 +64,7 @@ jobs:
       #   git push --recurse-submodules=on-demand origin HEAD:main
       env:
         GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
-      uses: stefanzweifel/git-auto-commit-action@v4
+      # uses: stefanzweifel/git-auto-commit-action@v4
     # - run: |
     #     cd site
     #     git config user.email "coendevente@gmail.com"
