@@ -49,7 +49,9 @@ jobs:
     - run: git config --global user.email "coendevente@gmail.com"
     - run: git config --global user.name "coendevente"
     - name: Deploy to GitHub Pages
-      run: sh push.sh "auto-commit"
+      run: |
+        git checkout main
+        sh push.sh "auto-commit"
       # run: |
       #   git pull
       #   python3 generate.py
