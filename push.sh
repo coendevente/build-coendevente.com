@@ -10,6 +10,4 @@ cd ..
 git add -u 
 git add site
 git commit -m "$1"
-# git push --recurse-submodules=check
-# git push --recurse-submodules=on-demand
-git push --recurse-submodules=on-demand origin HEAD:main
+git push --recurse-submodules=check
