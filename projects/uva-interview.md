@@ -2,4 +2,4 @@ Recently, an interview with me was published on the website of the UvA Informati
 
 You can read the full article [here](https://ivi.uva.nl/content/news/2023/06/when-will-robust-ai-supported-medical-imaging-finally-become-a-reality.html)!
 
-<sub><i>The cover image of this post was generated using Midjourney.</i></sub>
+<sub><i>The cover image is made by Rose Pilkington, published under [Google DeepMind's Visualizing AI project](https://deepmind.google/discover/visualising-ai/).</i></sub>

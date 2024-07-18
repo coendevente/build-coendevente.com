@@ -1,9 +1,15 @@
-title: Uncertainty-Aware Multiple-Instance Learning for Reliable Classification: Application to Optical Coherence Tomography
-authors: C. de Vente, B. van Ginneken, C.B. Hoyng, C.C. Klaver and C.I. Sánchez
-has_pdf: False
-template: publication
+title: Uncertainty-aware multiple-instance learning for reliable classification: Application to optical coherence tomography
+authors: C. de Vente, B. van Ginneken, C. Hoyng, C. Klaver and C. Sánchez
+has_pdf: False 
 bibkey: vent23b
-published_in: arXiv:2302.03116
-pub_details: <i>arXiv:2302.03116</i>, 2023
-doi: https://doi.org/10.48550/arXiv.2302.03116
-arxiv: https://arxiv.org/abs/2302.03116
+groups: diag
+booktitle: NA 
+year: 2024
+doi: https://doi.org/https://doi.org/10.1016/j.media.2024.103259
+template: publication
+diag_authors: coen-de-vente
+journal: Medical Image Analysis
+
+
+Deep learning classification models for medical image analysis often perform well on data from scanners that were used to acquire the training data. However, when these models are applied to data from different vendors, their performance tends to drop substantially. Artifacts that only occur within scans from specific scanners are major causes of this poor generalizability. We aimed to enhance the reliability of deep learning classification models using a novel method called Uncertainty-Based Instance eXclusion (UBIX). UBIX is an inference-time module that can be employed in multiple-instance learning (MIL) settings. MIL is a paradigm in which instances (generally crops or slices) of a bag (generally an image) contribute towards a bag-level output. Instead of assuming equal contribution of all instances to the bag-level output, UBIX detects instances corrupted due to local artifacts on-the-fly using uncertainty estimation, reducing or fully ignoring their contributions before MIL pooling. In our experiments, instances are 2D slices and bags are volumetric images, but alternative definitions are also possible. Although UBIX is generally applicable to diverse classification tasks, we focused on the staging of age-related macular degeneration in optical coherence tomography. Our models were trained on data from a single scanner and tested on external datasets from different vendors, which included vendor-specific artifacts. UBIX showed reliable behavior, with a slight decrease in performance (a decrease of the quadratic weighted kappa (κw) from 0.861 to 0.708), when applied to images from different vendors containing artifacts; while a state-of-the-art 3D neural network without UBIX suffered from a significant detriment of performance (κw from 0.852 to 0.084) on the same test set. We showed that instances with unseen artifacts can be identified with OOD detection. UBIX can reduce their contribution to the bag-level predictions, improving reliability without retraining on new data. This potentially increases the applicability of artificial intelligence models to data from other scanners than the ones for which they were developed. The source code for UBIX, including trained model weights, is publicly available through https://github.com/qurAI-amsterdam/ubix-for-reliable-classification.
+

@@ -262,7 +262,7 @@ def publications():
 
     all_publications_grouped = {
         replace_pub_type_name(k): all_publications_grouped[k] 
-        for k in order_types
+        for k in order_types if k in all_publications_grouped
     }
 
     body = template_env.get_template('publications.html').render(bib=all_publications_grouped)
@@ -288,6 +288,6 @@ def main():
     cv()
 
 if __name__ == "__main__":
-    all_publications = get_publications()
+    # all_publications = get_publications()
 
     main()

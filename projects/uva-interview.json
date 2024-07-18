@@ -1,8 +1,8 @@
 {
     "title": "An interview on robust AI for medical imaging with the University of Amsterdam",
-    "main_image": "linear-gradient(0deg, rgba(77, 131, 143, 0.8), rgba(77, 131, 143, 0.2)), url(images/robot-eye-doctor-2.png)",
+    "main_image": "linear-gradient(0deg, rgba(77, 131, 143, 0.8), rgba(77, 131, 143, 0.2)), url(images/visualizing_ai2.jpg)",
     "main_image_position": "center",
-    "thumbnail": "linear-gradient(0deg, rgba(77, 131, 143, 0.8), rgba(77, 131, 143, 0.2)), url(images/robot-eye-doctor.png)",
+    "thumbnail": "linear-gradient(0deg, rgba(77, 131, 143, 0.8), rgba(77, 131, 143, 0.2)), url(images/visualizing_ai.jpg)",
     "thumbnail_position": "top",
     "publication_date": "16 June 2023",
     "order": 999
