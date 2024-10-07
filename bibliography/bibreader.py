@@ -115,7 +115,7 @@ def parse_bibtex_file(filename, full_strings_bib):
 
             # update type
             bib_item["type"] = block_name.strip("@").lower()
-
+            
             # update journal name
             if "journal" in bib_item:
                 name = bib_item["journal"]

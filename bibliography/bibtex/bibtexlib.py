@@ -272,7 +272,7 @@ class BibItem:
 
                 val = val.replace("_", " ").strip()
 
-                line = before + "=" + "{" + val + "}"
+                line = before + "=" + "{" + val + "},"
             out += line + '\n'
         self.bibtex = out
 

@@ -1266,7 +1266,7 @@
 @article{Vent23a,
   title={AIROGS: Artificial Intelligence for RObust Glaucoma Screening Challenge},
   author={de Vente, Coen and Vermeer, Koenraad A. and Jaccard, Nicolas and Wang, He and Sun, Hongyi and Khader, Firas and Truhn, Daniel and Aimyshev, Temirgali and Zhanibekuly, Yerkebulan and Le, Tien-Dung and Galdran, Adrian and González Ballester, Miguel Ángel and Carneiro, Gustavo and G, Devika R and S, Hrishikesh P and Puthussery, Densen and Liu, Hong and Yang, Zekang and Kondo, Satoshi and Kasai, Satoshi and Wang, Edward and Durvasula, Ashritha and Heras, Jónathan and Zapata, Miguel Ángel and Araújo, Teresa and Aresta, Guilherme and Bogunović, Hrvoje and Arikan, Mustafa and Lee, Yeong Chan and Cho, Hyun Bin and Choi, Yoon Ho and Qayyum, Abdul and Razzak, Imran and van Ginneken, Bram and Lemij, Hans G. and Sánchez, Clara I.},
-  journal={IEEE transactions on medical imaging},
+  journal={IEEE Transactions on Medical Imaging},
   year={2023},
   scholar_id={12607038868340347612,10290591934597328501,16965053761187170060,12629941101464488854},
   publisher={IEEE},
@@ -1331,4 +1331,35 @@ Conclusions:  We showed the feasibility of the proposed approach to generate sup
   keywords = {Out-of-distribution detection, Generalizability, Interpretability, Optical coherence tomography},
   abstract = {Deep learning classification models for medical image analysis often perform well on data from scanners that were used to acquire the training data. However, when these models are applied to data from different vendors, their performance tends to drop substantially. Artifacts that only occur within scans from specific scanners are major causes of this poor generalizability. We aimed to enhance the reliability of deep learning classification models using a novel method called Uncertainty-Based Instance eXclusion (UBIX). UBIX is an inference-time module that can be employed in multiple-instance learning (MIL) settings. MIL is a paradigm in which instances (generally crops or slices) of a bag (generally an image) contribute towards a bag-level output. Instead of assuming equal contribution of all instances to the bag-level output, UBIX detects instances corrupted due to local artifacts on-the-fly using uncertainty estimation, reducing or fully ignoring their contributions before MIL pooling. In our experiments, instances are 2D slices and bags are volumetric images, but alternative definitions are also possible. Although UBIX is generally applicable to diverse classification tasks, we focused on the staging of age-related macular degeneration in optical coherence tomography. Our models were trained on data from a single scanner and tested on external datasets from different vendors, which included vendor-specific artifacts. UBIX showed reliable behavior, with a slight decrease in performance (a decrease of the quadratic weighted kappa (κw) from 0.861 to 0.708), when applied to images from different vendors containing artifacts; while a state-of-the-art 3D neural network without UBIX suffered from a significant detriment of performance (κw from 0.852 to 0.084) on the same test set. We showed that instances with unseen artifacts can be identified with OOD detection. UBIX can reduce their contribution to the bag-level predictions, improving reliability without retraining on new data. This potentially increases the applicability of artificial intelligence models to data from other scanners than the ones for which they were developed. The source code for UBIX, including trained model weights, is publicly available through https://github.com/qurAI-amsterdam/ubix-for-reliable-classification.},
   scholar_id = {2083973390038249415}
+}
+
+@preprint{schwartz2024genetic,
+  title={Genetic Distinctions Between Reticular Pseudodrusen and Drusen: Insights from a Genome-Wide Association Study},
+  author={Schwartz, Roy and Warwick, Alasdair N and Khawaja, Anthony P and Luben, Robert and Khalid, Hagar and Phatak, Sumita and Jhingan, Mahima and de Vente, Coen and Valmaggia, Philippe and Liakopoulos, Sandra and others},
+  journal={medRxiv:10.1101/2024.09.18.24313862v1},
+  pages={2024--09},
+  year={2024},
+  publisher={Cold Spring Harbor Laboratory Press}
+}
+
+@conference{schwartz2024increasing,
+  title={Increasing Stroke Risk Correlated with Higher Reticular Pseudodrusen Counts: Evidence from the UK Biobank},
+  author={Schwartz, Roy and Olvera-Barrios, Abraham and Warwick, Alasdair N and Khalid, Hagar and Phatak, Sumita and Jhingan, Mahima and De Vente, Coen and Valmaggia, Philippe and Sanchez, Clarisa and Egan, Catherine A and others},
+  booktitle=ARVO,
+  volume={65},
+  number={7},
+  pages={1344--1344},
+  year={2024},
+  publisher={The Association for Research in Vision and Ophthalmology}
+}
+
+@article{de2024generalizable,
+  title={Generalizable Deep Learning for the Detection of Incomplete and Complete Retinal Pigment Epithelium and Outer Retinal Atrophy: A MACUSTAR Report},
+  author={de Vente, Coen and Valmaggia, Philippe and Hoyng, Carel B and Holz, Frank G and Islam, Mohammad M and Klaver, Caroline CW and Boon, Camiel JF and Schmitz-Valckenberg, Steffen and Tufail, Adnan and Sa{\ss}mannshausen, Marlene and others},
+  journal={Translational Vision Science & Technology},
+  volume={13},
+  number={9},
+  pages={11--11},
+  year={2024},
+  publisher={The Association for Research in Vision and Ophthalmology}
 }

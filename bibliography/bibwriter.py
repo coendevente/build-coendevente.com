@@ -175,6 +175,13 @@ class PublicationsGenerator:
         return url_arxiv
 
     @staticmethod
+    def __get_medrxiv_id_from_title(title):
+        str_arxiv = title.lower().strip()
+        id_arxiv = str_arxiv.replace('medrxiv', '').replace(':', '').strip()
+        url_arxiv = 'https://medrxiv.org/content/' + id_arxiv
+        return url_arxiv
+
+    @staticmethod
     def __write_md_pass(out_path, md_format):
         file = open(out_path, 'w', encoding='utf-8')
 
@@ -429,6 +436,14 @@ class PublicationsGenerator:
                     formatted_text += ' <a ' + a_tags + ' href=\"' + url_arxiv + '/\">arXiv</a>'
                 else:
                     formatted_text += 'arxiv: ' + url_arxiv + '\n'
+            new_pubtype = '@Preprint'
+        elif 'journal' in bib_item.entry and 'medrxiv' in bib_item.entry['journal'].lower():
+            # If an entry has arxiv as journal, then it is considered as @Preprint
+            url_medrxiv = self.__get_medrxiv_id_from_title(bib_item.entry['journal'])
+            if is_html_format:
+                formatted_text += ' <a ' + a_tags + ' href=\"' + url_medrxiv + '/\">medRxiv</a>'
+            else:
+                formatted_text += 'medrxiv: ' + url_medrxiv + '\n'
             new_pubtype = '@Preprint'
         elif  bib_item.entry_type.lower() not in ['@inproceedings', '@conference', '@article', '@phdthesis', '@mastersthesis', '@patent', '@book']:
             # See the full list of publication types in bibtex/bibtexformatter.py (variable type_formatters)
