@@ -47,6 +47,8 @@ def download_file(url):
             # print(downloaded/filesize)
         buffer.seek(0)
         i = Image.open(io.BytesIO(buffer.read()))
+    else:
+        print('url failed:', url)
     buffer.close()
 
     return i
@@ -129,7 +131,8 @@ def projects():
         if 'bib' not in config:
             bib = False
         else:
-            bib = {k: all_publications[k] for k in config['bib']}
+            bib = {k: all_publications[k] for k in config['bib']
+                   if k in all_publications}
 
         header = get_header(config['title'])
         footer = get_footer()
