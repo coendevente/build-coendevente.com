@@ -2,41 +2,60 @@ name: Build and Deploy
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-and-deploy
+  cancel-in-progress: false
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-
+    runs-on: ubuntu-24.04
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+    - name: Checkout source
+      uses: actions/checkout@v4
+
+    - name: Checkout published site
+      uses: actions/checkout@v4
       with:
-        submodules: true  # Fetch submodules
-        fetch-depth: 0
+        repository: coendevente/coendevente.github.io
+        ref: master
+        path: site
+        ssh-key: ${{ secrets.SITE_DEPLOY_KEY }}
 
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v5
       with:
-        python-version: '3.x'
+        python-version: '3.11'
+        cache: pip
 
     - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
+      run: python -m pip install -r requirements.txt
 
-    - name: Pull before running script
-      run: git pull
+    - name: Test citation refresh
+      run: python -m unittest discover -s tests
 
-    - name: Run script
-      run: python3 generate.py
+    - name: Build site
+      env:
+        SERPAPI: ${{ secrets.SERPAPI }}
+        PYTHONDONTWRITEBYTECODE: '1'
+      run: python generate.py
 
-    - name: Commit and push changes
+    - name: Publish site and save citation cache
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git checkout main
-        git add -A
-        git commit -m "Automated commit message"
-        git push --recurse-submodules=on-demand
+        git -C site add -A
+        if ! git -C site diff --cached --quiet; then
+          git -C site commit -m "Rebuild website"
+          git -C site push origin HEAD:master
+        fi
+        git add site bibliography/content/citation_counts.json bibliography/content/dict_pubs.json
+        if ! git diff --cached --quiet; then
+          git commit -m "Save generated publications and citation counts"
+          git push origin HEAD:main
+        fi

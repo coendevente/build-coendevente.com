@@ -287,24 +287,8 @@ class BibItem:
         if self._use_dummy_citation_count():
             return "?"
 
-        r = requests.get(f'https://scholar.google.com/scholar?cites={scholar_id}')
-
-        if r.status_code == 200:
-            text = r.text
-
-            val = text.split("result")[0].split()[-1].split(">")[-1].replace("'", "").strip()
-            print("val:", val)
-            if val.isnumeric():
-                print("isnumeric")
-                return int(val)
-            else:
-                print("not isnumeric")
-            
-            # print("text:", text)
-        
-        warnings.warn(f"Could not get number of citations for Scholar ID {scholar_id} ({r.status_code})")
-
-        return None
+        from bibliography.citations import get_count
+        return get_count(scholar_id)
 
     def __getattr__ (self, key):
         if key in self.values:

@@ -382,7 +382,7 @@ class PublicationsGenerator:
         pub_html += '<div class="publication-button-group">'
         pub_html += f'<a data-ix="goupbox" id="publication-modal-{bib_key.lower()}-button" class="knop footerknop movewithmouse w-button publication-button">Cite</a>'
         print("bib_item.scholar_id, bib_item.scholar_cites:", bib_item.scholar_id, bib_item.scholar_cites)
-        if bib_item.scholar_id and bib_item.scholar_cites:
+        if bib_item.scholar_id and bib_item.scholar_cites is not None:
             print("Adding to pub_html...")
             pub_html += f'<a data-ix="goupbox" href="https://scholar.google.com/scholar?oi=bibs&hl=nl&cites={bib_item.scholar_id}" target="_new" class="knop footerknop movewithmouse w-button publication-button">Cited by {bib_item.scholar_cites}</a>'
         else:

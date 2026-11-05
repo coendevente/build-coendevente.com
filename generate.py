@@ -1,6 +1,5 @@
 from pydoc import getpager
 from urllib.request import urlopen
-from black import main
 from markdown import markdownFromFile
 from markdown2 import markdown
 from jinja2 import Environment, FileSystemLoader
