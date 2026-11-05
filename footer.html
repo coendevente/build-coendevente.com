@@ -55,9 +55,26 @@
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript" intergrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>
+    // Touch browsers can consume the first tap to reveal hover content.
+    var postHoverEnabled = window.matchMedia('(hover: hover) and (pointer: fine)');
+    if (!postHoverEnabled.matches) {
+      document.querySelectorAll('.templatethumb[data-ix], .morerect[data-ix]').forEach(function(card) {
+        card.removeAttribute('data-ix');
+      });
+    }
+  </script>
   <script src="js/webflow.js" type="text/javascript"></script>
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
   <style>
+      @media (hover: none), (pointer: coarse) {
+        .templatethumb .templatefrontwrap {
+          display: none;
+        }
+        .templatethumb, .morerect.movewithmouse {
+          transform: none !important;
+        }
+      }
       .w-webflow-badge {
         display: none !important;
       }
@@ -123,6 +140,7 @@
         refresh();
       });
       $(".movewithmouse").mousemove(function(e) {
+        if (!postHoverEnabled.matches) return;
         cursorX = e.clientX;
         cursorY = e.clientY;
         divW = $(this).outerWidth();
@@ -147,6 +165,7 @@
         $(this).css("transform", cssText);
       });
       $(".templatethumb").hover(function() {
+        if (!postHoverEnabled.matches) return;
         thumbW = $(this).width();
         thumbH = $(this).height();
         img = $(this).find(".thumbimgbg");
@@ -160,6 +179,7 @@
         $(this).find(".templatefront").height(thumbH);
         $(this).find(".templatefront").css("opacity", 1);
       }, function() {
+        if (!postHoverEnabled.matches) return;
         img.css("top", 0);
         $(this).find(".templatefront").css("opacity", 0);
       });
