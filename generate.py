@@ -25,9 +25,12 @@ def get_header(title="Personal website"):
 def get_footer(include_contact=True):
     return template_env.get_template('footer.html').render(include_contact=include_contact)
 
-def get_publications():
+def get_publications(include_references=False):
     with open('bibliography/content/dict_pubs.json') as f:
         all_publications = json.load(f)
+
+    if not include_references:
+        all_publications = {k: v for k, v in all_publications.items() if not v.get("reference_only", False)}
 
     for k, v in all_publications.items():
         all_publications[k]['html'] = v['html'].replace("C. de Vente", "<span class='highlight-me'>C. de Vente</span>")
@@ -64,6 +67,8 @@ def copy_to_local(config, k, new_shortest_axis_size=None):
             fname = hashlib.md5(url.encode()).hexdigest()
             url_out = Path("images") / (fname + ".png")
         else:
+            if Path(url).suffix.lower() == ".svg":
+                return
             im = Image.open(Path("site/") / url)
             url_out = os.path.splitext(url)[0] + "_thumb.png"
         
@@ -96,7 +101,7 @@ def update_imgs_in_config(config):
     
 
 def projects():
-    all_publications = get_publications()
+    all_publications = get_publications(include_references=True)
 
     projects_filter_func = lambda p: (p.startswith("projects/") and p.endswith(".md"))
     all_projects = template_env.list_templates(filter_func=projects_filter_func)
@@ -173,7 +178,11 @@ def projects():
 
 def get_index_body():
     project_dict = projects()
-    project_names_featured = list(project_dict.keys())[:3]
+    project_names_featured = [
+        "project-slicernninteractive-agent.html",
+        "project-phd-thesis.html",
+        "project-airogs.html",
+    ]
     project_dict_featured = {k: project_dict[k] for k in project_names_featured}
 
     projects_text = template_env.get_template('project_thumbs.html').render(projects=project_dict_featured, w_col_n=4, make_lists=False)

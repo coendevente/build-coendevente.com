@@ -1,0 +1,9 @@
+{
+    "title": "Towards Robust Deep Learning for Medical Imaging",
+    "main_image": "linear-gradient(0deg, rgba(32, 28, 62, 0.78), rgba(32, 28, 62, 0.08)), url(images/phd-thesis/cover-landscape.jpg)",
+    "main_image_position": "center 55%",
+    "thumbnail": "linear-gradient(0deg, rgba(224, 125, 48, 0.4), rgba(224, 125, 48, 0.1)), url(images/phd-thesis/artwork-centered.jpg)",
+    "thumbnail_position": "center",
+    "publication_date": "29 January 2025",
+    "order": 998
+}

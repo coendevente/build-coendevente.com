@@ -144,6 +144,10 @@ class PublicationsGenerator:
                         # Failed to parse this bibentry, report it but don't kill the build
                         print(f"Failed parsing bibentry for {firstname} {' '.join(lastnames)} and bib key {bib_key}. This entry is skipped.")
                         print(traceback.format_exc())
+        # Allow posts to cite external research without listing it as our publications.
+        for bib_key, bib_item in global_index.items():
+            if bib_item.entry.get('website_reference_only', '').strip('{}') == 'true' and bib_key not in filtered_bibkeys:
+                filtered_bibkeys.append(bib_key)
         return author_index, filtered_bibkeys
 
     @staticmethod
@@ -258,6 +262,7 @@ class PublicationsGenerator:
                 dict_pubs[bib_key]['pub_type'] = pub_type
                 dict_pubs[bib_key]['pub_details'] = pub_details
                 dict_pubs[bib_key]['bibtex'] = bibtex
+                dict_pubs[bib_key]['reference_only'] = global_index[bib_key].entry.get('website_reference_only', '').strip('{}') == 'true'
                 if pub_type.lower() == '@phdthesis':
                     dict_pubs[bib_key]['author_name'] = global_index[bib_key].entry['author']
                     dict_pubs[bib_key]['title_thesis'] = global_index[bib_key].entry['title']

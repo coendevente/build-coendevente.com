@@ -1,0 +1,14 @@
+On **29 January 2025**, I successfully defended my PhD thesis, [*Towards Robust Deep Learning for Medical Imaging: Applications in Ophthalmology and Radiology*](https://hdl.handle.net/11245.1/5bb41ff3-80eb-4abb-b499-4117a53bc011), at the University of Amsterdam. Supervised by Clarisa Sánchez and Bram van Ginneken, my research explored how to make AI for medical imaging more reliable when it encounters the variation found in everyday clinical practice. A model can perform well on a research dataset yet struggle with images from another hospital or scanner, or with images that are too poor in quality to assess.
+
+The thesis approaches robustness from three angles: performing well on images similar to those used for training, recognising images that a model should not confidently assess, and maintaining performance when parts of an image differ from what the model has seen before. In radiology, we developed and evaluated methods for assessing the likelihood and severity of COVID-19 in chest CT scans. Alongside the CORADS-AI system, I systematically compared network architectures and training choices to understand which components improved automated grading.
+
+In ophthalmology, we organised the [AIROGS challenge](project-airogs.html) to evaluate both glaucoma screening and the ability to identify ungradable retinal photographs. The challenge used around 113,000 images from 60,000 patients across 500 screening sites. It put a practical question at the centre of evaluation: can an algorithm recognise when an image does not support a reliable decision? This makes the ability to flag unsuitable inputs an explicit part of assessing a screening system.
+
+Another part of the thesis focused on optical coherence tomography (OCT) for age-related macular degeneration. I developed Uncertainty-Based Instance eXclusion (UBIX), which uses uncertainty estimates to reduce the influence of corrupted slices on an overall prediction, without retraining on those artifacts. We also investigated domain adaptation to improve the consistency of retinal biomarker segmentation across scanners. Together, these approaches address differences in image appearance that can otherwise undermine a model's performance outside its training setting.
+
+Finally, we explored [3D diffusion models for OCT super-resolution](project-oct-superres.html), using accompanying en face images to guide the generation of more densely sampled OCT volumes. This demonstrated a possible step towards more consistent imaging data, rather than establishing a finished clinical solution. Across these projects, the aim was to make robustness part of how medical imaging AI is developed and evaluated, so that its strengths and limitations remain visible when moving beyond the research setting.
+
+<div class="thesis-download">
+  <h3>Download the thesis</h3>
+  <a class="knop footerknop w-button" href="files/coen-de-vente-phd-thesis.pdf" download>Download my PhD thesis (PDF, 97 MB)</a>
+</div>
