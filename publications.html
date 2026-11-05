@@ -25,11 +25,7 @@
               <nav class="publication-groups" aria-label="Publication groups">
                 <ul>
                 {% for group, bib_items in bib.items() %}
-                  {% set totals = namespace(citations=0) %}
-                  {% for item in bib_items.values() %}
-                    {% set totals.citations = totals.citations + (item.citation_count or 0) %}
-                  {% endfor %}
-                  <li><a href="#publication-group-{{ loop.index }}">{{ group }} ({{ totals.citations }})</a></li>
+                  <li><a href="#publication-group-{{ loop.index }}">{{ group }} ({{ bib_items|length }})</a></li>
                 {% endfor %}
                 </ul>
               </nav>
