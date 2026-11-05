@@ -391,7 +391,7 @@ class PublicationsGenerator:
             pub_html += (f'<a data-ix="goupbox" href="{escape(citation["work_id"], quote=True)}" '
                          f'target="_blank" rel="noopener" title="OpenAlex citations; updated {date}" '
                          f'class="knop footerknop movewithmouse w-button publication-button">'
-                         f'Cited by {citation["count"]} (OpenAlex)</a>')
+                         f'Cited by {citation["count"]}</a>')
 
         pub_type = bib_item.entry_type
         if 'year' in bib_item.entry:
