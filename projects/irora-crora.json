@@ -1,0 +1,12 @@
+{
+    "title": "Detecting iRORA and cRORA Across OCT Scanners",
+    "main_image": "url(images/irora-crora/cover.svg)",
+    "main_image_position": "center",
+    "thumbnail": "url(images/irora-crora/thumbnail.svg)",
+    "thumbnail_position": "center",
+    "publication_date": "5 September 2024",
+    "order": 998.2,
+    "bib": [
+        "de2024generalizable"
+    ]
+}
