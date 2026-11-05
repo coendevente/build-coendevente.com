@@ -15,6 +15,7 @@ import unidecode
 import latexcodec
 import traceback
 from html import escape
+from urllib.parse import urlencode
 
 from bibtex import bibtexlib
 from bibtex import bibtexformatter
@@ -385,10 +386,13 @@ class PublicationsGenerator:
         pub_html += '</p>'
         pub_html += '<div class="publication-button-group">'
         pub_html += f'<a data-ix="goupbox" id="publication-modal-{bib_key.lower()}-button" class="knop footerknop movewithmouse w-button publication-button">Cite</a>'
-        if bib_item.citation:
+        if bib_item.citation and bib_item.citation["count"] > 0:
             citation = bib_item.citation
             date = citation['updated_at'][:10]
-            pub_html += (f'<a data-ix="goupbox" href="{escape(citation["work_id"], quote=True)}" '
+            scholar_params = ({'cites': bib_item.scholar_id, 'hl': 'en'} if bib_item.scholar_id
+                              else {'q': bib_item._get_string_rule_or_decode('title')})
+            scholar_url = 'https://scholar.google.com/scholar?' + urlencode(scholar_params)
+            pub_html += (f'<a data-ix="goupbox" href="{escape(scholar_url, quote=True)}" '
                          f'target="_blank" rel="noopener" title="OpenAlex citations; updated {date}" '
                          f'class="knop footerknop movewithmouse w-button publication-button">'
                          f'Cited by {citation["count"]}</a>')

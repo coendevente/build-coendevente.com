@@ -10,10 +10,10 @@
   <div class="w-dyn-list">
     <div class="collection-list colophome listforshowall w-dyn-items w-row">
         <div class="div-block-27 sameheight0source">
-          <div class="row-5 w-row">
+          <div class="row-5 w-row publication-layout">
             <div data-ix="flowinslow" class="column-9 w-col w-col-8">
               {% for group, bib_items in bib.items() %}
-                <h2 class="pub-head">{{ group }}</h2>
+                <h2 class="pub-head" id="publication-group-{{ loop.index }}" tabindex="-1">{{ group }} ({{ bib_items|length }})</h2>
                 {% for key, item in bib_items.items() %}
                   <div class="publication-card">
                     {{ item.html }}
@@ -21,7 +21,19 @@
                 {% endfor %}
               {% endfor %}
               </div>
-            <div data-ix="flowinslow" class="column-10 w-clearfix w-col w-col-4"></div>
+            <aside class="column-10 w-col w-col-4 publication-sidebar">
+              <nav class="publication-groups" aria-label="Publication groups">
+                <ul>
+                {% for group, bib_items in bib.items() %}
+                  {% set totals = namespace(citations=0) %}
+                  {% for item in bib_items.values() %}
+                    {% set totals.citations = totals.citations + (item.citation_count or 0) %}
+                  {% endfor %}
+                  <li><a href="#publication-group-{{ loop.index }}">{{ group }} ({{ totals.citations }})</a></li>
+                {% endfor %}
+                </ul>
+              </nav>
+            </aside>
           </div>
         </div>
     </div>
@@ -47,3 +59,45 @@
     </div>
   {% endfor %}
 {% endfor %}
+
+<style>
+  :root { --publication-nav-offset: 100px; }
+  .pub-head { scroll-margin-top: var(--publication-nav-offset); }
+  .publication-layout { display: flex; align-items: flex-start; }
+  .publication-layout::before, .publication-layout::after { display: none; }
+  .publication-sidebar { text-align: left; position: sticky; top: var(--publication-nav-offset); padding: 30px 20px 20px 40px; }
+  .publication-groups ul { list-style: none; margin: 0; padding: 0; }
+  .publication-groups li { margin: 0 0 16px; }
+  .publication-groups a { color: #333; text-decoration: none; line-height: 1.5; }
+  .publication-groups a:hover, .publication-groups a:focus-visible { color: #008cff; text-decoration: underline; }
+  @media (max-width: 767px) {
+    .publication-layout { flex-direction: column; }
+    .publication-sidebar { position: static; order: -1; width: 100%; padding: 10px 10px 24px; }
+  }
+</style>
+<script>
+(function () {
+  const navbar = document.querySelector('.navbar');
+  const groups = document.querySelector('.publication-groups');
+  function offset() { return (navbar ? navbar.getBoundingClientRect().height : 80) + 20; }
+  function updateOffset() {
+    document.documentElement.style.setProperty('--publication-nav-offset', offset() + 'px');
+  }
+  updateOffset();
+  window.addEventListener('resize', updateOffset);
+  if (navbar && window.ResizeObserver) new ResizeObserver(updateOffset).observe(navbar);
+  groups.addEventListener('click', function (event) {
+    const link = event.target.closest('a[href^="#"]');
+    if (!link || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    const target = document.querySelector(link.getAttribute('href'));
+    if (!target) return;
+    event.preventDefault();
+    event.stopPropagation();
+    updateOffset();
+    history.pushState(null, '', link.getAttribute('href'));
+    target.focus({preventScroll: true});
+    window.scrollTo({top: target.getBoundingClientRect().top + window.scrollY - offset(),
+      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'});
+  });
+})();
+</script>
