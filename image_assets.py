@@ -58,3 +58,20 @@ def optimize_site_images(site=Path('site')):
             text = SRC.sub(lambda m: m[1] + asset(m[2], document) + m[3], text)
         document.write_text(text)
     return replacements
+
+
+def create_cover_panels(settings, site=Path('site')):
+    source = site / settings['source']
+    raw = resvg_py.svg_to_bytes(svg_path=str(source), width=2400)
+    image = Image.open(io.BytesIO(raw)).convert('RGB')
+    paths = []
+    for crop in settings['crops']:
+        box = tuple(round(value * (image.width if i % 2 == 0 else image.height))
+                    for i, value in enumerate(crop))
+        panel = image.crop(box)
+        digest = hashlib.sha256(source.read_bytes() + str(crop).encode()).hexdigest()[:20]
+        relative = Path('images/optimized') / (digest + '.webp')
+        (site / relative).parent.mkdir(parents=True, exist_ok=True)
+        panel.save(site / relative, 'WEBP', quality=88, method=6)
+        paths.append(relative.as_posix())
+    return paths

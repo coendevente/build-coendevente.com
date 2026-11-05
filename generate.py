@@ -1,4 +1,4 @@
-from image_assets import optimize_site_images
+from image_assets import optimize_site_images, create_cover_panels
 from pydoc import getpager
 from urllib.request import urlopen
 from markdown import markdownFromFile
@@ -151,6 +151,7 @@ def projects():
         project_dict_other = {k: project_dict[k] for k in project_keys}
         projects_thumbs = template_env.get_template('project_thumbs.html').render(projects=project_dict_other, w_col_n=4, make_lists=False)
         text = header + template_env.get_template('project.html').render(
+            cover_panels=create_cover_panels(config['cover_panels']) if config.get('cover_panels') else [],
             title=config['title'],
             main_image=config['main_image'],
             main_image_position=config['main_image_position'],

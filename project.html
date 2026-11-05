@@ -1,5 +1,34 @@
+{% if cover_panels %}
+<style>
+  .project-title-wrapper.panel-cover {
+    height: auto;
+    padding: 90px 20px 24px;
+    background: #050a12;
+  }
+  .cover-panels {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(12px, 6vw, 100px);
+    height: clamp(180px, 28vw, 270px);
+    margin-bottom: 24px;
+  }
+  .cover-panels img {
+    height: 100%;
+    width: auto;
+    max-width: 60%;
+    object-fit: contain;
+  }
+  .panel-cover .heading-5 { margin: 0; }
+</style>
+{% endif %}
 <div class="section-9">
-  <div style="background-image: {{ main_image }}; background-size: cover; padding-bottom: 0px; background-position: {{ main_image_position }};" class="div-block-27 project-title-wrapper">
+  <div {% if not cover_panels %}style="background-image: {{ main_image }}; background-size: cover; padding-bottom: 0px; background-position: {{ main_image_position }};" {% endif %}class="div-block-27 project-title-wrapper{% if cover_panels %} panel-cover{% endif %}">
+    {% if cover_panels %}
+    <div class="cover-panels" role="img" aria-label="CT scan with labeled vertebrae alongside the segmented spine in 3D">
+      {% for panel in cover_panels %}<img src="{{ panel }}" alt="" fetchpriority="high">{% endfor %}
+    </div>
+    {% endif %}
     <div style="height: 100%; display: flex; flex-direction: column; justify-content: flex-end;" class="row-5 w-row whitetext" >
         <h1 style="font-size: 40px; " class="heading-5 zwartehead naastmockup">
           <div data-ix="flowinslow" class="column-9 w-col w-col-2 whitetext"></div>

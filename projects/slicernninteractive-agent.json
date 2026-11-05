@@ -10,5 +10,22 @@
         "devente2026joss",
         "isensee2026agent",
         "isensee2025nninteractive"
-    ]
+    ],
+    "cover_panels": {
+        "source": "images/slicernninteractive/vertebrae-cover.svg",
+        "crops": [
+            [
+                0.15,
+                0,
+                0.34,
+                1
+            ],
+            [
+                0.72,
+                0,
+                0.79,
+                1
+            ]
+        ]
+    }
 }
