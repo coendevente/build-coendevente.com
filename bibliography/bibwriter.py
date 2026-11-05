@@ -14,6 +14,7 @@ import codecs
 import unidecode
 import latexcodec
 import traceback
+from html import escape
 
 from bibtex import bibtexlib
 from bibtex import bibtexformatter
@@ -258,6 +259,9 @@ class PublicationsGenerator:
                 dict_pubs[bib_key] = {}
                 dict_pubs[bib_key]['html'] = html_bibkey
                 dict_pubs[bib_key]['only_text'] = only_text
+                citation = global_index[bib_key].citation
+                dict_pubs[bib_key]['citation_count'] = citation['count'] if citation else None
+                dict_pubs[bib_key]['citation'] = citation
                 dict_pubs[bib_key]['year'] = int(year)
                 dict_pubs[bib_key]['pub_type'] = pub_type
                 dict_pubs[bib_key]['pub_details'] = pub_details
@@ -381,12 +385,13 @@ class PublicationsGenerator:
         pub_html += '</p>'
         pub_html += '<div class="publication-button-group">'
         pub_html += f'<a data-ix="goupbox" id="publication-modal-{bib_key.lower()}-button" class="knop footerknop movewithmouse w-button publication-button">Cite</a>'
-        print("bib_item.scholar_id, bib_item.scholar_cites:", bib_item.scholar_id, bib_item.scholar_cites)
-        if bib_item.scholar_id and bib_item.scholar_cites is not None:
-            print("Adding to pub_html...")
-            pub_html += f'<a data-ix="goupbox" href="https://scholar.google.com/scholar?oi=bibs&hl=nl&cites={bib_item.scholar_id}" target="_new" class="knop footerknop movewithmouse w-button publication-button">Cited by {bib_item.scholar_cites}</a>'
-        else:
-            print("Not adding to pub_html")
+        if bib_item.citation:
+            citation = bib_item.citation
+            date = citation['updated_at'][:10]
+            pub_html += (f'<a data-ix="goupbox" href="{escape(citation["work_id"], quote=True)}" '
+                         f'target="_blank" rel="noopener" title="OpenAlex citations; updated {date}" '
+                         f'class="knop footerknop movewithmouse w-button publication-button">'
+                         f'Cited by {citation["count"]} (OpenAlex)</a>')
 
         pub_type = bib_item.entry_type
         if 'year' in bib_item.entry:

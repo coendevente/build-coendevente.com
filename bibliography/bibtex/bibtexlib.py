@@ -241,16 +241,10 @@ class BibItem:
         self.entry_type = entry_type
         self.values = {}
         self.bibtex = bibtex
-        self.scholar_cites = self._get_scholar_cites()
-    
-    def _get_scholar_cites(self):
-        scholar_id = self.scholar_id
-
-        if scholar_id:
-            return self._get_cites(scholar_id)
-        else:
-            return None
-
+        from bibliography.citations import get_citation
+        self.citation = get_citation(
+            key.lower(), self._get_string_rule_or_decode('title'),
+            int(self._get_simple_value('year') or 0), self._get_simple_value('doi'), entry_type)
     
     def _update_bibtex(self, string_rules):
         out = ""
@@ -275,20 +269,6 @@ class BibItem:
                 line = before + "=" + "{" + val + "},"
             out += line + '\n'
         self.bibtex = out
-
-    def _use_dummy_citation_count(self):
-        if "USE_DUMMY_CITATION_COUNT" in os.environ:
-            print('os.environ["USE_DUMMY_CITATION_COUNT"]:', os.environ["USE_DUMMY_CITATION_COUNT"])
-            return os.environ["USE_DUMMY_CITATION_COUNT"] == "true"
-        
-        return False
-
-    def _get_cites(self, scholar_id):
-        if self._use_dummy_citation_count():
-            return "?"
-
-        from bibliography.citations import get_count
-        return get_count(scholar_id)
 
     def __getattr__ (self, key):
         if key in self.values:

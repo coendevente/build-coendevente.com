@@ -6,6 +6,7 @@ from jinja2 import Environment, FileSystemLoader
 import json
 from pathlib import Path
 from bibliography import bibparser, bibwriter
+from bibliography.citations import publication_sort_key
 import os
 import io
 import requests
@@ -241,14 +242,8 @@ def publications():
     all_publications_grouped = {}
     for type in types:
         pub_this_type = {k: v for k, v in all_publications.items() if v['pub_type'].lower() == type.lower()}
-        all_years = [pub_this_type[k]['year'] for k in pub_this_type.keys()]
-        years = reversed(sorted(list(set(all_years))))
-        pub_this_type_sorted = {}
-        for year in years:
-            for k, v in pub_this_type.items():
-                if v['year'] == year:
-                    pub_this_type_sorted[k] = v
-        all_publications_grouped[type] = pub_this_type_sorted
+        all_publications_grouped[type] = dict(sorted(
+            pub_this_type.items(), key=publication_sort_key))
     
     order_types = ['@article', '@preprint', '@conference', '@inproceedings']
     order_types += list(types - set(order_types))

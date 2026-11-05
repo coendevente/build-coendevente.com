@@ -12,17 +12,23 @@ Publications are in `publications/content/publications.bib`.
 
 ## Automated publication and citations
 
-The Actions build uses Python 3.11 (compatible with the pinned Pillow release).
-`SERPAPI` is the existing SerpApi API-key secret used for Google Scholar citation
-refreshes. If refreshes fail, `bibliography/content/citation_counts.json` retains
-the last successful count and its timestamp; a failed request never becomes zero.
-The initial fallback values were recovered from the published site on April 10,
-2025, with their source commit recorded in the cache. Counts can therefore lag
-Google Scholar during outages. Local builds without the secret try Scholar directly.
+Actions builds with Python 3.11 and refreshes citation counts from OpenAlex every
+Monday at 06:23 UTC, on pushes, or via workflow_dispatch. No API key is required
+for this small workload; the optional OPENALEX_API_KEY secret supports a higher
+quota. Counts are OpenAlex counts, not Google Scholar counts.
 
-`SITE_DEPLOY_KEY` is a write-enabled deploy key scoped to
-`coendevente/coendevente.github.io`. The workflow commits and pushes the generated
-`site` to its `master` branch, then records the submodule and citation cache here.
-Run the workflow manually to refresh counts without editing content.
+One filtered author-catalog request resolves titles without relying on the
+rate-limited full-text search endpoint. Publications resolve by DOI, or by an
+exact normalized title, matching author
+(Coen de Vente), and publication year within one year (exact year for conference abstracts). Ambiguous results are
+omitted until a DOI is supplied. Resolved OpenAlex work IDs, counts, and timestamps
+are saved in bibliography/content/openalex_counts.json. Successful responses are
+cached for one day; failures retain the previous OpenAlex count. Missing counts
+are never treated as zero. Each group sorts by count descending, then year
+descending, with unavailable counts last.
 
-Run citation regression tests with `python -m unittest discover -s tests`.
+SITE_DEPLOY_KEY is a write-enabled deploy key scoped to
+coendevente/coendevente.github.io. Actions publishes the generated site to master,
+then records the submodule, publication data, and citation cache here.
+
+Run regression tests with `python -m unittest discover -s tests`.

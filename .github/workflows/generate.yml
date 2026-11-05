@@ -3,6 +3,8 @@ name: Build and Deploy
 on:
   push:
     branches: [main]
+  schedule:
+    - cron: '23 6 * * 1'
   workflow_dispatch:
 
 permissions:
@@ -41,8 +43,9 @@ jobs:
 
     - name: Build site
       env:
-        SERPAPI: ${{ secrets.SERPAPI }}
+        OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
         PYTHONDONTWRITEBYTECODE: '1'
+        REFRESH_CITATIONS: 'true'
       run: python generate.py
 
     - name: Publish site and save citation cache
@@ -54,7 +57,7 @@ jobs:
           git -C site commit -m "Rebuild website"
           git -C site push origin HEAD:master
         fi
-        git add site bibliography/content/citation_counts.json bibliography/content/dict_pubs.json
+        git add site bibliography/content/openalex_counts.json bibliography/content/dict_pubs.json
         if ! git diff --cached --quiet; then
           git commit -m "Save generated publications and citation counts"
           git push origin HEAD:main
