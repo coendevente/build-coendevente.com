@@ -1,6 +1,6 @@
 {
     "title": "Segmenting 3D Medical Images with Text: nnInteractive Agent in Slicer",
-    "main_image": "linear-gradient(90deg, rgba(20,33,43,0.3), rgba(20,33,43,0)), url(images/slicernninteractive/cover-agent.svg)",
+    "main_image": "linear-gradient(0deg, rgba(5, 10, 18, 0.84), rgba(5, 10, 18, 0.05)), url(images/slicernninteractive/vertebrae-cover.svg)",
     "main_image_position": "center",
     "thumbnail": "linear-gradient(0deg, rgba(139, 104, 205, 0.4), rgba(139, 104, 205, 0.1)), url(images/slicernninteractive/thumb-agent.svg)",
     "thumbnail_position": "center",

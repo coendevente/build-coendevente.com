@@ -1,6 +1,6 @@
 {
     "title": "Interactive 3D Medical Image Segmentation with SlicerNNInteractive",
-    "main_image": "linear-gradient(90deg, rgba(20,33,43,0.3), rgba(20,33,43,0)), url(images/slicernninteractive/cover-interactive.svg)",
+    "main_image": "linear-gradient(0deg, rgba(5, 10, 18, 0.84), rgba(5, 10, 18, 0.05)), url(images/slicernninteractive/organ-cover.svg)",
     "main_image_position": "center",
     "thumbnail": "linear-gradient(0deg, rgba(53, 182, 153, 0.4), rgba(53, 182, 153, 0.1)), url(images/slicernninteractive/thumb-interactive.svg)",
     "thumbnail_position": "center",
