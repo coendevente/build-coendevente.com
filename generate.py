@@ -1,3 +1,4 @@
+from image_assets import optimize_site_images
 from pydoc import getpager
 from urllib.request import urlopen
 from markdown import markdownFromFile
@@ -292,6 +293,7 @@ def main():
     contact()
     publications()
     cv()
+    optimize_site_images()
 
 if __name__ == "__main__":
     # all_publications = get_publications()
