@@ -1,7 +1,7 @@
 {
     "title": "UBIX: Robustness to Vendor-Specific Artifacts in OCT Classification",
     "main_image": "url(images/ubix/cover.svg)",
-    "main_image_position": "center",
+    "main_image_position": "center 20%",
     "thumbnail": "url(images/ubix/thumbnail.svg)",
     "thumbnail_position": "center",
     "publication_date": "27 June 2024",
