@@ -8,6 +8,4 @@ The pipeline combines domain adaptation with segmentation. It first reduces diff
 
 We compared the algorithm with manual annotations in **168 patients with intermediate age-related macular degeneration**. For the three-way distinction between no atrophy, iRORA and cRORA, quadratic weighted kappa was **0.73 on Spectralis** and **0.37 on ZEISS** scans. Removing domain adaptation reduced the Spectralis score to 0.63.
 
-Performance still differed between devices: sensitivity for detecting iRORA/cRORA was 84.0% on Spectralis and 38.5% on ZEISS. This matters when interpreting results across a multicentre study.
-
-The work supports automated measurement of atrophy-related changes while showing where further improvement is needed. It forms part of my [PhD thesis](project-phd-thesis.html) on robust medical imaging AI.
+It forms part of my [PhD thesis](project-phd-thesis.html) on robust medical imaging AI.
