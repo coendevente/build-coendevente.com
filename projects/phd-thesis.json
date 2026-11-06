@@ -5,5 +5,7 @@
     "thumbnail": "linear-gradient(0deg, rgba(224, 125, 48, 0.4), rgba(224, 125, 48, 0.1)), url(images/phd-thesis/artwork-centered.jpg)",
     "thumbnail_position": "center",
     "publication_date": "29 January 2025",
-    "order": 998
+    "order": 998,
+    "download_text": "Thesis (PDF, 97 MB)",
+    "download_file": "files/coen-de-vente-phd-thesis.pdf"
 }
