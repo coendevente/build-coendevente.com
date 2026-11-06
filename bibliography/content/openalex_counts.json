@@ -4,7 +4,7 @@
     "signature": "4b553618dc949318a4c9905de3d8d5145d55c266fb17367282b0ee1b79b104e1",
     "source": "OpenAlex",
     "title": "Validation of a deep learning model for the automated detection and quantification of cystoid macular oedema on optical coherence tomography in patients with retinitis pigmentosa",
-    "updated_at": "2026-11-06T10:27:25.312280+00:00",
+    "updated_at": "2026-11-06T10:29:34.256738+00:00",
     "work_id": "https://openalex.org/W4410565026"
   },
   "de2024generalizable": {
@@ -12,7 +12,7 @@
     "signature": "ea9e653521797bef0bb57de04d41db2199db72b0660515032105cc00821cf651",
     "source": "OpenAlex",
     "title": "Generalizable Deep Learning for the Detection of Incomplete and Complete Retinal Pigment Epithelium and Outer Retinal Atrophy: A MACUSTAR Report",
-    "updated_at": "2026-11-06T10:27:24.606277+00:00",
+    "updated_at": "2026-11-06T10:29:34.003404+00:00",
     "work_id": "https://openalex.org/W4402270084"
   },
   "devente2019simultaneous": {
@@ -20,7 +20,7 @@
     "signature": "78864f84ba6ed1d32740e752a0a4b42e3b152c332ed42438ba9592483bdea23b",
     "source": "OpenAlex",
     "title": "Simultaneous Detection and Grading of Prostate Cancer in Multi-Parametric MRI",
-    "updated_at": "2026-11-06T10:27:25.472353+00:00",
+    "updated_at": "2026-11-06T10:29:34.310950+00:00",
     "work_id": "https://openalex.org/W2963534717"
   },
   "devente2024conditioning": {
@@ -28,7 +28,7 @@
     "signature": "04d27e2c774ae2c8f483275bb6ee23d86419a50c55f4be45466f3343eba5c5fb",
     "source": "OpenAlex",
     "title": "Conditioning 3D Diffusion Models with 2D Images: Towards Standardized OCT Volumes through En Face-Informed Super-Resolution",
-    "updated_at": "2026-11-06T10:27:25.746156+00:00",
+    "updated_at": "2026-11-06T10:29:34.400988+00:00",
     "work_id": "https://openalex.org/W4403570207"
   },
   "devente2025slicernninteractive": {
@@ -36,7 +36,7 @@
     "signature": "513b5affb0855bcfcb2599282022927423694307b9ed6d196d259f9e299e57fc",
     "source": "OpenAlex",
     "title": "SlicerNNInteractive: A 3D Slicer extension for nnInteractive",
-    "updated_at": "2026-11-06T10:27:25.147139+00:00",
+    "updated_at": "2026-11-06T10:29:34.211800+00:00",
     "work_id": "https://openalex.org/W4415152121"
   },
   "devente2025thesis": {
@@ -60,7 +60,7 @@
     "signature": "18fe550bc9cd0adeb5c66cd7ef65d19529908ef7f062db8acc1ae2df7ab05c63",
     "source": "OpenAlex",
     "title": "Hierarchical curriculum learning for robust automated detection of low-prevalence retinal disease features: application to reticular pseudodrusen",
-    "updated_at": "2026-11-06T10:27:23.268551+00:00",
+    "updated_at": "2026-11-06T10:29:33.562002+00:00",
     "work_id": "https://openalex.org/W3177833306"
   },
   "hensman2025deep": {
@@ -68,7 +68,7 @@
     "signature": "327a401eeae0ff51d390f14216d83bae04a9fed2e0e6e139cf269e723d4e07b8",
     "source": "OpenAlex",
     "title": "Deep learning model for detecting cystoid fluid collections on optical coherence tomography in X\u2010linked retinoschisis patients",
-    "updated_at": "2026-11-06T10:27:24.711214+00:00",
+    "updated_at": "2026-11-06T10:29:34.071532+00:00",
     "work_id": "https://openalex.org/W4409189956"
   },
   "hensman2026axis": {
@@ -76,7 +76,7 @@
     "signature": "592fecf27d9483445a99f76085344f9e1132fee3d14bdb00999320b1d609bc71",
     "source": "OpenAlex",
     "title": "Randomised Clinical Trial to Evaluate the Efficacy of Acetazolamide for the Treatment of Cystoid Fluid Collections in X\u2010Linked Retinoschisis: The AXIS Trial",
-    "updated_at": "2026-11-06T10:27:25.581476+00:00",
+    "updated_at": "2026-11-06T10:29:34.347695+00:00",
     "work_id": "https://openalex.org/W7202179621"
   },
   "hensman2026reaxis": {
@@ -84,7 +84,7 @@
     "signature": "34bc34d2166d6800e69052580b53a343d30b63ddaae2193d3601da94dbbb5dc7",
     "source": "OpenAlex",
     "title": "Crossover to acetazolamide for the treatment of cystoid fluid collections in X-linked retinoschisis: the REAXIS study",
-    "updated_at": "2026-11-06T10:27:26.023219+00:00",
+    "updated_at": "2026-11-06T10:29:34.465482+00:00",
     "work_id": "https://openalex.org/W7204460011"
   },
   "isla24": {
@@ -92,7 +92,7 @@
     "signature": "7bf54ea99305449baaf5babdd59d1688bf9bda2e279c63d10b195de7e42f77ea",
     "source": "OpenAlex",
     "title": "Uncertainty-aware retinal layer segmentation in OCT through probabilistic signed distance functions",
-    "updated_at": "2026-11-06T10:27:24.404998+00:00",
+    "updated_at": "2026-11-06T10:29:33.902123+00:00",
     "work_id": "https://openalex.org/W4405173896"
   },
   "islam2025longitudinal": {
@@ -100,7 +100,7 @@
     "signature": "90f293c348c72dfa61ba82f90bf2ec9a2ab2e1a1c5d81de2cd0cafba90609e31",
     "source": "OpenAlex",
     "title": "Longitudinal Flow Matching for Trajectory Modeling",
-    "updated_at": "2026-11-06T10:27:25.045386+00:00",
+    "updated_at": "2026-11-06T10:29:34.169147+00:00",
     "work_id": "https://openalex.org/W4414969282"
   },
   "lemi23": {
@@ -108,7 +108,7 @@
     "signature": "860c70afd8dfe6bcbfdc88f7586ddafbf05eb7cc28d441fa51a9dd8f5d8730fd",
     "source": "OpenAlex",
     "title": "Characteristics of a Large, Labeled Data Set for the Training of Artificial Intelligence for Glaucoma Screening with Fundus Photographs",
-    "updated_at": "2026-11-06T10:27:24.297239+00:00",
+    "updated_at": "2026-11-06T10:29:33.857311+00:00",
     "work_id": "https://openalex.org/W4327748037"
   },
   "lemij2023characteristics": {
@@ -124,7 +124,7 @@
     "signature": "cc6b47cbd6f0162bd27583a58a19423fad27fa3e69f18eb08fbc8b5ab2802152",
     "source": "OpenAlex",
     "title": "Automated Assessment of COVID-19 Reporting and Data System and Chest CT Severity Scores in Patients Suspected of Having COVID-19 Using Artificial Intelligence",
-    "updated_at": "2026-11-06T10:27:22.977929+00:00",
+    "updated_at": "2026-11-06T10:29:33.278325+00:00",
     "work_id": "https://openalex.org/W3045596310"
   },
   "schw22": {
@@ -132,7 +132,7 @@
     "signature": "2635704d395c903c5d1de8884d4d0fd7484a01ac3b501035d6f30e874bbdf913",
     "source": "OpenAlex",
     "title": "A Deep Learning Framework for the Detection and Quantification of Reticular Pseudodrusen and Drusen on Optical Coherence Tomography",
-    "updated_at": "2026-11-06T10:27:23.888638+00:00",
+    "updated_at": "2026-11-06T10:29:33.743242+00:00",
     "work_id": "https://openalex.org/W4310815766"
   },
   "schwartz2025genetic": {
@@ -140,7 +140,7 @@
     "signature": "07ff6bf959b8ddfcb1ad6ec96bca553672efacc10c43559990b5f12c6eded2b9",
     "source": "OpenAlex",
     "title": "Genetic Distinctions Between Reticular Pseudodrusen and Drusen: A Genome-Wide Association Study",
-    "updated_at": "2026-11-06T10:27:24.819984+00:00",
+    "updated_at": "2026-11-06T10:29:34.118916+00:00",
     "work_id": "https://openalex.org/W4408254625"
   },
   "schwartz2026stroke": {
@@ -156,7 +156,7 @@
     "signature": "651c668aafb5bfa2ae286b0bbc634ebbde654357500032ec47c70f841617eaef",
     "source": "OpenAlex",
     "title": "Convolutional Neural Networks for Segmentation of the Left Atrium from Gadolinium-Enhancement MRI Images",
-    "updated_at": "2026-11-06T10:27:23.717845+00:00",
+    "updated_at": "2026-11-06T10:29:33.704737+00:00",
     "work_id": "https://openalex.org/W2913089831"
   },
   "vent20a": {
@@ -164,7 +164,7 @@
     "signature": "6dcb9f7147b4ace458526499a35aebc37925d60943794aad9fea51d1d9ff48d2",
     "source": "OpenAlex",
     "title": "Deep Learning Regression for Prostate Cancer Detection and Grading in Bi-Parametric MRI",
-    "updated_at": "2026-11-06T10:27:23.444912+00:00",
+    "updated_at": "2026-11-06T10:29:33.610227+00:00",
     "work_id": "https://openalex.org/W3022806210"
   },
   "vent21": {
@@ -172,7 +172,7 @@
     "signature": "201e2a7383c6add389907da4e5d0e3b7578217baf7d0629ce8a5f0f709b76995",
     "source": "OpenAlex",
     "title": "Automated COVID-19 Grading With Convolutional Neural Networks in Computed Tomography Scans: A Systematic Comparison",
-    "updated_at": "2026-11-06T10:27:22.200511+00:00",
+    "updated_at": "2026-11-06T10:29:32.961159+00:00",
     "work_id": "https://openalex.org/W3205812661"
   },
   "vent21a": {
@@ -180,7 +180,7 @@
     "signature": "a73c55722cc492517d0f4eb4304491d66eeb8f340c62793fd59451e7ae92e751",
     "source": "OpenAlex",
     "title": "Making AI Transferable Across OCT Scanners from Different Vendors",
-    "updated_at": "2026-11-06T10:27:21.655161+00:00",
+    "updated_at": "2026-11-06T10:29:32.823647+00:00",
     "work_id": "https://openalex.org/W3182529538"
   },
   "vent23a": {
@@ -188,7 +188,7 @@
     "signature": "3d76edba2c3051f1b4c2feb9b4cfb7684abc9deaf419e8fe7868243a9a8151d8",
     "source": "OpenAlex",
     "title": "AIROGS: Artificial Intelligence for Robust Glaucoma Screening Challenge",
-    "updated_at": "2026-11-06T10:27:24.060151+00:00",
+    "updated_at": "2026-11-06T10:29:33.808653+00:00",
     "work_id": "https://openalex.org/W4386757860"
   },
   "vent24": {
@@ -196,7 +196,7 @@
     "signature": "33806868374e45c1fe9e064a07590a713f3ad601dc0f800b70d39dbf1027f09a",
     "source": "OpenAlex",
     "title": "Uncertainty-aware multiple-instance learning for reliable classification: Application to optical coherence tomography",
-    "updated_at": "2026-11-06T10:27:24.506514+00:00",
+    "updated_at": "2026-11-06T10:29:33.943930+00:00",
     "work_id": "https://openalex.org/W4400078389"
   },
   "xion21": {
@@ -204,7 +204,7 @@
     "signature": "8d79eb44cf36ddada971647e5e571e2841298c2ae853281b20974e253a13d9e8",
     "source": "OpenAlex",
     "title": "A global benchmark of algorithms for segmenting the left atrium from late gadolinium-enhanced cardiac magnetic resonance imaging",
-    "updated_at": "2026-11-06T10:27:23.601632+00:00",
+    "updated_at": "2026-11-06T10:29:33.658238+00:00",
     "work_id": "https://openalex.org/W3093394156"
   }
 }
