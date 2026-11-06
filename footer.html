@@ -255,10 +255,12 @@
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/plax.js"></script>
   <script>
-    $.plax.enable()
-    $('.medical-image').plaxify()
-    $('.ground-bg').plaxify()
-    $('.plax').plaxify()
+    if ($('.medical-image, .ground-bg, .plax').length) {
+      $('.medical-image').plaxify();
+      $('.ground-bg').plaxify();
+      $('.plax').plaxify();
+      $.plax.enable();
+    }
   </script>
 
   <script>

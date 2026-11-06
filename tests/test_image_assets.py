@@ -29,3 +29,16 @@ class ImageAssetsTests(unittest.TestCase):
             self.assertIn('../images/optimized/', (site / 'css/style.css').read_text())
             optimize_site_images(site)
             self.assertEqual(output, (site / 'index.html').read_text())
+
+    def test_large_vector_svg_is_rasterized_without_embedded_images(self):
+        with tempfile.TemporaryDirectory() as directory:
+            site = Path(directory)
+            (site / 'images').mkdir()
+            svg = '<svg xmlns="http://www.w3.org/2000/svg" width="900" height="675">'
+            svg += '<!--' + 'vector artwork ' * 8000 + '--><rect width="900" height="675" fill="#123456"/></svg>'
+            (site / 'images/thumbnail.svg').write_text(svg)
+            (site / 'index.html').write_text('<div style="background-image: url(images/thumbnail.svg)"></div>')
+            mapping = optimize_site_images(site)
+            target = mapping[(site / 'images/thumbnail.svg').resolve()]
+            self.assertEqual(target.suffix, '.webp')
+            self.assertIn('images/optimized/', (site / 'index.html').read_text())

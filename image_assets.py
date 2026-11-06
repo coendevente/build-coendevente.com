@@ -30,7 +30,7 @@ def optimize_site_images(site=Path('site')):
         if source not in replacements:
             raw = source.read_bytes()
             # Keep small vector icons as vectors.
-            if source.suffix.lower() == '.svg' and (len(raw) < 100_000 or b'data:image' not in raw):
+            if source.suffix.lower() == '.svg' and len(raw) < 100_000:
                 return url
             digest = hashlib.sha256(raw + b'webp-v1-1920-q84').hexdigest()[:20]
             target = output / (digest + '.webp')
