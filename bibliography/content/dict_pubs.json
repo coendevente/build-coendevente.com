@@ -1,6 +1,6 @@
 {
     "vent21a": {
-        "html": "<p>C. de Vente, C. Gonz\u00e1lez-Gonzalo, E.F. Thee, M. van Grinsven, C.C. Klaver and C.I. S\u00e1nchez. \"Making AI Transferable Across OCT Scanners from Different Vendors\", in: <i>Association for Research in Vision and Ophthalmology</i>, 2021.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-vent21a-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?cites=504386056410585983&amp;hl=en\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-06\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~4</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://iovs.arvojournals.org/article.aspx?articleid=2775505\">URL</a></div>\n",
+        "html": "<p>C. de Vente, C. Gonz\u00e1lez-Gonzalo, E.F. Thee, M. van Grinsven, C.C. Klaver and C.I. S\u00e1nchez. \"Making AI Transferable Across OCT Scanners from Different Vendors\", in: <i>Association for Research in Vision and Ophthalmology</i>, 2021.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-vent21a-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?cites=504386056410585983&amp;hl=en\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-09\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~4</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://iovs.arvojournals.org/article.aspx?articleid=2775505\">URL</a></div>\n",
         "only_text": "C. de Vente, C. Gonz\u00e1lez-Gonzalo, E.F. Thee, M. van Grinsven, C.C. Klaver and C.I. S\u00e1nchez. \"Making AI Transferable Across OCT Scanners from Different Vendors\", in: <i>Association for Research in Vision and Ophthalmology</i>, 2021.",
         "citation_count": 4,
         "citation": {
@@ -8,7 +8,7 @@
             "work_id": "https://openalex.org/W3182529538",
             "title": "Making AI Transferable Across OCT Scanners from Different Vendors",
             "source": "OpenAlex",
-            "updated_at": "2026-11-06T16:53:44.095995+00:00",
+            "updated_at": "2026-11-09T16:40:51.743588+00:00",
             "signature": "a73c55722cc492517d0f4eb4304491d66eeb8f340c62793fd59451e7ae92e751"
         },
         "year": 2021,
@@ -18,7 +18,7 @@
         "reference_only": false
     },
     "vent21": {
-        "html": "<p>C. de Vente, L.H. Boulogne, K. Vaidhya Venkadesh, C. Sital, N. Lessmann, C. Jacobs, C.I. S\u00e1nchez and B. van Ginneken. \"Automated COVID-19 Grading with Convolutional Neural Networks in Computed Tomography Scans: A Systematic Comparison\", <i>IEEE Transactions on Artificial Intelligence</i>, 2022;3(2):129-138.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-vent21-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?cites=6795267621829470688%2C3751302600748129411%2C11993509375043963622&amp;hl=en\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-06\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~16</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://doi.org/10.1109/TAI.2021.3115093\">DOI</a></div>\n",
+        "html": "<p>C. de Vente, L.H. Boulogne, K. Vaidhya Venkadesh, C. Sital, N. Lessmann, C. Jacobs, C.I. S\u00e1nchez and B. van Ginneken. \"Automated COVID-19 Grading with Convolutional Neural Networks in Computed Tomography Scans: A Systematic Comparison\", <i>IEEE Transactions on Artificial Intelligence</i>, 2022;3(2):129-138.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-vent21-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?cites=6795267621829470688%2C3751302600748129411%2C11993509375043963622&amp;hl=en\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-09\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~16</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://doi.org/10.1109/TAI.2021.3115093\">DOI</a></div>\n",
         "only_text": "C. de Vente, L.H. Boulogne, K. Vaidhya Venkadesh, C. Sital, N. Lessmann, C. Jacobs, C.I. S\u00e1nchez and B. van Ginneken. \"Automated COVID-19 Grading with Convolutional Neural Networks in Computed Tomography Scans: A Systematic Comparison\", <i>IEEE Transactions on Artificial Intelligence</i>, 2022;3(2):129-138.",
         "citation_count": 16,
         "citation": {
@@ -26,7 +26,7 @@
             "work_id": "https://openalex.org/W3205812661",
             "title": "Automated COVID-19 Grading With Convolutional Neural Networks in Computed Tomography Scans: A Systematic Comparison",
             "source": "OpenAlex",
-            "updated_at": "2026-11-06T16:53:44.834234+00:00",
+            "updated_at": "2026-11-09T16:40:52.377943+00:00",
             "signature": "201e2a7383c6add389907da4e5d0e3b7578217baf7d0629ce8a5f0f709b76995"
         },
         "year": 2022,
@@ -47,15 +47,15 @@
         "reference_only": false
     },
     "less20": {
-        "html": "<p>N. Lessmann, C.I. S\u00e1nchez, L. Beenen, L.H. Boulogne, M. Brink, E. Calli, J. Charbonnier, T. Dofferhoff, W.M. van Everdingen, P.K. Gerke, B. Geurts, H.A. Gietema, M. Groeneveld, L. van Harten, N. Hendrix, W. Hendrix, H.J. Huisman, I. Isgum, C. Jacobs, R. Kluge, M. Kok, J. Krdzalic, B. Lassen-Schmidt, K. van Leeuwen, J. Meakin, M. Overkamp, T. van Rees Vellinga, E.M. van Rikxoort, R. Samperna, C. Schaefer-Prokop, S. Schalekamp, E.T. Scholten, C. Sital, L. St\u00f6ger, J. Teuwen, K. Vaidhya Venkadesh, C. de Vente, M. Vermaat, W. Xie, B. de Wilde, M. Prokop and B. van Ginneken. \"Automated Assessment of COVID-19 Reporting and Data System and Chest CT Severity Scores in Patients Suspected of Having COVID-19 Using Artificial Intelligence\", <i>Radiology</i>, 2021;298(1):E18-E28.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-less20-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?cites=13623399645587834950%2C2370993400684076548&amp;hl=en\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-06\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~142</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://doi.org/10.1148/radiol.2020202439\">DOI</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"http://www.ncbi.nlm.nih.gov/pubmed/32729810/\">PMID</a></div>\n",
+        "html": "<p>N. Lessmann, C.I. S\u00e1nchez, L. Beenen, L.H. Boulogne, M. Brink, E. Calli, J. Charbonnier, T. Dofferhoff, W.M. van Everdingen, P.K. Gerke, B. Geurts, H.A. Gietema, M. Groeneveld, L. van Harten, N. Hendrix, W. Hendrix, H.J. Huisman, I. Isgum, C. Jacobs, R. Kluge, M. Kok, J. Krdzalic, B. Lassen-Schmidt, K. van Leeuwen, J. Meakin, M. Overkamp, T. van Rees Vellinga, E.M. van Rikxoort, R. Samperna, C. Schaefer-Prokop, S. Schalekamp, E.T. Scholten, C. Sital, L. St\u00f6ger, J. Teuwen, K. Vaidhya Venkadesh, C. de Vente, M. Vermaat, W. Xie, B. de Wilde, M. Prokop and B. van Ginneken. \"Automated Assessment of COVID-19 Reporting and Data System and Chest CT Severity Scores in Patients Suspected of Having COVID-19 Using Artificial Intelligence\", <i>Radiology</i>, 2021;298(1):E18-E28.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-less20-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?cites=13623399645587834950%2C2370993400684076548&amp;hl=en\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-09\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~143</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://doi.org/10.1148/radiol.2020202439\">DOI</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"http://www.ncbi.nlm.nih.gov/pubmed/32729810/\">PMID</a></div>\n",
         "only_text": "N. Lessmann, C.I. S\u00e1nchez, L. Beenen, L.H. Boulogne, M. Brink, E. Calli, J. Charbonnier, T. Dofferhoff, W.M. van Everdingen, P.K. Gerke, B. Geurts, H.A. Gietema, M. Groeneveld, L. van Harten, N. Hendrix, W. Hendrix, H.J. Huisman, I. Isgum, C. Jacobs, R. Kluge, M. Kok, J. Krdzalic, B. Lassen-Schmidt, K. van Leeuwen, J. Meakin, M. Overkamp, T. van Rees Vellinga, E.M. van Rikxoort, R. Samperna, C. Schaefer-Prokop, S. Schalekamp, E.T. Scholten, C. Sital, L. St\u00f6ger, J. Teuwen, K. Vaidhya Venkadesh, C. de Vente, M. Vermaat, W. Xie, B. de Wilde, M. Prokop and B. van Ginneken. \"Automated Assessment of COVID-19 Reporting and Data System and Chest CT Severity Scores in Patients Suspected of Having COVID-19 Using Artificial Intelligence\", <i>Radiology</i>, 2021;298(1):E18-E28.",
-        "citation_count": 142,
+        "citation_count": 143,
         "citation": {
-            "count": 142,
+            "count": 143,
             "work_id": "https://openalex.org/W3045596310",
             "title": "Automated Assessment of COVID-19 Reporting and Data System and Chest CT Severity Scores in Patients Suspected of Having COVID-19 Using Artificial Intelligence",
             "source": "OpenAlex",
-            "updated_at": "2026-11-06T16:53:45.771737+00:00",
+            "updated_at": "2026-11-09T16:40:53.454941+00:00",
             "signature": "cc6b47cbd6f0162bd27583a58a19423fad27fa3e69f18eb08fbc8b5ab2802152"
         },
         "year": 2021,
@@ -65,7 +65,7 @@
         "reference_only": false
     },
     "gonz21": {
-        "html": "<p>C. Gonz\u00e1lez-Gonzalo, E.F. Thee, B. Liefers, C. de Vente, C.C. Klaver and C.I. S\u00e1nchez. \"Hierarchical curriculum learning for robust automated detection of low-prevalence retinal disease features: application to reticular pseudodrusen\", in: <i>Association for Research in Vision and Ophthalmology</i>, 2021.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-gonz21-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?cites=8274882984481634472&amp;hl=en\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-06\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~1</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://iovs.arvojournals.org/article.aspx?articleid=2773295\">URL</a></div>\n",
+        "html": "<p>C. Gonz\u00e1lez-Gonzalo, E.F. Thee, B. Liefers, C. de Vente, C.C. Klaver and C.I. S\u00e1nchez. \"Hierarchical curriculum learning for robust automated detection of low-prevalence retinal disease features: application to reticular pseudodrusen\", in: <i>Association for Research in Vision and Ophthalmology</i>, 2021.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-gonz21-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?cites=8274882984481634472&amp;hl=en\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-09\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~1</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://iovs.arvojournals.org/article.aspx?articleid=2773295\">URL</a></div>\n",
         "only_text": "C. Gonz\u00e1lez-Gonzalo, E.F. Thee, B. Liefers, C. de Vente, C.C. Klaver and C.I. S\u00e1nchez. \"Hierarchical curriculum learning for robust automated detection of low-prevalence retinal disease features: application to reticular pseudodrusen\", in: <i>Association for Research in Vision and Ophthalmology</i>, 2021.",
         "citation_count": 1,
         "citation": {
@@ -73,7 +73,7 @@
             "work_id": "https://openalex.org/W3177833306",
             "title": "Hierarchical curriculum learning for robust automated detection of low-prevalence retinal disease features: application to reticular pseudodrusen",
             "source": "OpenAlex",
-            "updated_at": "2026-11-06T16:53:45.972599+00:00",
+            "updated_at": "2026-11-09T16:40:53.716347+00:00",
             "signature": "18fe550bc9cd0adeb5c66cd7ef65d19529908ef7f062db8acc1ae2df7ab05c63"
         },
         "year": 2021,
@@ -94,15 +94,15 @@
         "reference_only": false
     },
     "vent20a": {
-        "html": "<p>C. de Vente, P. Vos, M. Hosseinzadeh, J. Pluim and M. Veta. \"Deep learning regression for prostate cancer detection and grading in bi-parametric MRI\", <i>IEEE Transactions on Biomedical Engineering</i>, 2020;68(2):374-383.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-vent20a-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?cites=403188362461805794&amp;hl=en\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-06\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~176</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://doi.org/10.1109/TBME.2020.2993528\">DOI</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"http://www.ncbi.nlm.nih.gov/pubmed/32396068/\">PMID</a></div>\n",
+        "html": "<p>C. de Vente, P. Vos, M. Hosseinzadeh, J. Pluim and M. Veta. \"Deep learning regression for prostate cancer detection and grading in bi-parametric MRI\", <i>IEEE Transactions on Biomedical Engineering</i>, 2020;68(2):374-383.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-vent20a-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?cites=403188362461805794&amp;hl=en\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-09\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~179</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://doi.org/10.1109/TBME.2020.2993528\">DOI</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"http://www.ncbi.nlm.nih.gov/pubmed/32396068/\">PMID</a></div>\n",
         "only_text": "C. de Vente, P. Vos, M. Hosseinzadeh, J. Pluim and M. Veta. \"Deep learning regression for prostate cancer detection and grading in bi-parametric MRI\", <i>IEEE Transactions on Biomedical Engineering</i>, 2020;68(2):374-383.",
-        "citation_count": 176,
+        "citation_count": 179,
         "citation": {
-            "count": 176,
+            "count": 179,
             "work_id": "https://openalex.org/W3022806210",
             "title": "Deep Learning Regression for Prostate Cancer Detection and Grading in Bi-Parametric MRI",
             "source": "OpenAlex",
-            "updated_at": "2026-11-06T16:53:46.212202+00:00",
+            "updated_at": "2026-11-09T16:40:54.088426+00:00",
             "signature": "6dcb9f7147b4ace458526499a35aebc37925d60943794aad9fea51d1d9ff48d2"
         },
         "year": 2020,
@@ -112,15 +112,15 @@
         "reference_only": false
     },
     "xion21": {
-        "html": "<p>Z. Xiong, Q. Xia, Z. Hu, N. Huang, C. Bian, Y. Zheng, S. Vesal, N. Ravikumar, A. Maier, X. Yang, P. Heng, D. Ni, C. Li, Q. Tong, W. Si, E. Puybareau, Y. Khoudli, T. Graud, C. Chen, W. Bai, D. Rueckert, L. Xu, X. Zhuang, X. Luo, S. Jia, M. Sermesant, Y. Liu, K. Wang, D. Borra, A. Masci, C. Corsi, C. de Vente, M. Veta, R. Karim, C. Jayachandran Preetha, S. Engelhardt, M. Qiao, Y. Wang, Q. Tao, M. Nu\u00f1ez-Garcia, O. Camara, N. Savioli, P. Lamata and J. Zhao. \"A global benchmark of algorithms for segmenting the left atrium from late gadolinium-enhanced cardiac magnetic resonance imaging\", <i>Medical Image Analysis</i>, 2021;67:101832.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-xion21-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?cites=298995361484429794&amp;hl=en\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-06\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~532</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"http://www.ncbi.nlm.nih.gov/pubmed/33166776/\">PMID</a></div>\n",
+        "html": "<p>Z. Xiong, Q. Xia, Z. Hu, N. Huang, C. Bian, Y. Zheng, S. Vesal, N. Ravikumar, A. Maier, X. Yang, P. Heng, D. Ni, C. Li, Q. Tong, W. Si, E. Puybareau, Y. Khoudli, T. Graud, C. Chen, W. Bai, D. Rueckert, L. Xu, X. Zhuang, X. Luo, S. Jia, M. Sermesant, Y. Liu, K. Wang, D. Borra, A. Masci, C. Corsi, C. de Vente, M. Veta, R. Karim, C. Jayachandran Preetha, S. Engelhardt, M. Qiao, Y. Wang, Q. Tao, M. Nu\u00f1ez-Garcia, O. Camara, N. Savioli, P. Lamata and J. Zhao. \"A global benchmark of algorithms for segmenting the left atrium from late gadolinium-enhanced cardiac magnetic resonance imaging\", <i>Medical Image Analysis</i>, 2021;67:101832.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-xion21-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?cites=298995361484429794&amp;hl=en\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-09\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~553</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"http://www.ncbi.nlm.nih.gov/pubmed/33166776/\">PMID</a></div>\n",
         "only_text": "Z. Xiong, Q. Xia, Z. Hu, N. Huang, C. Bian, Y. Zheng, S. Vesal, N. Ravikumar, A. Maier, X. Yang, P. Heng, D. Ni, C. Li, Q. Tong, W. Si, E. Puybareau, Y. Khoudli, T. Graud, C. Chen, W. Bai, D. Rueckert, L. Xu, X. Zhuang, X. Luo, S. Jia, M. Sermesant, Y. Liu, K. Wang, D. Borra, A. Masci, C. Corsi, C. de Vente, M. Veta, R. Karim, C. Jayachandran Preetha, S. Engelhardt, M. Qiao, Y. Wang, Q. Tao, M. Nu\u00f1ez-Garcia, O. Camara, N. Savioli, P. Lamata and J. Zhao. \"A global benchmark of algorithms for segmenting the left atrium from late gadolinium-enhanced cardiac magnetic resonance imaging\", <i>Medical Image Analysis</i>, 2021;67:101832.",
-        "citation_count": 532,
+        "citation_count": 553,
         "citation": {
-            "count": 532,
+            "count": 553,
             "work_id": "https://openalex.org/W3093394156",
             "title": "A global benchmark of algorithms for segmenting the left atrium from late gadolinium-enhanced cardiac magnetic resonance imaging",
             "source": "OpenAlex",
-            "updated_at": "2026-11-06T16:53:46.453163+00:00",
+            "updated_at": "2026-11-09T16:40:54.290609+00:00",
             "signature": "8d79eb44cf36ddada971647e5e571e2841298c2ae853281b20974e253a13d9e8"
         },
         "year": 2021,
@@ -130,15 +130,15 @@
         "reference_only": false
     },
     "vent18": {
-        "html": "<p>C. de Vente, M. Veta, O. Razeghi, S. Niederer, J. Pluim, K. Rhode and R. Karim. \"Convolutional neural networks for segmentation of the left atrium from gadolinium-enhancement MRI images\", in: <i>International Workshop on Statistical Atlases and Computational Models of the Heart</i>, 2018, pages 348-356.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-vent18-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?cites=441491962980777638&amp;hl=en\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-06\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~7</a></div>\n",
+        "html": "<p>C. de Vente, M. Veta, O. Razeghi, S. Niederer, J. Pluim, K. Rhode and R. Karim. \"Convolutional neural networks for segmentation of the left atrium from gadolinium-enhancement MRI images\", in: <i>International Workshop on Statistical Atlases and Computational Models of the Heart</i>, 2018, pages 348-356.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-vent18-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?cites=441491962980777638&amp;hl=en\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-09\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~8</a></div>\n",
         "only_text": "C. de Vente, M. Veta, O. Razeghi, S. Niederer, J. Pluim, K. Rhode and R. Karim. \"Convolutional neural networks for segmentation of the left atrium from gadolinium-enhancement MRI images\", in: <i>International Workshop on Statistical Atlases and Computational Models of the Heart</i>, 2018, pages 348-356.",
-        "citation_count": 7,
+        "citation_count": 8,
         "citation": {
-            "count": 7,
+            "count": 8,
             "work_id": "https://openalex.org/W2913089831",
             "title": "Convolutional Neural Networks for Segmentation of the Left Atrium from Gadolinium-Enhancement MRI Images",
             "source": "OpenAlex",
-            "updated_at": "2026-11-06T16:53:46.754551+00:00",
+            "updated_at": "2026-11-09T16:40:54.577125+00:00",
             "signature": "651c668aafb5bfa2ae286b0bbc634ebbde654357500032ec47c70f841617eaef"
         },
         "year": 2018,
@@ -148,15 +148,15 @@
         "reference_only": false
     },
     "schw22": {
-        "html": "<p>R. Schwartz, H. Khalid, S. Liakopoulos, Y. Ouyang, C. de Vente, C. Gonz\u00e1lez-Gonzalo, A.Y. Lee, R. Guymer, E.Y. Chew, C. Egan and others. \"A Deep Learning Framework for the Detection and Quantification of Reticular Pseudodrusen and Drusen on Optical Coherence Tomography\", <i>Translational Vision Science & Technology</i>, 2022;11(12):3-3.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-schw22-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?cites=15646198235825211737%2C5612937199194471457&amp;hl=en\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-06\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~43</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://doi.org/10.1167/tvst.11.12.3\">DOI</a></div>\n",
+        "html": "<p>R. Schwartz, H. Khalid, S. Liakopoulos, Y. Ouyang, C. de Vente, C. Gonz\u00e1lez-Gonzalo, A.Y. Lee, R. Guymer, E.Y. Chew, C. Egan and others. \"A Deep Learning Framework for the Detection and Quantification of Reticular Pseudodrusen and Drusen on Optical Coherence Tomography\", <i>Translational Vision Science & Technology</i>, 2022;11(12):3-3.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-schw22-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?cites=15646198235825211737%2C5612937199194471457&amp;hl=en\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-09\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~44</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://doi.org/10.1167/tvst.11.12.3\">DOI</a></div>\n",
         "only_text": "R. Schwartz, H. Khalid, S. Liakopoulos, Y. Ouyang, C. de Vente, C. Gonz\u00e1lez-Gonzalo, A.Y. Lee, R. Guymer, E.Y. Chew, C. Egan and others. \"A Deep Learning Framework for the Detection and Quantification of Reticular Pseudodrusen and Drusen on Optical Coherence Tomography\", <i>Translational Vision Science & Technology</i>, 2022;11(12):3-3.",
-        "citation_count": 43,
+        "citation_count": 44,
         "citation": {
-            "count": 43,
+            "count": 44,
             "work_id": "https://openalex.org/W4310815766",
             "title": "A Deep Learning Framework for the Detection and Quantification of Reticular Pseudodrusen and Drusen on Optical Coherence Tomography",
             "source": "OpenAlex",
-            "updated_at": "2026-11-06T16:53:46.994955+00:00",
+            "updated_at": "2026-11-09T16:40:54.799623+00:00",
             "signature": "2635704d395c903c5d1de8884d4d0fd7484a01ac3b501035d6f30e874bbdf913"
         },
         "year": 2022,
@@ -199,15 +199,15 @@
         "reference_only": false
     },
     "vent23a": {
-        "html": "<p>C. de Vente, K.A. Vermeer, N. Jaccard, H. Wang, H. Sun, F. Khader, D. Truhn, T. Aimyshev, Y. Zhanibekuly, T. Le, A. Galdran, M.\u00c1. Gonz\u00e1lez Ballester, G. Carneiro, D.R. G, H.P. S, D. Puthussery, H. Liu, Z. Yang, S. Kondo, S. Kasai, E. Wang, A. Durvasula, J. Heras, M.\u00c1. Zapata, T. Ara\u00fajo, G. Aresta, H. Bogunovi\u0107, M. Arikan, Y.C. Lee, H.B. Cho, Y.H. Choi, A. Qayyum, I. Razzak, B. van Ginneken, H.G. Lemij and C.I. S\u00e1nchez. \"AIROGS: Artificial Intelligence for RObust Glaucoma Screening Challenge\", <i>IEEE Transactions on Medical Imaging</i>, 2023;43(1):542-557.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-vent23a-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?cites=12607038868340347612%2C10290591934597328501%2C16965053761187170060%2C12629941101464488854&amp;hl=en\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-06\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~108</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://doi.org/10.1109/TMI.2023.3313786\">DOI</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"http://www.ncbi.nlm.nih.gov/pubmed/37713220/\">PMID</a></div>\n",
+        "html": "<p>C. de Vente, K.A. Vermeer, N. Jaccard, H. Wang, H. Sun, F. Khader, D. Truhn, T. Aimyshev, Y. Zhanibekuly, T. Le, A. Galdran, M.\u00c1. Gonz\u00e1lez Ballester, G. Carneiro, D.R. G, H.P. S, D. Puthussery, H. Liu, Z. Yang, S. Kondo, S. Kasai, E. Wang, A. Durvasula, J. Heras, M.\u00c1. Zapata, T. Ara\u00fajo, G. Aresta, H. Bogunovi\u0107, M. Arikan, Y.C. Lee, H.B. Cho, Y.H. Choi, A. Qayyum, I. Razzak, B. van Ginneken, H.G. Lemij and C.I. S\u00e1nchez. \"AIROGS: Artificial Intelligence for RObust Glaucoma Screening Challenge\", <i>IEEE Transactions on Medical Imaging</i>, 2023;43(1):542-557.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-vent23a-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?cites=12607038868340347612%2C10290591934597328501%2C16965053761187170060%2C12629941101464488854&amp;hl=en\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-09\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~120</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://doi.org/10.1109/TMI.2023.3313786\">DOI</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"http://www.ncbi.nlm.nih.gov/pubmed/37713220/\">PMID</a></div>\n",
         "only_text": "C. de Vente, K.A. Vermeer, N. Jaccard, H. Wang, H. Sun, F. Khader, D. Truhn, T. Aimyshev, Y. Zhanibekuly, T. Le, A. Galdran, M.\u00c1. Gonz\u00e1lez Ballester, G. Carneiro, D.R. G, H.P. S, D. Puthussery, H. Liu, Z. Yang, S. Kondo, S. Kasai, E. Wang, A. Durvasula, J. Heras, M.\u00c1. Zapata, T. Ara\u00fajo, G. Aresta, H. Bogunovi\u0107, M. Arikan, Y.C. Lee, H.B. Cho, Y.H. Choi, A. Qayyum, I. Razzak, B. van Ginneken, H.G. Lemij and C.I. S\u00e1nchez. \"AIROGS: Artificial Intelligence for RObust Glaucoma Screening Challenge\", <i>IEEE Transactions on Medical Imaging</i>, 2023;43(1):542-557.",
-        "citation_count": 108,
+        "citation_count": 120,
         "citation": {
-            "count": 108,
+            "count": 120,
             "work_id": "https://openalex.org/W4386757860",
             "title": "AIROGS: Artificial Intelligence for Robust Glaucoma Screening Challenge",
             "source": "OpenAlex",
-            "updated_at": "2026-11-06T16:53:47.300854+00:00",
+            "updated_at": "2026-11-09T16:40:54.957164+00:00",
             "signature": "3d76edba2c3051f1b4c2feb9b4cfb7684abc9deaf419e8fe7868243a9a8151d8"
         },
         "year": 2023,
@@ -217,15 +217,15 @@
         "reference_only": false
     },
     "lemi23": {
-        "html": "<p>H.G. Lemij, C. de Vente, C.I. S\u00e1nchez and K.A. Vermeer. \"Characteristics of a large, labeled dataset for the training of artificial intelligence for glaucoma screening with fundus photographs\", <i>Ophthalmology Science</i>, 2023;100300.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-lemi23-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?cites=2038978167705297420&amp;hl=en\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-06\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~40</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://doi.org/10.1016/j.xops.2023.100300\">DOI</a></div>\n",
+        "html": "<p>H.G. Lemij, C. de Vente, C.I. S\u00e1nchez and K.A. Vermeer. \"Characteristics of a large, labeled dataset for the training of artificial intelligence for glaucoma screening with fundus photographs\", <i>Ophthalmology Science</i>, 2023;100300.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-lemi23-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?cites=2038978167705297420&amp;hl=en\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-09\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~44</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://doi.org/10.1016/j.xops.2023.100300\">DOI</a></div>\n",
         "only_text": "H.G. Lemij, C. de Vente, C.I. S\u00e1nchez and K.A. Vermeer. \"Characteristics of a large, labeled dataset for the training of artificial intelligence for glaucoma screening with fundus photographs\", <i>Ophthalmology Science</i>, 2023;100300.",
-        "citation_count": 40,
+        "citation_count": 44,
         "citation": {
-            "count": 40,
+            "count": 44,
             "work_id": "https://openalex.org/W4327748037",
             "title": "Characteristics of a Large, Labeled Data Set for the Training of Artificial Intelligence for Glaucoma Screening with Fundus Photographs",
             "source": "OpenAlex",
-            "updated_at": "2026-11-06T16:53:47.600825+00:00",
+            "updated_at": "2026-11-09T16:40:55.105849+00:00",
             "signature": "860c70afd8dfe6bcbfdc88f7586ddafbf05eb7cc28d441fa51a9dd8f5d8730fd"
         },
         "year": 2023,
@@ -254,7 +254,7 @@
             "work_id": "https://openalex.org/W4405173896",
             "title": "Uncertainty-aware retinal layer segmentation in OCT through probabilistic signed distance functions",
             "source": "OpenAlex",
-            "updated_at": "2026-11-06T16:53:48.099831+00:00",
+            "updated_at": "2026-11-09T16:40:55.305293+00:00",
             "signature": "7bf54ea99305449baaf5babdd59d1688bf9bda2e279c63d10b195de7e42f77ea"
         },
         "year": 2024,
@@ -264,15 +264,15 @@
         "reference_only": false
     },
     "vent24": {
-        "html": "<p>C. de Vente, B. van Ginneken, C.B. Hoyng, C.C.W. Klaver and C.I. S\u00e1nchez. \"Uncertainty-aware multiple-instance learning for reliable classification: Application to optical coherence tomography\", <i>Medical Image Analysis</i>, 2024;97:103259.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-vent24-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?cites=2083973390038249415&amp;hl=en\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-06\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~11</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://doi.org/10.1016/j.media.2024.103259\">DOI</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://www.sciencedirect.com/science/article/pii/S1361841524001841\">URL</a></div>\n",
+        "html": "<p>C. de Vente, B. van Ginneken, C.B. Hoyng, C.C.W. Klaver and C.I. S\u00e1nchez. \"Uncertainty-aware multiple-instance learning for reliable classification: Application to optical coherence tomography\", <i>Medical Image Analysis</i>, 2024;97:103259.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-vent24-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?cites=2083973390038249415&amp;hl=en\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-09\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~14</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://doi.org/10.1016/j.media.2024.103259\">DOI</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://www.sciencedirect.com/science/article/pii/S1361841524001841\">URL</a></div>\n",
         "only_text": "C. de Vente, B. van Ginneken, C.B. Hoyng, C.C.W. Klaver and C.I. S\u00e1nchez. \"Uncertainty-aware multiple-instance learning for reliable classification: Application to optical coherence tomography\", <i>Medical Image Analysis</i>, 2024;97:103259.",
-        "citation_count": 11,
+        "citation_count": 14,
         "citation": {
-            "count": 11,
+            "count": 14,
             "work_id": "https://openalex.org/W4400078389",
             "title": "Uncertainty-aware multiple-instance learning for reliable classification: Application to optical coherence tomography",
             "source": "OpenAlex",
-            "updated_at": "2026-11-06T16:53:48.321464+00:00",
+            "updated_at": "2026-11-09T16:40:55.509244+00:00",
             "signature": "33806868374e45c1fe9e064a07590a713f3ad601dc0f800b70d39dbf1027f09a"
         },
         "year": 2024,
@@ -304,7 +304,7 @@
         "reference_only": false
     },
     "de2024generalizable": {
-        "html": "<p>C. de Vente, P. Valmaggia, C.B. Hoyng, F.G. Holz, M.M. Islam, C.C. Klaver, C.J. Boon, S. Schmitz-Valckenberg, A. Tufail, M. Sa\u00dfmannshausen and others. \"Generalizable Deep Learning for the Detection of Incomplete and Complete Retinal Pigment Epithelium and Outer Retinal Atrophy: A MACUSTAR Report\", <i>Translational Vision Science & Technology</i>, 2024;13(9):11-11.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-de2024generalizable-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?cites=11005501908408658331&amp;hl=en\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-06\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~7</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://doi.org/10.1167/tvst.13.9.11\">DOI</a></div>\n",
+        "html": "<p>C. de Vente, P. Valmaggia, C.B. Hoyng, F.G. Holz, M.M. Islam, C.C. Klaver, C.J. Boon, S. Schmitz-Valckenberg, A. Tufail, M. Sa\u00dfmannshausen and others. \"Generalizable Deep Learning for the Detection of Incomplete and Complete Retinal Pigment Epithelium and Outer Retinal Atrophy: A MACUSTAR Report\", <i>Translational Vision Science & Technology</i>, 2024;13(9):11-11.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-de2024generalizable-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?cites=11005501908408658331&amp;hl=en\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-09\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~7</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://doi.org/10.1167/tvst.13.9.11\">DOI</a></div>\n",
         "only_text": "C. de Vente, P. Valmaggia, C.B. Hoyng, F.G. Holz, M.M. Islam, C.C. Klaver, C.J. Boon, S. Schmitz-Valckenberg, A. Tufail, M. Sa\u00dfmannshausen and others. \"Generalizable Deep Learning for the Detection of Incomplete and Complete Retinal Pigment Epithelium and Outer Retinal Atrophy: A MACUSTAR Report\", <i>Translational Vision Science & Technology</i>, 2024;13(9):11-11.",
         "citation_count": 7,
         "citation": {
@@ -312,7 +312,7 @@
             "work_id": "https://openalex.org/W4402270084",
             "title": "Generalizable Deep Learning for the Detection of Incomplete and Complete Retinal Pigment Epithelium and Outer Retinal Atrophy: A MACUSTAR Report",
             "source": "OpenAlex",
-            "updated_at": "2026-11-06T16:53:48.634033+00:00",
+            "updated_at": "2026-11-09T16:40:55.741780+00:00",
             "signature": "ea9e653521797bef0bb57de04d41db2199db72b0660515032105cc00821cf651"
         },
         "year": 2024,
@@ -322,7 +322,7 @@
         "reference_only": false
     },
     "hensman2025deep": {
-        "html": "<p>J. Hensman, Y. El Allali, H. Almushattat, C. de Vente, C.I. S\u00e1nchez and C.J. Boon. \"Deep learning model for detecting cystoid fluid collections on optical coherence tomography in X-linked retinoschisis patients\", <i>Acta Ophthalmologica</i>, 2025.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-hensman2025deep-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?q=Deep+learning+model+for+detecting+cystoid+fluid+collections+on+optical+coherence+tomography+in+X-linked+retinoschisis+patients\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-06\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~7</a></div>\n",
+        "html": "<p>J. Hensman, Y. El Allali, H. Almushattat, C. de Vente, C.I. S\u00e1nchez and C.J. Boon. \"Deep learning model for detecting cystoid fluid collections on optical coherence tomography in X-linked retinoschisis patients\", <i>Acta Ophthalmologica</i>, 2025.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-hensman2025deep-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?q=Deep+learning+model+for+detecting+cystoid+fluid+collections+on+optical+coherence+tomography+in+X-linked+retinoschisis+patients\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-09\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~7</a></div>\n",
         "only_text": "J. Hensman, Y. El Allali, H. Almushattat, C. de Vente, C.I. S\u00e1nchez and C.J. Boon. \"Deep learning model for detecting cystoid fluid collections on optical coherence tomography in X-linked retinoschisis patients\", <i>Acta Ophthalmologica</i>, 2025.",
         "citation_count": 7,
         "citation": {
@@ -330,7 +330,7 @@
             "work_id": "https://openalex.org/W4409189956",
             "title": "Deep learning model for detecting cystoid fluid collections on optical coherence tomography in X\u2010linked retinoschisis patients",
             "source": "OpenAlex",
-            "updated_at": "2026-11-06T16:53:48.892617+00:00",
+            "updated_at": "2026-11-09T16:40:55.956489+00:00",
             "signature": "327a401eeae0ff51d390f14216d83bae04a9fed2e0e6e139cf269e723d4e07b8"
         },
         "year": 2025,
@@ -340,7 +340,7 @@
         "reference_only": false
     },
     "schwartz2025genetic": {
-        "html": "<p>R. Schwartz, A.N. Warwick, A.P. Khawaja, R. Luben, H. Khalid, S. Phatak, M. Jhingan, C. de Vente, P. Valmaggia, S. Liakopoulos and others. \"Genetic Distinctions Between Reticular Pseudodrusen and Drusen: A Genome-Wide Association Study\", <i>American Journal of Ophthalmology</i>, 2025.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-schwartz2025genetic-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?q=Genetic+Distinctions+Between+Reticular+Pseudodrusen+and+Drusen%3A+A+Genome-Wide+Association+Study\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-06\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~14</a></div>\n",
+        "html": "<p>R. Schwartz, A.N. Warwick, A.P. Khawaja, R. Luben, H. Khalid, S. Phatak, M. Jhingan, C. de Vente, P. Valmaggia, S. Liakopoulos and others. \"Genetic Distinctions Between Reticular Pseudodrusen and Drusen: A Genome-Wide Association Study\", <i>American Journal of Ophthalmology</i>, 2025.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-schwartz2025genetic-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?q=Genetic+Distinctions+Between+Reticular+Pseudodrusen+and+Drusen%3A+A+Genome-Wide+Association+Study\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-09\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~14</a></div>\n",
         "only_text": "R. Schwartz, A.N. Warwick, A.P. Khawaja, R. Luben, H. Khalid, S. Phatak, M. Jhingan, C. de Vente, P. Valmaggia, S. Liakopoulos and others. \"Genetic Distinctions Between Reticular Pseudodrusen and Drusen: A Genome-Wide Association Study\", <i>American Journal of Ophthalmology</i>, 2025.",
         "citation_count": 14,
         "citation": {
@@ -348,7 +348,7 @@
             "work_id": "https://openalex.org/W4408254625",
             "title": "Genetic Distinctions Between Reticular Pseudodrusen and Drusen: A Genome-Wide Association Study",
             "source": "OpenAlex",
-            "updated_at": "2026-11-06T16:53:49.192426+00:00",
+            "updated_at": "2026-11-09T16:40:56.116624+00:00",
             "signature": "07ff6bf959b8ddfcb1ad6ec96bca553672efacc10c43559990b5f12c6eded2b9"
         },
         "year": 2025,
@@ -358,15 +358,15 @@
         "reference_only": false
     },
     "islam2025longitudinal": {
-        "html": "<p>M.M. Islam, T.P. Kuipers, S. Vadgama, C. de Vente, A. Khan, C.I. S\u00e1nchez and E.J. Bekkers. \"Longitudinal flow matching for trajectory modeling\", <i>arXiv preprint arXiv:2510.03569</i>, 2025.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-islam2025longitudinal-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://arxiv.org/abs/2510.03569/\">arXiv</a></div>\n",
+        "html": "<p>M.M. Islam, T.P. Kuipers, S. Vadgama, C. de Vente, A. Khan, C.I. S\u00e1nchez and E.J. Bekkers. \"Longitudinal flow matching for trajectory modeling\", <i>arXiv preprint arXiv:2510.03569</i>, 2025.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-islam2025longitudinal-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?q=Longitudinal+flow+matching+for+trajectory+modeling\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-09\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~6</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://arxiv.org/abs/2510.03569/\">arXiv</a></div>\n",
         "only_text": "M.M. Islam, T.P. Kuipers, S. Vadgama, C. de Vente, A. Khan, C.I. S\u00e1nchez and E.J. Bekkers. \"Longitudinal flow matching for trajectory modeling\", <i>arXiv preprint arXiv:2510.03569</i>, 2025.",
-        "citation_count": 0,
+        "citation_count": 6,
         "citation": {
-            "count": 0,
+            "count": 6,
             "work_id": "https://openalex.org/W4414969282",
             "title": "Longitudinal Flow Matching for Trajectory Modeling",
             "source": "OpenAlex",
-            "updated_at": "2026-11-06T16:53:49.499703+00:00",
+            "updated_at": "2026-11-09T16:40:56.387975+00:00",
             "signature": "90f293c348c72dfa61ba82f90bf2ec9a2ab2e1a1c5d81de2cd0cafba90609e31"
         },
         "year": 2025,
@@ -376,15 +376,15 @@
         "reference_only": false
     },
     "devente2025slicernninteractive": {
-        "html": "<p>C. de Vente, K.V. Venkadesh, B. van Ginneken and C.I. S\u00e1nchez. \"SlicerNNInteractive: A 3D Slicer extension for nnInteractive\", <i>arXiv preprint arXiv:2504.07991</i>, 2025.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-devente2025slicernninteractive-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?q=SlicerNNInteractive%3A+A+3D+Slicer+extension+for+nnInteractive\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-06\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~5</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://arxiv.org/abs/2504.07991/\">arXiv</a></div>\n",
+        "html": "<p>C. de Vente, K.V. Venkadesh, B. van Ginneken and C.I. S\u00e1nchez. \"SlicerNNInteractive: A 3D Slicer extension for nnInteractive\", <i>arXiv preprint arXiv:2504.07991</i>, 2025.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-devente2025slicernninteractive-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?q=SlicerNNInteractive%3A+A+3D+Slicer+extension+for+nnInteractive\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-09\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~8</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://arxiv.org/abs/2504.07991/\">arXiv</a></div>\n",
         "only_text": "C. de Vente, K.V. Venkadesh, B. van Ginneken and C.I. S\u00e1nchez. \"SlicerNNInteractive: A 3D Slicer extension for nnInteractive\", <i>arXiv preprint arXiv:2504.07991</i>, 2025.",
-        "citation_count": 5,
+        "citation_count": 8,
         "citation": {
-            "count": 5,
+            "count": 8,
             "work_id": "https://openalex.org/W4415152121",
             "title": "SlicerNNInteractive: A 3D Slicer extension for nnInteractive",
             "source": "OpenAlex",
-            "updated_at": "2026-11-06T16:53:49.708569+00:00",
+            "updated_at": "2026-11-09T16:40:56.604065+00:00",
             "signature": "513b5affb0855bcfcb2599282022927423694307b9ed6d196d259f9e299e57fc"
         },
         "year": 2025,
@@ -394,7 +394,7 @@
         "reference_only": false
     },
     "almushattat2025validation": {
-        "html": "<p>H. Almushattat, J. Hensman, Y. El Allali, C. de Vente, C.I. S\u00e1nchez and C.J. Boon. \"Validation of a deep learning model for the automated detection and quantification of cystoid macular oedema on optical coherence tomography in patients with retinitis pigmentosa\", <i>Acta Ophthalmologica</i>, 2025;103(7):e524-e531.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-almushattat2025validation-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?q=Validation+of+a+deep+learning+model+for+the+automated+detection+and+quantification+of+cystoid+macular+oedema+on+optical+coherence+tomography+in+patients+with+retinitis+pigmentosa\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-06\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~5</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://doi.org/10.1111/aos.17518\">DOI</a></div>\n",
+        "html": "<p>H. Almushattat, J. Hensman, Y. El Allali, C. de Vente, C.I. S\u00e1nchez and C.J. Boon. \"Validation of a deep learning model for the automated detection and quantification of cystoid macular oedema on optical coherence tomography in patients with retinitis pigmentosa\", <i>Acta Ophthalmologica</i>, 2025;103(7):e524-e531.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-almushattat2025validation-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?q=Validation+of+a+deep+learning+model+for+the+automated+detection+and+quantification+of+cystoid+macular+oedema+on+optical+coherence+tomography+in+patients+with+retinitis+pigmentosa\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-09\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~5</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://doi.org/10.1111/aos.17518\">DOI</a></div>\n",
         "only_text": "H. Almushattat, J. Hensman, Y. El Allali, C. de Vente, C.I. S\u00e1nchez and C.J. Boon. \"Validation of a deep learning model for the automated detection and quantification of cystoid macular oedema on optical coherence tomography in patients with retinitis pigmentosa\", <i>Acta Ophthalmologica</i>, 2025;103(7):e524-e531.",
         "citation_count": 5,
         "citation": {
@@ -402,7 +402,7 @@
             "work_id": "https://openalex.org/W4410565026",
             "title": "Validation of a deep learning model for the automated detection and quantification of cystoid macular oedema on optical coherence tomography in patients with retinitis pigmentosa",
             "source": "OpenAlex",
-            "updated_at": "2026-11-06T16:53:49.943009+00:00",
+            "updated_at": "2026-11-09T16:40:56.783872+00:00",
             "signature": "4b553618dc949318a4c9905de3d8d5145d55c266fb17367282b0ee1b79b104e1"
         },
         "year": 2025,
@@ -412,7 +412,7 @@
         "reference_only": false
     },
     "devente2019simultaneous": {
-        "html": "<p>C. de Vente, P. Vos, J. Pluim and M. Veta. \"Simultaneous detection and grading of prostate cancer in multi-parametric MRI\", in: <i>Medical Imaging with Deep Learning (Extended Abstract Track)</i>, 2019.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-devente2019simultaneous-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?q=Simultaneous+detection+and+grading+of+prostate+cancer+in+multi-parametric+MRI\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-06\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~2</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://openreview.net/forum?id=r1lqYQvAY4\">URL</a></div>\n",
+        "html": "<p>C. de Vente, P. Vos, J. Pluim and M. Veta. \"Simultaneous detection and grading of prostate cancer in multi-parametric MRI\", in: <i>Medical Imaging with Deep Learning (Extended Abstract Track)</i>, 2019.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-devente2019simultaneous-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?q=Simultaneous+detection+and+grading+of+prostate+cancer+in+multi-parametric+MRI\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-09\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~2</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://openreview.net/forum?id=r1lqYQvAY4\">URL</a></div>\n",
         "only_text": "C. de Vente, P. Vos, J. Pluim and M. Veta. \"Simultaneous detection and grading of prostate cancer in multi-parametric MRI\", in: <i>Medical Imaging with Deep Learning (Extended Abstract Track)</i>, 2019.",
         "citation_count": 2,
         "citation": {
@@ -420,7 +420,7 @@
             "work_id": "https://openalex.org/W2963534717",
             "title": "Simultaneous Detection and Grading of Prostate Cancer in Multi-Parametric MRI",
             "source": "OpenAlex",
-            "updated_at": "2026-11-06T16:53:50.163923+00:00",
+            "updated_at": "2026-11-09T16:40:56.989578+00:00",
             "signature": "78864f84ba6ed1d32740e752a0a4b42e3b152c332ed42438ba9592483bdea23b"
         },
         "year": 2019,
@@ -430,7 +430,7 @@
         "reference_only": false
     },
     "hensman2026axis": {
-        "html": "<p>J. Hensman, H. Almushattat, R.M. Diederen, T. Tan, P. Dai, C. de Vente, D.S. Ting, M.M. van Genderen, J. Ossewaarde-van Norel, R. van Leeuwen, M.J. Tjon-Fo-Sang, C.I. S\u00e1nchez, M.D. Fischer, M. Pfau, J.W. Twisk and C.J. Boon. \"Randomised Clinical Trial to Evaluate the Efficacy of Acetazolamide for the Treatment of Cystoid Fluid Collections in X-Linked Retinoschisis: The AXIS Trial\", <i>Clinical & Experimental Ophthalmology</i>, 2026.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-hensman2026axis-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?q=Randomised+Clinical+Trial+to+Evaluate+the+Efficacy+of+Acetazolamide+for+the+Treatment+of+Cystoid+Fluid+Collections+in+X-Linked+Retinoschisis%3A+The+AXIS+Trial\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-06\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~3</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://doi.org/10.1111/ceo.70146\">DOI</a></div>\n",
+        "html": "<p>J. Hensman, H. Almushattat, R.M. Diederen, T. Tan, P. Dai, C. de Vente, D.S. Ting, M.M. van Genderen, J. Ossewaarde-van Norel, R. van Leeuwen, M.J. Tjon-Fo-Sang, C.I. S\u00e1nchez, M.D. Fischer, M. Pfau, J.W. Twisk and C.J. Boon. \"Randomised Clinical Trial to Evaluate the Efficacy of Acetazolamide for the Treatment of Cystoid Fluid Collections in X-Linked Retinoschisis: The AXIS Trial\", <i>Clinical & Experimental Ophthalmology</i>, 2026.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-hensman2026axis-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?q=Randomised+Clinical+Trial+to+Evaluate+the+Efficacy+of+Acetazolamide+for+the+Treatment+of+Cystoid+Fluid+Collections+in+X-Linked+Retinoschisis%3A+The+AXIS+Trial\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-09\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~3</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://doi.org/10.1111/ceo.70146\">DOI</a></div>\n",
         "only_text": "J. Hensman, H. Almushattat, R.M. Diederen, T. Tan, P. Dai, C. de Vente, D.S. Ting, M.M. van Genderen, J. Ossewaarde-van Norel, R. van Leeuwen, M.J. Tjon-Fo-Sang, C.I. S\u00e1nchez, M.D. Fischer, M. Pfau, J.W. Twisk and C.J. Boon. \"Randomised Clinical Trial to Evaluate the Efficacy of Acetazolamide for the Treatment of Cystoid Fluid Collections in X-Linked Retinoschisis: The AXIS Trial\", <i>Clinical & Experimental Ophthalmology</i>, 2026.",
         "citation_count": 3,
         "citation": {
@@ -438,7 +438,7 @@
             "work_id": "https://openalex.org/W7202179621",
             "title": "Randomised Clinical Trial to Evaluate the Efficacy of Acetazolamide for the Treatment of Cystoid Fluid Collections in X\u2010Linked Retinoschisis: The AXIS Trial",
             "source": "OpenAlex",
-            "updated_at": "2026-11-06T16:53:50.319409+00:00",
+            "updated_at": "2026-11-09T16:40:57.136776+00:00",
             "signature": "592fecf27d9483445a99f76085344f9e1132fee3d14bdb00999320b1d609bc71"
         },
         "year": 2026,
@@ -448,15 +448,15 @@
         "reference_only": false
     },
     "devente2024conditioning": {
-        "html": "<p>C. de Vente, M.M. Islam, P. Valmaggia, C. Hoyng, A. Tufail and C.I. S\u00e1nchez. \"Conditioning 3D diffusion models with 2D images: Towards standardized OCT volumes through en face-informed super-resolution\", <i>arXiv preprint arXiv:2410.09862</i>, 2024.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-devente2024conditioning-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?q=Conditioning+3D+diffusion+models+with+2D+images%3A+Towards+standardized+OCT+volumes+through+en+face-informed+super-resolution\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-06\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~1</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://arxiv.org/abs/2410.09862/\">arXiv</a></div>\n",
+        "html": "<p>C. de Vente, M.M. Islam, P. Valmaggia, C. Hoyng, A. Tufail and C.I. S\u00e1nchez. \"Conditioning 3D diffusion models with 2D images: Towards standardized OCT volumes through en face-informed super-resolution\", <i>arXiv preprint arXiv:2410.09862</i>, 2024.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-devente2024conditioning-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?q=Conditioning+3D+diffusion+models+with+2D+images%3A+Towards+standardized+OCT+volumes+through+en+face-informed+super-resolution\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-09\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~2</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://arxiv.org/abs/2410.09862/\">arXiv</a></div>\n",
         "only_text": "C. de Vente, M.M. Islam, P. Valmaggia, C. Hoyng, A. Tufail and C.I. S\u00e1nchez. \"Conditioning 3D diffusion models with 2D images: Towards standardized OCT volumes through en face-informed super-resolution\", <i>arXiv preprint arXiv:2410.09862</i>, 2024.",
-        "citation_count": 1,
+        "citation_count": 2,
         "citation": {
-            "count": 1,
+            "count": 2,
             "work_id": "https://openalex.org/W4403570207",
             "title": "Conditioning 3D Diffusion Models with 2D Images: Towards Standardized OCT Volumes through En Face-Informed Super-Resolution",
             "source": "OpenAlex",
-            "updated_at": "2026-11-06T16:53:50.572849+00:00",
+            "updated_at": "2026-11-09T16:40:57.353119+00:00",
             "signature": "04d27e2c774ae2c8f483275bb6ee23d86419a50c55f4be45466f3343eba5c5fb"
         },
         "year": 2024,
@@ -474,7 +474,7 @@
             "work_id": "https://openalex.org/W7169797003",
             "title": "Reticular pseudodrusen load is associated with an increased risk of stroke",
             "source": "OpenAlex",
-            "updated_at": "2026-11-06T16:53:50.792184+00:00",
+            "updated_at": "2026-11-09T16:40:57.545830+00:00",
             "signature": "baf14b8866dbfee2352d8be5f641f879ffff2b46e5630abdc5924cbfd47fbe32"
         },
         "year": 2026,
@@ -492,7 +492,7 @@
             "work_id": "https://openalex.org/W7204460011",
             "title": "Crossover to acetazolamide for the treatment of cystoid fluid collections in X-linked retinoschisis: the REAXIS study",
             "source": "OpenAlex",
-            "updated_at": "2026-11-06T16:53:51.086329+00:00",
+            "updated_at": "2026-11-09T16:40:57.766027+00:00",
             "signature": "34bc34d2166d6800e69052580b53a343d30b63ddaae2193d3601da94dbbb5dc7"
         },
         "year": 2026,
@@ -510,7 +510,7 @@
             "work_id": "https://openalex.org/W7135810947",
             "title": "Towards robust deep learning for medical imaging:Applications in ophthalmology and radiology",
             "source": "OpenAlex",
-            "updated_at": "2026-11-06T16:53:51.330302+00:00",
+            "updated_at": "2026-11-09T16:40:57.971049+00:00",
             "signature": "ff5dfe65a54f923f6bd37eac8834d52d0f40f7a4ad19f0692388afdadbb8e894"
         },
         "year": 2025,
@@ -523,7 +523,7 @@
         "coverpng": "Devente2025thesis.png"
     },
     "lemij2023characteristics": {
-        "html": "<p>H. G. Lemij, K. A. Vermeer, C. de Vente and C. I. S\u00e1nchez. \"Characteristics of glaucomatous eyes in fundus photographs from a screening project\", in: <i>Acta Ophthalmologica</i>, 2023.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-lemij2023characteristics-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?q=Characteristics+of+glaucomatous+eyes+in+fundus+photographs+from+a+screening+project\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-06\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~1</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://doi.org/10.1111/aos.15696\">DOI</a></div>\n",
+        "html": "<p>H. G. Lemij, K. A. Vermeer, C. de Vente and C. I. S\u00e1nchez. \"Characteristics of glaucomatous eyes in fundus photographs from a screening project\", in: <i>Acta Ophthalmologica</i>, 2023.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-lemij2023characteristics-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?q=Characteristics+of+glaucomatous+eyes+in+fundus+photographs+from+a+screening+project\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-09\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~1</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://doi.org/10.1111/aos.15696\">DOI</a></div>\n",
         "only_text": "H. G. Lemij, K. A. Vermeer, C. de Vente and C. I. S\u00e1nchez. \"Characteristics of glaucomatous eyes in fundus photographs from a screening project\", in: <i>Acta Ophthalmologica</i>, 2023.",
         "citation_count": 1,
         "citation": {
@@ -531,7 +531,7 @@
             "work_id": "https://openalex.org/W4378953691",
             "title": "Abstracts",
             "source": "OpenAlex",
-            "updated_at": "2026-11-06T16:53:51.613910+00:00",
+            "updated_at": "2026-11-09T16:40:58.129317+00:00",
             "signature": "6dd0fad13df19899ecf1300c5395442edf97c63d6439ae8a690c05efd2b97a9c"
         },
         "year": 2023,
@@ -541,15 +541,15 @@
         "reference_only": false
     },
     "devente2026joss": {
-        "html": "<p>C. de Vente, K.V. Venkadesh, A. Lasso, B. van Ginneken and C.I. S\u00e1nchez. \"SlicerNNInteractive: A 3D Slicer extension for nnInteractive\", <i>Journal of Open Source Software</i>, 2026;11(123):9003.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-devente2026joss-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?q=SlicerNNInteractive%3A+A+3D+Slicer+extension+for+nnInteractive\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-06\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~5</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://doi.org/10.21105/joss.09003\">DOI</a></div>\n",
+        "html": "<p>C. de Vente, K.V. Venkadesh, A. Lasso, B. van Ginneken and C.I. S\u00e1nchez. \"SlicerNNInteractive: A 3D Slicer extension for nnInteractive\", <i>Journal of Open Source Software</i>, 2026;11(123):9003.</p><div class=\"publication-button-group\"><a data-ix=\"goupbox\" id=\"publication-modal-devente2026joss-button\" class=\"knop footerknop movewithmouse w-button publication-button\">Cite</a><a data-ix=\"goupbox\" href=\"https://scholar.google.com/scholar?q=SlicerNNInteractive%3A+A+3D+Slicer+extension+for+nnInteractive\" target=\"_blank\" rel=\"noopener\" title=\"OpenAlex citations; updated 2026-11-09\" class=\"knop footerknop movewithmouse w-button publication-button\">Cited by ~8</a> <a data-ix=\"goupbox\" target=\"_blank\" class=\"knop footerknop movewithmouse w-button publication-button\" href=\"https://doi.org/10.21105/joss.09003\">DOI</a></div>\n",
         "only_text": "C. de Vente, K.V. Venkadesh, A. Lasso, B. van Ginneken and C.I. S\u00e1nchez. \"SlicerNNInteractive: A 3D Slicer extension for nnInteractive\", <i>Journal of Open Source Software</i>, 2026;11(123):9003.",
-        "citation_count": 5,
+        "citation_count": 8,
         "citation": {
-            "count": 5,
+            "count": 8,
             "work_id": "https://openalex.org/W4415152121",
             "title": "SlicerNNInteractive: A 3D Slicer extension for nnInteractive",
             "source": "OpenAlex",
-            "updated_at": "2026-11-06T16:53:51.766899+00:00",
+            "updated_at": "2026-11-09T16:40:58.270997+00:00",
             "signature": "d55f843c8790a4d09e02a879586d94fb6ef700583e11668fa42f84b1e88d0df1"
         },
         "year": 2026,
